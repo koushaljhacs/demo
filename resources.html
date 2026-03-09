@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources Hub - Koshiv Technology and Logistics Pvt Ltd</title>
+    <meta name="description" content="Resources, tools, and information from Koshiv Technology and Logistics. Blog, news, webinars, white papers, case studies, and calculators. Launching 2026.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <style>
+        /* ===== RESET & BASE STYLES ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #1a1a1a;
+            background-color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* ===== FLUID HEADER ARCHITECTURE (Edge-to-Edge) ===== */
+        .pre-header {
+            background-color: #f8f8f8;
+            padding: 8px 24px;
+            font-size: 14px;
+            border-bottom: 1px solid #e0e0e0;
+            width: 100%;
+        }
+
+        .pre-header-content {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .pre-header-left {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .pre-header-left a {
+            color: #1e3a8a;
+        }
+
+        .pre-header-left span {
+            color: #4a4a4a;
+        }
+
+        .pre-header-right {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .login-links {
+            display: flex;
+            gap: 16px;
+        }
+
+        .login-links a {
+            color: #4a4a4a;
+        }
+
+        .login-links a:hover {
+            color: #1e3a8a;
+        }
+
+        /* ===== MAIN NAVIGATION (Fluid Edge-to-Edge) ===== */
+        .main-nav {
+            background-color: white;
+            padding: 16px 24px;
+            border-bottom: 1px solid #e0e0e0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            width: 100%;
+        }
+
+        .nav-container {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .logo span {
+            font-size: 14px;
+            font-weight: 400;
+            color: #4a4a4a;
+            margin-left: 8px;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+
+        .nav-item {
+            font-weight: 500;
+            position: relative;
+        }
+
+        .nav-item a {
+            color: #1a1a1a;
+        }
+
+        .nav-item a:hover {
+            color: #1e3a8a;
+        }
+
+        .nav-item.active a {
+            color: #1e3a8a;
+            font-weight: 600;
+        }
+
+        .contact-btn {
+            background-color: #1e3a8a;
+            color: white !important;
+            padding: 8px 20px;
+            border-radius: 4px;
+        }
+
+        .contact-btn:hover {
+            background-color: #1e3a8a;
+            opacity: 0.9;
+        }
+
+        .mobile-toggle {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* ===== DROPDOWN MENU ===== */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background-color: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            padding: 20px;
+            width: 700px;
+            max-width: 90vw;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: none;
+            z-index: 1000;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: grid;
+        }
+
+        .dropdown-category h4 {
+            color: #1e3a8a;
+            font-weight: 600;
+            margin-bottom: 12px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .dropdown-category ul li {
+            margin-bottom: 8px;
+        }
+
+        .dropdown-category ul li a {
+            color: #4a4a4a;
+            font-size: 14px;
+        }
+
+        .dropdown-category ul li a:hover {
+            color: #1e3a8a;
+        }
+
+        /* ===== PAGE HEADER (Expansive) ===== */
+        .page-header {
+            background-color: #f8f8f8;
+            padding: 60px 24px;
+            border-bottom: 1px solid #e0e0e0;
+            width: 100%;
+        }
+
+        .page-header-content {
+            width: 100%;
+        }
+
+        .page-header h1 {
+            font-size: 48px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            text-align: left;
+        }
+
+        .page-header p {
+            font-size: 20px;
+            color: #4a4a4a;
+            max-width: 800px;
+            text-align: left;
+        }
+
+        .breadcrumb {
+            margin-bottom: 16px;
+            color: #4a4a4a;
+            font-size: 14px;
+            text-align: left;
+        }
+
+        .breadcrumb a {
+            color: #1e3a8a;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== RESOURCES STATUS NOTE ===== */
+        .resources-status {
+            background-color: #f0f4ff;
+            padding: 24px;
+            border-radius: 4px;
+            margin: 0 0 40px 0;
+            text-align: left;
+            border: 1px solid #d0e0ff;
+            width: 100%;
+        }
+
+        .resources-status p {
+            font-size: 16px;
+            color: #1e3a8a;
+        }
+
+        .resources-status a {
+            color: #1e3a8a;
+            text-decoration: underline;
+            font-weight: 500;
+        }
+
+        /* ===== EXPANSIVE BODY CONTENT ===== */
+        .full-width-section {
+            width: 100%;
+            padding: 60px 24px;
+        }
+
+        .full-width-section:nth-child(even) {
+            background-color: #f8f8f8;
+        }
+
+        .section-title {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+            text-align: left;
+            width: 100%;
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            color: #4a4a4a;
+            margin-bottom: 48px;
+            text-align: left;
+            width: 100%;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            font-weight: 500;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: center;
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: #1e3a8a;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #1e3a8a;
+            opacity: 0.9;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 1px solid #1e3a8a;
+            color: #1e3a8a;
+        }
+
+        .btn-outline:hover {
+            background-color: #f0f4ff;
+        }
+
+        /* ===== GRID SYSTEMS ===== */
+        .grid-4 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            width: 100%;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            width: 100%;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+            width: 100%;
+        }
+
+        .grid-5 {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 16px;
+            width: 100%;
+        }
+
+        /* ===== RESOURCE CARD STYLES ===== */
+        .resource-card {
+            background-color: white;
+            padding: 24px;
+            border-radius: 4px;
+            border: 1px solid #e0e0e0;
+            transition: transform 0.2s;
+            height: 100%;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .resource-card h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #1e3a8a;
+        }
+
+        .resource-card p {
+            color: #4a4a4a;
+            margin-bottom: 16px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .resource-icon {
+            font-size: 32px;
+            color: #1e3a8a;
+            margin-bottom: 16px;
+        }
+
+        .status-tag {
+            display: inline-block;
+            background-color: #f0f4ff;
+            color: #1e3a8a;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin-right: 8px;
+        }
+
+        .resource-link {
+            display: inline-block;
+            margin-top: 16px;
+            color: #1e3a8a;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .resource-link i {
+            font-size: 12px;
+            margin-left: 4px;
+        }
+
+        .coming-soon {
+            background-color: #f3f4f6;
+            color: #4a4a4a;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+
+        /* ===== KNOWLEDGE CARD ===== */
+        .knowledge-card {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2a4a9a 100%);
+            color: white;
+            padding: 32px;
+            border-radius: 4px;
+            height: 100%;
+        }
+
+        .knowledge-card h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: white;
+        }
+
+        .knowledge-card p {
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 24px;
+            font-size: 16px;
+        }
+
+        .knowledge-card .btn-white {
+            background-color: white;
+            color: #1e3a8a;
+        }
+
+        .knowledge-card .btn-outline-white {
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+
+        .knowledge-card .btn-outline-white:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+
+        .knowledge-badge {
+            display: inline-block;
+            background-color: rgba(255,255,255,0.2);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin-right: 8px;
+        }
+
+        /* ===== BLOG CARD ===== */
+        .blog-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid #e0e0e0;
+            height: 100%;
+        }
+
+        .blog-card h4 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .blog-card .blog-meta {
+            font-size: 12px;
+            color: #4a4a4a;
+            margin-bottom: 12px;
+        }
+
+        .blog-card p {
+            color: #4a4a4a;
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+
+        /* ===== TOOL CARD ===== */
+        .tool-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid #e0e0e0;
+            text-align: center;
+            transition: transform 0.2s;
+            height: 100%;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .tool-card i {
+            font-size: 32px;
+            color: #1e3a8a;
+            margin-bottom: 12px;
+        }
+
+        .tool-card h4 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .tool-card p {
+            font-size: 13px;
+            color: #4a4a4a;
+        }
+
+        /* ===== PAGE LIST SECTION ===== */
+        .page-list-section {
+            width: 100%;
+            padding: 40px 24px;
+            background-color: #f8f8f8;
+        }
+
+        .page-list-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            width: 100%;
+        }
+
+        .page-list-card {
+            background: white;
+            padding: 20px;
+            border-radius: 4px;
+        }
+
+        .page-list-card h4 {
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #1e3a8a;
+        }
+
+        .page-list-card ul li {
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
+
+        .page-list-card ul li a {
+            color: #4a4a4a;
+        }
+
+        .page-list-card ul li a:hover {
+            color: #1e3a8a;
+        }
+
+        /* ===== CTA SECTION ===== */
+        .cta-section {
+            width: 100%;
+            padding: 60px 24px;
+            background-color: #1e3a8a;
+            color: white;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        .cta-section p {
+            font-size: 18px;
+            margin-bottom: 32px;
+            opacity: 0.9;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn-white {
+            background-color: white;
+            color: #1e3a8a;
+        }
+
+        .btn-white:hover {
+            background-color: #f0f0f0;
+        }
+
+        .btn-outline-white {
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+
+        .btn-outline-white:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+
+        /* ===== CONTAINED FOOTER (Centered container with left-aligned text) ===== */
+        .footer {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 48px 24px 24px;
+            width: 100%;
+        }
+
+        .footer-content {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .footer-main {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+            margin-bottom: 32px;
+        }
+
+        .footer-col h4 {
+            font-weight: 600;
+            margin-bottom: 16px;
+            text-align: left;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 8px;
+            text-align: left;
+        }
+
+        .footer-col ul li a {
+            opacity: 0.8;
+        }
+
+        .footer-col ul li a:hover {
+            opacity: 1;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 24px;
+            font-size: 14px;
+            opacity: 0.6;
+            text-align: left;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1024px) {
+            .grid-4,
+            .grid-5,
+            .page-list-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .grid-3 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-main {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .dropdown-menu {
+                width: 500px;
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .mobile-toggle {
+                display: block;
+            }
+
+            .grid-4,
+            .grid-3,
+            .grid-2,
+            .grid-5,
+            .page-list-grid,
+            .footer-main {
+                grid-template-columns: 1fr;
+            }
+
+            .page-header h1 {
+                font-size: 36px;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+
+            .dropdown-menu {
+                display: none !important;
+            }
+
+            .cta-section h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ===== FLUID EDGE-TO-EDGE PRE-HEADER ===== -->
+    <div class="pre-header">
+        <div class="pre-header-content">
+            <div class="pre-header-left">
+                <a href="mailto:info@koshiv.com"><i class="fas fa-envelope"></i> info@koshiv.com</a>
+                <span><i class="fas fa-building"></i> Koshiv Technology and Logistics Pvt Ltd</span>
+                <span><i class="fas fa-calendar-alt"></i> Launching 2026</span>
+                <span><i class="fas fa-file"></i> GST: In Process</span>
+            </div>
+            <div class="pre-header-right">
+                <div class="login-links">
+                    <a href="#">Client Login</a>
+                    <a href="#">Driver Login</a>
+                    <a href="#">Partner Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== FLUID EDGE-TO-EDGE MAIN NAVIGATION ===== -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">KOSHIV<span>Technology and Logistics</span></a>
+            </div>
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="nav-menu">
+                <div class="nav-item"><a href="index.html">Home</a></div>
+                <div class="nav-item"><a href="about.html">About</a></div>
+                <div class="nav-item"><a href="services.html">Services</a></div>
+                <div class="nav-item"><a href="fleet.html">Fleet</a></div>
+                <div class="nav-item"><a href="coverage.html">Coverage</a></div>
+                <div class="nav-item"><a href="clients.html">Clients</a></div>
+                <div class="nav-item"><a href="drivers.html">Drivers</a></div>
+                <div class="nav-item"><a href="partners.html">Partners</a></div>
+                <div class="nav-item dropdown active">
+                    <a href="resources.html">RESOURCES <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <!-- Knowledge Center (Pages 111-115) -->
+                        <div class="dropdown-category">
+                            <h4>KNOWLEDGE CENTER</h4>
+                            <ul>
+                                <li><a href="blog/index.html">111. Blog Home</a></li>
+                                <li><a href="news/index.html">112. Industry News</a></li>
+                                <li><a href="events/webinars.html">113. Webinars</a></li>
+                                <li><a href="research/white-papers.html">114. White Papers</a></li>
+                                <li><a href="research/case-studies.html">115. Case Studies</a></li>
+                            </ul>
+                        </div>
+                        <!-- Tools & Calculators (Pages 116-120) -->
+                        <div class="dropdown-category">
+                            <h4>TOOLS & CALCULATORS</h4>
+                            <ul>
+                                <li><a href="tools/transit-calculator.html">116. Transit Time Calculator</a></li>
+                                <li><a href="tools/rate-calculator.html">117. Freight Rate Calculator</a></li>
+                                <li><a href="tools/duty-calculator.html">118. Duty Calculator</a></li>
+                                <li><a href="tools/hsn-lookup.html">119. HSN Code Lookup</a></li>
+                                <li><a href="tools/pallet-calculator.html">120. Pallet Calculator</a></li>
+                            </ul>
+                        </div>
+                        <!-- About Resources (Pages 121-126) -->
+                        <div class="dropdown-category">
+                            <h4>ABOUT RESOURCES</h4>
+                            <ul>
+                                <li><a href="about/timeline.html">121. Launch Timeline</a></li>
+                                <li><a href="about/faq.html">122. FAQ About Koshiv</a></li>
+                                <li><a href="about/team.html">123. Meet the Founders</a></li>
+                                <li><a href="about/investors.html">124. Investor Information</a></li>
+                                <li><a href="media/press-kit.html">125. Press Kit</a></li>
+                                <li><a href="resources/index.html">126. Resource Center</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-item"><a href="contact.html" class="contact-btn">Contact</a></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== PAGE HEADER ===== -->
+    <div class="page-header">
+        <div class="page-header-content" style="padding: 0 24px;">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / Resources
+            </div>
+            <h1>Resources Hub</h1>
+            <p>Knowledge center, tools, calculators, and information to help you navigate import/export logistics.</p>
+        </div>
+    </div>
+
+    <!-- ===== RESOURCES STATUS NOTE ===== -->
+    <div style="padding: 0 24px;">
+        <div class="resources-status">
+            <p><i class="fas fa-info-circle"></i> Resources are under development. Blog, news, webinars, and tools will be launched progressively throughout 2026.</p>
+        </div>
+    </div>
+
+    <!-- ===== KNOWLEDGE CENTER SECTION (Pages 111-115) ===== -->
+    <div class="full-width-section">
+        <h2 class="section-title" style="padding: 0 24px;">Knowledge Center</h2>
+        <p class="section-subtitle" style="padding: 0 24px;">Insights, news, and educational content from our team.</p>
+
+        <div class="grid-4" style="padding: 0 24px;">
+            <!-- Page 111 -->
+            <div class="resource-card">
+                <div class="resource-icon"><i class="fas fa-blog"></i></div>
+                <h3><a href="blog/index.html">Blog Home</a></h3>
+                <p>Articles, insights, and updates from the Koshiv team on logistics, import/export, and industry trends.</p>
+                <span class="status-tag">Page 111</span>
+                <a href="blog/index.html" class="resource-link">Visit Blog <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Page 112 -->
+            <div class="resource-card">
+                <div class="resource-icon"><i class="fas fa-newspaper"></i></div>
+                <h3><a href="news/index.html">Industry News</a></h3>
+                <p>Curated news and updates from the logistics and transportation industry.</p>
+                <span class="status-tag">Page 112</span>
+                <a href="news/index.html" class="resource-link">Read News <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Page 113 -->
+            <div class="resource-card">
+                <div class="resource-icon"><i class="fas fa-video"></i></div>
+                <h3><a href="events/webinars.html">Webinars</a></h3>
+                <p>Educational webinars on import/export documentation, compliance, and logistics best practices.</p>
+                <span class="coming-soon">Coming 2026</span>
+                <span class="status-tag">Page 113</span>
+                <a href="events/webinars.html" class="resource-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Page 114 -->
+            <div class="resource-card">
+                <div class="resource-icon"><i class="fas fa-file-pdf"></i></div>
+                <h3><a href="research/white-papers.html">White Papers</a></h3>
+                <p>In-depth research and analysis on logistics trends, challenges, and opportunities.</p>
+                <span class="coming-soon">Coming 2026</span>
+                <span class="status-tag">Page 114</span>
+                <a href="research/white-papers.html" class="resource-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Page 115 -->
+            <div class="resource-card">
+                <div class="resource-icon"><i class="fas fa-briefcase"></i></div>
+                <h3><a href="research/case-studies.html">Case Studies</a></h3>
+                <p>Real-world examples of how we help clients solve logistics challenges.</p>
+                <span class="coming-soon">Coming 2026</span>
+                <span class="status-tag">Page 115</span>
+                <a href="research/case-studies.html" class="resource-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== FEATURED BLOG POSTS (Preview) ===== -->
+    <div class="full-width-section">
+        <h2 class="section-title" style="padding: 0 24px;">Latest from Our Blog</h2>
+        <p class="section-subtitle" style="padding: 0 24px;">Recent articles and insights.</p>
+
+        <div class="grid-4" style="padding: 0 24px;">
+            <div class="blog-card">
+                <h4><a href="blog/why-we-started.html">Why We Started Koshiv</a></h4>
+                <div class="blog-meta">March 15, 2026 • 5 min read</div>
+                <p>A message from our founder about the vision behind Koshiv Technology and Logistics.</p>
+                <a href="blog/why-we-started.html" class="resource-link">Read More</a>
+            </div>
+            <div class="blog-card">
+                <h4><a href="blog/tariff-changes-2026.html">5 Things to Know About 2026 Tariff Changes</a></h4>
+                <div class="blog-meta">March 10, 2026 • 8 min read</div>
+                <p>Understanding the latest tariff updates and how they affect importers and exporters.</p>
+                <a href="blog/tariff-changes-2026.html" class="resource-link">Read More</a>
+            </div>
+            <div class="blog-card">
+                <h4><a href="blog/meet-the-founders.html">Meet Our Founding Team</a></h4>
+                <div class="blog-meta">March 5, 2026 • 4 min read</div>
+                <p>Introducing the team behind Koshiv with 40+ years of combined industry experience.</p>
+                <a href="blog/meet-the-founders.html" class="resource-link">Read More</a>
+            </div>
+            <div class="blog-card">
+                <h4><a href="blog/early-adopter-program.html">What Early Adopters Get</a></h4>
+                <div class="blog-meta">February 28, 2026 • 6 min read</div>
+                <p>Inside the Koshiv Launch Program and benefits for early clients and partners.</p>
+                <a href="blog/early-adopter-program.html" class="resource-link">Read More</a>
+            </div>
+        </div>
+        <div style="padding: 0 24px; margin-top: 24px;">
+            <a href="blog/index.html" class="btn btn-outline">View All Articles</a>
+        </div>
+    </div>
+
+    <!-- ===== TOOLS & CALCULATORS SECTION (Pages 116-120) ===== -->
+    <div class="full-width-section">
+        <h2 class="section-title" style="padding: 0 24px;">Tools & Calculators</h2>
+        <p class="section-subtitle" style="padding: 0 24px;">Helpful tools to plan and estimate your shipments.</p>
+
+        <div class="grid-5" style="padding: 0 24px;">
+            <!-- Page 116 -->
+            <a href="tools/transit-calculator.html" class="tool-card">
+                <i class="fas fa-clock"></i>
+                <h4>Transit Time</h4>
+                <p>Estimate delivery times</p>
+                <span class="status-tag">116</span>
+            </a>
+            <!-- Page 117 -->
+            <a href="tools/rate-calculator.html" class="tool-card">
+                <i class="fas fa-calculator"></i>
+                <h4>Freight Rate</h4>
+                <p>Calculate shipping costs</p>
+                <span class="status-tag">117</span>
+            </a>
+            <!-- Page 118 -->
+            <a href="tools/duty-calculator.html" class="tool-card">
+                <i class="fas fa-file-invoice"></i>
+                <h4>Duty Calculator</h4>
+                <p>Estimate import duties</p>
+                <span class="status-tag">118</span>
+            </a>
+            <!-- Page 119 -->
+            <a href="tools/hsn-lookup.html" class="tool-card">
+                <i class="fas fa-search"></i>
+                <h4>HSN Code Lookup</h4>
+                <p>Find product codes</p>
+                <span class="status-tag">119</span>
+            </a>
+            <!-- Page 120 -->
+            <a href="tools/pallet-calculator.html" class="tool-card">
+                <i class="fas fa-cubes"></i>
+                <h4>Pallet Calculator</h4>
+                <p>Optimize pallet loading</p>
+                <span class="status-tag">120</span>
+            </a>
+        </div>
+        <div style="padding: 0 24px; margin-top: 24px;">
+            <p style="font-size: 14px; color: #4a4a4a;">All calculators are under development. <a href="tools/calculators.html" style="color: #1e3a8a;">Visit Page 76 for details</a>.</p>
+        </div>
+    </div>
+
+    <!-- ===== ABOUT RESOURCES SECTION (Pages 121-126) ===== -->
+    <div class="full-width-section">
+        <h2 class="section-title" style="padding: 0 24px;">About Koshiv Resources</h2>
+        <p class="section-subtitle" style="padding: 0 24px;">Learn more about our company, timeline, and team.</p>
+
+        <div class="grid-4" style="padding: 0 24px;">
+            <!-- Page 121 -->
+            <div class="resource-card">
+                <h3><a href="about/timeline.html">Launch Timeline</a></h3>
+                <p>Our phased launch plan and progress updates as we prepare for 2026.</p>
+                <span class="status-tag">Page 121</span>
+                <a href="about/timeline.html" class="resource-link">View Timeline <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Page 122 -->
+            <div class="resource-card">
+                <h3><a href="about/faq.html">FAQ About Koshiv</a></h3>
+                <p>Frequently asked questions about our company, services, and launch.</p>
+                <span class="status-tag">Page 122</span>
+                <a href="about/faq.html" class="resource-link">View FAQs <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Page 123 -->
+            <div class="resource-card">
+                <h3><a href="about/team.html">Meet the Founders</a></h3>
+                <p>Learn about the team behind Koshiv with 40+ years of combined experience.</p>
+                <span class="status-tag">Page 123</span>
+                <a href="about/team.html" class="resource-link">Meet the Team <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Page 124 -->
+            <div class="resource-card">
+                <h3><a href="about/investors.html">Investor Information</a></h3>
+                <p>Information for potential investors interested in our growth journey.</p>
+                <span class="status-tag">Page 124</span>
+                <a href="about/investors.html" class="resource-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Page 125 -->
+            <div class="resource-card">
+                <h3><a href="media/press-kit.html">Press Kit</a></h3>
+                <p>Logos, brand assets, and media resources for press and partners.</p>
+                <span class="status-tag">Page 125</span>
+                <a href="media/press-kit.html" class="resource-link">Download <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Page 126 -->
+            <div class="knowledge-card">
+                <h3>Resource Center</h3>
+                <p>Central hub for all Koshiv resources, guides, and tools.</p>
+                <span class="knowledge-badge">Page 126</span>
+                <div style="margin-top: 16px;">
+                    <a href="resources/index.html" class="btn btn-white">Visit Resource Center</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== PAGE LIST SECTION - ALL 16 RESOURCES PAGES ===== -->
+    <div class="page-list-section">
+        <div style="padding: 0 24px;">
+            <h2 class="section-title">Resources Information Pages</h2>
+            <p class="section-subtitle">All 16 resources-related pages are linked below. Click any link to visit that page (pages under development will be available soon).</p>
+
+            <div class="page-list-grid">
+                <!-- Knowledge Center (111-115) -->
+                <div class="page-list-card">
+                    <h4>Knowledge Center (111-115)</h4>
+                    <ul>
+                        <li><a href="blog/index.html">111. Blog Home</a></li>
+                        <li><a href="news/index.html">112. Industry News</a></li>
+                        <li><a href="events/webinars.html">113. Webinars</a></li>
+                        <li><a href="research/white-papers.html">114. White Papers</a></li>
+                        <li><a href="research/case-studies.html">115. Case Studies</a></li>
+                    </ul>
+                </div>
+
+                <!-- Tools & Calculators (116-120) -->
+                <div class="page-list-card">
+                    <h4>Tools & Calculators (116-120)</h4>
+                    <ul>
+                        <li><a href="tools/transit-calculator.html">116. Transit Time Calculator</a></li>
+                        <li><a href="tools/rate-calculator.html">117. Freight Rate Calculator</a></li>
+                        <li><a href="tools/duty-calculator.html">118. Duty Calculator</a></li>
+                        <li><a href="tools/hsn-lookup.html">119. HSN Code Lookup</a></li>
+                        <li><a href="tools/pallet-calculator.html">120. Pallet Calculator</a></li>
+                    </ul>
+                </div>
+
+                <!-- About Resources (121-126) -->
+                <div class="page-list-card">
+                    <h4>About Resources (121-126)</h4>
+                    <ul>
+                        <li><a href="about/timeline.html">121. Launch Timeline</a></li>
+                        <li><a href="about/faq.html">122. FAQ About Koshiv</a></li>
+                        <li><a href="about/team.html">123. Meet the Founders</a></li>
+                        <li><a href="about/investors.html">124. Investor Information</a></li>
+                        <li><a href="media/press-kit.html">125. Press Kit</a></li>
+                        <li><a href="resources/index.html">126. Resource Center</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="margin-top: 32px; padding: 20px; background: white; border-radius: 4px;">
+                <p style="font-weight: 500;">Total Resources Pages: <strong style="color: #1e3a8a;">16 pages</strong> (Pages 111-126 from your complete list)</p>
+                <p style="font-size: 14px; color: #4a4a4a; margin-top: 8px;">Individual pages are under development. Clicking links will show placeholder content until pages are created.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== CTA SECTION ===== -->
+    <div class="cta-section">
+        <div style="padding: 0 24px;">
+            <h2>Looking for more information?</h2>
+            <p>Explore our resources or contact us directly with your questions.</p>
+            <div class="cta-buttons">
+                <a href="resources/index.html" class="btn btn-white">Visit Resource Center</a>
+                <a href="contact.html" class="btn btn-outline-white">Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== CONTAINED FOOTER (Centered container with left-aligned text) ===== -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-col">
+                    <h4>KOSHIV</h4>
+                    <ul>
+                        <li>Technology and Logistics Pvt Ltd</li>
+                        <li>Launching 2026</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="fleet.html">Fleet</a></li>
+                        <li><a href="coverage.html">Coverage</a></li>
+                        <li><a href="clients.html">Clients</a></li>
+                        <li><a href="drivers.html">Drivers</a></li>
+                        <li><a href="partners.html">Partners</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="blog/index.html">Blog (111)</a></li>
+                        <li><a href="news/index.html">News (112)</a></li>
+                        <li><a href="tools/calculators.html">Calculators (116-120)</a></li>
+                        <li><a href="about/timeline.html">Timeline (121)</a></li>
+                        <li><a href="media/press-kit.html">Press Kit (125)</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@koshiv.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Mumbai, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                © 2026 Koshiv Technology and Logistics Pvt Ltd. All rights reserved. | Resources Pages 111-126
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-toggle').addEventListener('click', function() {
+            alert('Mobile menu would open here - navigation links: Home, About, Services, Fleet, Coverage, Clients, Drivers, Partners, Resources, Contact');
+        });
+
+        console.log('Resources Hub page loaded - All 16 resources pages (111-126) are linked correctly');
+    </script>
+</body>
+</html>
