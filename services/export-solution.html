@@ -27,8 +27,8 @@
     
     <!-- ===== OPEN GRAPH META TAGS ===== -->
     <meta property="og:title" content="Full Export Solution - Koshiv Technology and Logistics">
-    <meta property="og:description" content="Complete end-to-end export logistics solution. Planned launch 2026.">
-    <meta property="og:image" content="https://www.koshiv.com/images/og-export-solution.jpg">
+    <meta property="og:description" content="Complete end-to-end export logistics solution including documentation, shipping bill filing, container loading, and packing. Planned launch 2026.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1586528116311-ad8ed7c83a7f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80">
     <meta property="og:url" content="https://www.koshiv.com/services/export-solution.html">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Koshiv Technology and Logistics">
@@ -37,7 +37,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Full Export Solution - Koshiv Logistics">
     <meta name="twitter:description" content="Complete end-to-end export logistics solution.">
-    <meta name="twitter:image" content="https://www.koshiv.com/images/twitter-export-solution.jpg">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1586528116311-ad8ed7c83a7f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80">
     
     <!-- ===== GEO META TAGS ===== -->
     <meta name="geo.region" content="IN-MH">
@@ -79,6 +79,37 @@
 
         ul {
             list-style: none;
+        }
+
+        /* ===== LEFT-ALIGN ALL CONTENT (EXCEPT CTA) ===== */
+        .container, 
+        .full-width-section, 
+        .info-box, 
+        .service-detail-card,
+        .feature-list,
+        p, 
+        h1, h2, h3, h4, h5, h6,
+        .breadcrumb,
+        .page-header,
+        .page-header h1,
+        .page-header p,
+        .section-title,
+        .section-subtitle,
+        .status-badge,
+        .back-link,
+        .benefits-card,
+        .process-card,
+        .industry-card,
+        .faq-item {
+            text-align: left;
+        }
+
+        /* CTA section remains centered */
+        .cta-section,
+        .cta-section h2,
+        .cta-section p,
+        .cta-buttons {
+            text-align: center;
         }
 
         /* ===== FLUID HEADER ARCHITECTURE ===== */
@@ -263,28 +294,27 @@
         }
 
         .page-header-content {
-            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
         }
 
         .page-header h1 {
             font-size: 48px;
             font-weight: 600;
             margin-bottom: 16px;
-            text-align: left;
         }
 
         .page-header p {
             font-size: 20px;
             color: #4a4a4a;
             max-width: 800px;
-            text-align: left;
         }
 
         .breadcrumb {
             margin-bottom: 16px;
             color: #4a4a4a;
             font-size: 14px;
-            text-align: left;
         }
 
         .breadcrumb a {
@@ -295,10 +325,20 @@
             text-decoration: underline;
         }
 
-        /* ===== CONTENT SECTION ===== */
+        /* ===== CONTENT STYLES ===== */
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
         .full-width-section {
             width: 100%;
             padding: 60px 24px;
+        }
+
+        .full-width-section:nth-child(even) {
+            background-color: #f8f8f8;
         }
 
         .section-title {
@@ -306,8 +346,12 @@
             font-weight: 600;
             margin-bottom: 16px;
             letter-spacing: -0.02em;
-            text-align: left;
-            width: 100%;
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            color: #4a4a4a;
+            margin-bottom: 48px;
         }
 
         .btn {
@@ -339,6 +383,15 @@
 
         .btn-outline:hover {
             background-color: #f0f4ff;
+        }
+
+        .btn-white {
+            background-color: white;
+            color: #1e3a8a;
+        }
+
+        .btn-white:hover {
+            background-color: #f0f0f0;
         }
 
         .status-badge {
@@ -375,6 +428,354 @@
         .back-link a {
             color: #1e3a8a;
             font-weight: 500;
+            display: inline-block;
+        }
+
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== IMAGE STYLES ===== */
+        .hero-image {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .feature-image {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+
+        .grid-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+
+        .process-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+        }
+
+        /* ===== SERVICE DETAILS ===== */
+        .service-details-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin: 40px 0;
+        }
+
+        .service-detail-card {
+            background-color: white;
+            padding: 24px;
+            border-radius: 12px;
+            border: 1px solid #e0e0e0;
+            transition: all 0.3s;
+        }
+
+        .service-detail-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            border-color: #1e3a8a;
+        }
+
+        .service-detail-card i {
+            font-size: 32px;
+            color: #1e3a8a;
+            margin-bottom: 16px;
+        }
+
+        .service-detail-card h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #1e3a8a;
+        }
+
+        .service-detail-card p {
+            color: #4a4a4a;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* ===== PROCESS GRID ===== */
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin: 40px 0;
+        }
+
+        .process-card {
+            background-color: white;
+            border-radius: 12px;
+            border: 1px solid #e0e0e0;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+
+        .process-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+
+        .process-content {
+            padding: 20px;
+        }
+
+        .process-content .step {
+            display: inline-block;
+            background-color: #f0f4ff;
+            color: #1e3a8a;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .process-content h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #1e3a8a;
+        }
+
+        .process-content p {
+            color: #4a4a4a;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* ===== BENEFITS GRID ===== */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            margin: 40px 0;
+        }
+
+        .benefits-card {
+            background-color: white;
+            padding: 24px;
+            border-radius: 12px;
+            border: 1px solid #e0e0e0;
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            transition: all 0.3s;
+        }
+
+        .benefits-card:hover {
+            background-color: #f8f8f8;
+            border-color: #1e3a8a;
+        }
+
+        .benefits-card i {
+            font-size: 28px;
+            color: #1e3a8a;
+            flex-shrink: 0;
+        }
+
+        .benefits-card h4 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #1e3a8a;
+        }
+
+        .benefits-card p {
+            color: #4a4a4a;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* ===== DOCUMENT GRID ===== */
+        .document-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin: 40px 0;
+        }
+
+        .document-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .document-card:hover {
+            background-color: #f8f8f8;
+            transform: translateY(-2px);
+        }
+
+        .document-card i {
+            font-size: 32px;
+            color: #1e3a8a;
+            margin-bottom: 12px;
+        }
+
+        .document-card h4 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 4px;
+            color: #1e3a8a;
+        }
+
+        .document-card p {
+            color: #4a4a4a;
+            font-size: 12px;
+        }
+
+        /* ===== INDUSTRY GRID ===== */
+        .industry-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin: 40px 0;
+        }
+
+        .industry-card {
+            background-color: white;
+            padding: 24px;
+            border-radius: 12px;
+            border: 1px solid #e0e0e0;
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .industry-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+
+        .industry-card i {
+            font-size: 32px;
+            color: #1e3a8a;
+            margin-bottom: 16px;
+        }
+
+        .industry-card h4 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #1e3a8a;
+        }
+
+        .industry-card p {
+            color: #4a4a4a;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* ===== FAQ GRID ===== */
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            margin: 40px 0;
+        }
+
+        .faq-item {
+            background-color: white;
+            padding: 24px;
+            border-radius: 12px;
+            border: 1px solid #e0e0e0;
+            transition: all 0.3s;
+        }
+
+        .faq-item:hover {
+            background-color: #f8f8f8;
+        }
+
+        .faq-item h4 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #1e3a8a;
+        }
+
+        .faq-item p {
+            color: #4a4a4a;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* ===== FEATURE LIST ===== */
+        .feature-list {
+            list-style: none;
+            margin: 20px 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+
+        .feature-list li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #4a4a4a;
+        }
+
+        .feature-list li i {
+            color: #1e3a8a;
+            width: 20px;
+        }
+
+        /* ===== CTA SECTION (CENTERED) ===== */
+        .cta-section {
+            width: 100%;
+            padding: 80px 24px;
+            background: linear-gradient(135deg, #1e3a8a 0%, #2a4a9a 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .cta-section p {
+            font-size: 18px;
+            margin-bottom: 32px;
+            opacity: 0.9;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn-outline-white {
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+
+        .btn-outline-white:hover {
+            background-color: rgba(255,255,255,0.1);
         }
 
         /* ===== FOOTER ===== */
@@ -400,16 +801,16 @@
         .footer-col h4 {
             font-weight: 600;
             margin-bottom: 16px;
-            text-align: left;
+            color: white;
         }
 
         .footer-col ul li {
             margin-bottom: 8px;
-            text-align: left;
         }
 
         .footer-col ul li a {
             opacity: 0.8;
+            transition: opacity 0.2s;
         }
 
         .footer-col ul li a:hover {
@@ -421,18 +822,28 @@
             padding-top: 24px;
             font-size: 14px;
             opacity: 0.6;
-            text-align: left;
         }
 
         /* ===== RESPONSIVE ===== */
         @media (max-width: 1024px) {
-            .footer-main {
+            .service-details-grid,
+            .process-grid,
+            .document-grid,
+            .industry-grid,
+            .faq-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
 
-            .dropdown-menu {
-                width: 500px;
+            .benefits-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .feature-list {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-main {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
 
@@ -445,6 +856,12 @@
                 display: block;
             }
 
+            .service-details-grid,
+            .process-grid,
+            .document-grid,
+            .benefits-grid,
+            .industry-grid,
+            .faq-grid,
             .footer-main {
                 grid-template-columns: 1fr;
             }
@@ -457,12 +874,20 @@
                 font-size: 28px;
             }
 
-            .dropdown-menu {
-                display: none !important;
+            .cta-section h2 {
+                font-size: 28px;
             }
 
             .info-box {
                 padding: 24px;
+            }
+
+            .hero-image {
+                height: 300px;
+            }
+
+            .feature-image {
+                height: 250px;
             }
         }
     </style>
@@ -487,7 +912,7 @@
         </div>
     </div>
 
-    <!-- ===== FLUID EDGE-TO-EDGE MAIN NAVIGATION ===== -->
+    <!-- ===== MAIN NAVIGATION ===== -->
     <nav class="main-nav">
         <div class="nav-container">
             <div class="logo">
@@ -499,14 +924,15 @@
             <div class="nav-menu">
                 <div class="nav-item"><a href="/index.html">Home</a></div>
                 <div class="nav-item"><a href="/about.html">About</a></div>
-                <div class="nav-item"><a href="/services.html">Services</a></div>
+                <div class="nav-item active"><a href="/services.html">Services</a></div>
                 <div class="nav-item"><a href="/fleet.html">Fleet</a></div>
                 <div class="nav-item"><a href="/coverage.html">Coverage</a></div>
                 <div class="nav-item"><a href="/clients.html">Clients</a></div>
                 <div class="nav-item"><a href="/drivers.html">Drivers</a></div>
                 <div class="nav-item"><a href="/partners.html">Partners</a></div>
                 <div class="nav-item"><a href="/resources.html">Resources</a></div>
-                <div class="nav-item"><a href="/about.html">About</a></div>
+                <div class="nav-item"><a href="/legal.html">Legal</a></div>
+                <div class="nav-item"><a href="/sitemap.html">Sitemap</a></div>
                 <div class="nav-item">
                     <a href="/contact.html" class="contact-btn">Contact</a>
                 </div>
@@ -516,18 +942,27 @@
 
     <!-- ===== PAGE HEADER ===== -->
     <div class="page-header">
-        <div class="page-header-content" style="padding: 0 24px;">
+        <div class="page-header-content">
             <div class="breadcrumb">
-                <a href="/index.html">Home</a> / <a href="/services.html">Services</a> / Full Export Solution
+                <a href="/index.html">Home</a> / <a href="/services.html">Services</a> / <a href="/services/export-solution.html">Export Services</a> / Full Export Solution
             </div>
             <h1>Full Export Solution</h1>
-            <p>Complete end-to-end export logistics solution including documentation, shipping bill filing, container loading, and packing.</p>
+            <p>Complete end-to-end export logistics solution including documentation, shipping bill filing, container loading, and packing. Details to be announced upon launch.</p>
+        </div>
+    </div>
+
+    <!-- ===== HERO IMAGE ===== -->
+    <div class="full-width-section" style="padding-top: 0;">
+        <div class="container">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8ed7c83a7f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" 
+                 alt="Export container loading at port" 
+                 class="hero-image">
         </div>
     </div>
 
     <!-- ===== CONTENT SECTION ===== -->
     <div class="full-width-section">
-        <div style="max-width: 1280px; margin: 0 auto; padding: 0 24px;">
+        <div class="container">
             <span class="status-badge"><i class="far fa-clock"></i> Planned for Q2 2026</span>
             
             <div class="info-box">
@@ -535,20 +970,250 @@
                 <p>Koshiv Technology and Logistics Pvt Ltd is launching in 2026. Please check back later or contact us for specific inquiries.</p>
             </div>
 
-            <h2 style="margin-bottom: 16px; font-size: 24px;">Service Overview</h2>
+            <h2 class="section-title">Service Overview</h2>
             <p style="margin-bottom: 32px; color: #4a4a4a;">Our Full Export Solution is designed to handle every aspect of your export process, from documentation to final loading. We are currently in the planning phase and will provide detailed information closer to our launch.</p>
+
+            <!-- Service Details Grid -->
+            <div class="service-details-grid">
+                <div class="service-detail-card">
+                    <i class="fas fa-file-export"></i>
+                    <h3>Export Documentation</h3>
+                    <p>Complete preparation and processing of all export documents including invoices, packing lists, and certificates of origin.</p>
+                </div>
+                <div class="service-detail-card">
+                    <i class="fas fa-file-invoice"></i>
+                    <h3>Shipping Bill Filing</h3>
+                    <p>Electronic filing of shipping bills with Indian customs for export shipments.</p>
+                </div>
+                <div class="service-detail-card">
+                    <i class="fas fa-boxes"></i>
+                    <h3>Container Loading</h3>
+                    <p>Professional loading and securing of cargo in export containers following international standards.</p>
+                </div>
+                <div class="service-detail-card">
+                    <i class="fas fa-box"></i>
+                    <h3>Export Packing</h3>
+                    <p>Specialized packing for export shipments to ensure safe transit and compliance with international standards.</p>
+                </div>
+                <div class="service-detail-card">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Certificate of Origin</h3>
+                    <p>Assistance in obtaining certificates of origin for preferential tariff treatment under trade agreements.</p>
+                </div>
+                <div class="service-detail-card">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <h3>Hazmat Export</h3>
+                    <p>Specialized handling, documentation, and transportation for hazardous materials export.</p>
+                </div>
+            </div>
+
+            <!-- Process Section -->
+            <h2 class="section-title" style="margin-top: 60px;">Export Process</h2>
+            <div class="process-grid">
+                <div class="process-card">
+                    <img src="https://images.unsplash.com/photo-1586528116311-ad8ed7c83a7f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Documentation" class="process-image">
+                    <div class="process-content">
+                        <span class="step">Step 1</span>
+                        <h3>Documentation</h3>
+                        <p>Preparation of all export documents and shipping bill filing.</p>
+                    </div>
+                </div>
+                <div class="process-card">
+                    <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Packing" class="process-image">
+                    <div class="process-content">
+                        <span class="step">Step 2</span>
+                        <h3>Packing</h3>
+                        <p>Professional export packing and labeling of cargo.</p>
+                    </div>
+                </div>
+                <div class="process-card">
+                    <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Container Loading" class="process-image">
+                    <div class="process-content">
+                        <span class="step">Step 3</span>
+                        <h3>Container Loading</h3>
+                        <p>Secure loading and VGM certification of containers.</p>
+                    </div>
+                </div>
+                <div class="process-card">
+                    <img src="https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Port Dispatch" class="process-image">
+                    <div class="process-content">
+                        <span class="step">Step 4</span>
+                        <h3>Port Dispatch</h3>
+                        <p>Transport to port and vessel loading coordination.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature Image -->
+            <img src="https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" 
+                 alt="Container ship at port" 
+                 class="feature-image">
+
+            <!-- Required Documents -->
+            <h2 class="section-title">Export Documentation</h2>
+            <div class="document-grid">
+                <div class="document-card">
+                    <i class="fas fa-file-invoice"></i>
+                    <h4>Commercial Invoice</h4>
+                    <p>Detailed invoice for customs</p>
+                </div>
+                <div class="document-card">
+                    <i class="fas fa-list"></i>
+                    <h4>Packing List</h4>
+                    <p>Itemized list of cargo</p>
+                </div>
+                <div class="document-card">
+                    <i class="fas fa-file-contract"></i>
+                    <h4>Bill of Lading</h4>
+                    <p>Contract of carriage</p>
+                </div>
+                <div class="document-card">
+                    <i class="fas fa-certificate"></i>
+                    <h4>Certificate of Origin</h4>
+                    <p>For trade agreements</p>
+                </div>
+                <div class="document-card">
+                    <i class="fas fa-file-export"></i>
+                    <h4>Shipping Bill</h4>
+                    <p>Export declaration</p>
+                </div>
+                <div class="document-card">
+                    <i class="fas fa-clipboard-list"></i>
+                    <h4>Export License</h4>
+                    <p>For restricted goods</p>
+                </div>
+                <div class="document-card">
+                    <i class="fas fa-weight-hanging"></i>
+                    <h4>VGM Certificate</h4>
+                    <p>Verified gross mass</p>
+                </div>
+                <div class="document-card">
+                    <i class="fas fa-file"></i>
+                    <h4>Insurance Certificate</h4>
+                    <p>Cargo insurance proof</p>
+                </div>
+            </div>
+
+            <!-- Benefits Section -->
+            <h2 class="section-title" style="margin-top: 60px;">Why Choose Our Export Solution</h2>
+            <div class="benefits-grid">
+                <div class="benefits-card">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <h4>Complete Solution</h4>
+                        <p>One provider for all your export needs - documentation, packing, and shipping.</p>
+                    </div>
+                </div>
+                <div class="benefits-card">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h4>Timely Processing</h4>
+                        <p>Efficient handling to meet vessel cut-off times and sailing schedules.</p>
+                    </div>
+                </div>
+                <div class="benefits-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <div>
+                        <h4>Compliance Assurance</h4>
+                        <p>All documentation and procedures comply with export regulations.</p>
+                    </div>
+                </div>
+                <div class="benefits-card">
+                    <i class="fas fa-globe"></i>
+                    <div>
+                        <h4>International Expertise</h4>
+                        <p>Experience with export requirements for various destination countries.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Industries Served -->
+            <h2 class="section-title" style="margin-top: 60px;">Industries We Serve</h2>
+            <div class="industry-grid">
+                <div class="industry-card">
+                    <i class="fas fa-box-open"></i>
+                    <h4>Manufacturing</h4>
+                    <p>Finished goods, machinery, spare parts</p>
+                </div>
+                <div class="industry-card">
+                    <i class="fas fa-utensils"></i>
+                    <h4>Food & Beverage</h4>
+                    <p>Processed foods, spices, beverages</p>
+                </div>
+                <div class="industry-card">
+                    <i class="fas fa-cogs"></i>
+                    <h4>Industrial</h4>
+                    <p>Equipment, tools, industrial supplies</p>
+                </div>
+                <div class="industry-card">
+                    <i class="fas fa-car"></i>
+                    <h4>Automotive</h4>
+                    <p>Parts, components, accessories</p>
+                </div>
+                <div class="industry-card">
+                    <i class="fas fa-tshirt"></i>
+                    <h4>Textiles</h4>
+                    <p>Garments, fabrics, finished products</p>
+                </div>
+                <div class="industry-card">
+                    <i class="fas fa-flask"></i>
+                    <h4>Chemicals</h4>
+                    <p>Industrial chemicals, pharmaceuticals</p>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <h2 class="section-title" style="margin-top: 60px;">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>What documents are required for export?</h4>
+                    <p>Typical documents include commercial invoice, packing list, bill of lading, shipping bill, and certificate of origin.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How long does export processing take?</h4>
+                    <p>Processing time varies based on cargo type and destination. We'll provide timelines closer to launch.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do you handle hazardous materials?</h4>
+                    <p>Yes, we plan to offer hazmat export services with proper documentation and handling procedures.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What is a shipping bill?</h4>
+                    <p>A shipping bill is the export declaration filed with customs, required for all export shipments.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can you help with export packing?</h4>
+                    <p>Yes, we provide professional export packing services to ensure cargo safety during transit.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What is VGM certification?</h4>
+                    <p>Verified Gross Mass certification is required for all container exports as per SOLAS regulations.</p>
+                </div>
+            </div>
 
             <div style="margin-top: 40px;">
                 <a href="/contact.html" class="btn btn-primary">Contact Us for Inquiries</a>
             </div>
 
             <div class="back-link">
-                <a href="/services.html">← Back to Services</a>
+                <a href="/services/export-solution.html">← Back to Export Services</a>
             </div>
         </div>
     </div>
 
-    <!-- ===== FOOTER (with Sitemap link) ===== -->
+    <!-- ===== CTA SECTION (CENTERED) ===== -->
+    <div class="cta-section">
+        <div class="container">
+            <h2>Ready to export?</h2>
+            <p>Contact our team to learn more about our planned export solutions and how we can help with your international shipments.</p>
+            <div class="cta-buttons">
+                <a href="/contact.html" class="btn btn-white">Contact Us</a>
+                <a href="/sitemap.html" class="btn btn-outline-white">View Sitemap</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-main">
@@ -557,6 +1222,7 @@
                     <ul>
                         <li>Technology and Logistics Pvt Ltd</li>
                         <li>Launching 2026</li>
+                        <li><a href="/sitemap.html">Sitemap</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -577,12 +1243,15 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Our Services</h4>
+                    <h4>Export Services</h4>
                     <ul>
-                        <li><a href="/services/import-solution.html">Import Solution</a></li>
-                        <li><a href="/services/export-solution.html">Export Solution</a></li>
-                        <li><a href="/services/cross-border.html">Cross-Border</a></li>
-                        <li><a href="/services/specialized.html">Specialized</a></li>
+                        <li><a href="/services/export-solution.html">Full Export Solution (18)</a></li>
+                        <li><a href="/services/export-documentation.html">Export Documentation (19)</a></li>
+                        <li><a href="/services/shipping-bill.html">Shipping Bill Filing (20)</a></li>
+                        <li><a href="/services/container-loading.html">Container Loading (21)</a></li>
+                        <li><a href="/services/export-packing.html">Export Packing (22)</a></li>
+                        <li><a href="/services/certificate-of-origin.html">Certificate of Origin (23)</a></li>
+                        <li><a href="/services/hazmat-export.html">Hazmat Export (24)</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -590,11 +1259,12 @@
                     <ul>
                         <li><i class="fas fa-envelope"></i> info@koshiv.com</li>
                         <li><i class="fas fa-map-marker-alt"></i> Mumbai, India</li>
+                        <li><a href="/contact.html">Contact Page</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                © 2026 Koshiv Technology and Logistics Pvt Ltd. All rights reserved.
+                © 2026 Koshiv Technology and Logistics Pvt Ltd. All rights reserved. | Page 18/157
             </div>
         </div>
     </footer>
@@ -602,7 +1272,7 @@
     <script>
         // Mobile menu toggle
         document.querySelector('.mobile-toggle').addEventListener('click', function() {
-            alert('Mobile menu would open here - navigation links: Home, About, Services, Fleet, Coverage, Clients, Drivers, Partners, Resources, Contact');
+            alert('Mobile menu would open here - navigation links: Home, About, Services, Fleet, Coverage, Clients, Drivers, Partners, Resources, Legal, Sitemap, Contact');
         });
     </script>
 </body>
