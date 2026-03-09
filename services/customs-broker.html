@@ -1,0 +1,1568 @@
+<!--
+     ====================================================================
+     COPYRIGHT INFORMATION
+     ====================================================================
+     File: services/customs-broker.html
+     Author: Koushal Jha
+     Created: March 2026
+     Last Modified: March 9, 2026
+     Version: 1.0.0
+     ====================================================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ===== PRIMARY META TAGS ===== -->
+    <title>Customs Broker Services - Koshiv Technology and Logistics Pvt Ltd | Mumbai</title>
+    <meta name="title" content="Customs Broker Services - Koshiv Technology and Logistics">
+    <meta name="description" content="Professional customs broker services for import and export shipments. Expert customs clearance, documentation, duty calculation, and regulatory compliance. Planned launch 2026.">
+    <meta name="keywords" content="customs broker, customs clearance, customs house agent, CHA, import clearance, export clearance, customs documentation, duty calculation">
+    <meta name="author" content="Koushal Jha">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    
+    <!-- ===== OPEN GRAPH META TAGS ===== -->
+    <meta property="og:title" content="Customs Broker Services - Koshiv Technology and Logistics">
+    <meta property="og:description" content="Professional customs broker services for import and export shipments. Expert customs clearance and documentation.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1586528116311-ad8ed7c83a7f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80">
+    <meta property="og:url" content="https://www.koshiv.com/services/customs-broker.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Koshiv Technology and Logistics">
+    
+    <!-- ===== TWITTER CARD META TAGS ===== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Customs Broker Services - Koshiv Logistics">
+    <meta name="twitter:description" content="Professional customs broker services for import and export shipments.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1586528116311-ad8ed7c83a7f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80">
+    
+    <!-- ===== GEO META TAGS ===== -->
+    <meta name="geo.region" content="IN-MH">
+    <meta name="geo.placename" content="Mumbai">
+    
+    <!-- ===== CANONICAL URL ===== -->
+    <link rel="canonical" href="https://www.koshiv.com/services/customs-broker.html">
+    
+    <!-- ===== FAVICON ===== -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <style>
+        /* ===== RESET & BASE STYLES ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #1a1a1a;
+            background-color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* ===== LEFT-ALIGN ALL CONTENT (EXCEPT CTA) ===== */
+        .container, 
+        .full-width-section, 
+        .info-box, 
+        .service-detail-card,
+        .feature-list,
+        p, 
+        h1, h2, h3, h4, h5, h6,
+        .breadcrumb,
+        .page-header,
+        .page-header h1,
+        .page-header p,
+        .section-title,
+        .section-subtitle,
+        .status-badge,
+        .back-link,
+        .benefits-card,
+        .broker-card,
+        .industry-card,
+        .faq-item,
+        .step-card {
+            text-align: left;
+        }
+
+        /* CTA section remains centered */
+        .cta-section,
+        .cta-section h2,
+        .cta-section p,
+        .cta-buttons {
+            text-align: center;
+        }
+
+        /* ===== FLUID HEADER ARCHITECTURE ===== */
+        .pre-header {
+            background-color: #f8f8f8;
+            padding: 8px 24px;
+            font-size: 14px;
+            border-bottom: 1px solid #e0e0e0;
+            width: 100%;
+        }
+
+        .pre-header-content {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .pre-header-left {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .pre-header-left a {
+            color: #1e3a8a;
+        }
+
+        .pre-header-left span {
+            color: #4a4a4a;
+        }
+
+        .pre-header-right {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .login-links {
+            display: flex;
+            gap: 16px;
+        }
+
+        .login-links a {
+            color: #4a4a4a;
+        }
+
+        .login-links a:hover {
+            color: #1e3a8a;
+        }
+
+        /* ===== MAIN NAVIGATION WITH DROPDOWN MENUS ===== */
+        .main-nav {
+            background-color: white;
+            padding: 16px 24px;
+            border-bottom: 1px solid #e0e0e0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            width: 100%;
+        }
+
+        .nav-container {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .logo span {
+            font-size: 14px;
+            font-weight: 400;
+            color: #4a4a4a;
+            margin-left: 8px;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .nav-item {
+            position: relative;
+        }
+
+        .nav-item > a {
+            font-weight: 500;
+            padding: 8px 0;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            color: #1a1a1a;
+        }
+
+        .nav-item > a:hover {
+            color: #1e3a8a;
+        }
+
+        .nav-item.active > a {
+            color: #1e3a8a;
+            font-weight: 600;
+        }
+
+        /* Dropdown Menu Styles */
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            width: 600px;
+            max-width: 90vw;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            display: none;
+            z-index: 1000;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .nav-item:hover .dropdown-menu {
+            display: grid;
+        }
+
+        .dropdown-category h4 {
+            color: #1e3a8a;
+            font-weight: 600;
+            margin-bottom: 12px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .dropdown-category ul li {
+            margin-bottom: 8px;
+        }
+
+        .dropdown-category ul li a {
+            color: #4a4a4a;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+
+        .dropdown-category ul li a:hover {
+            color: #1e3a8a;
+            padding-left: 4px;
+        }
+
+        .dropdown-category ul li a i {
+            margin-right: 6px;
+            font-size: 12px;
+            color: #1e3a8a;
+        }
+
+        .contact-btn {
+            background-color: #1e3a8a;
+            color: white !important;
+            padding: 8px 20px;
+            border-radius: 4px;
+        }
+
+        .contact-btn:hover {
+            background-color: #1e3a8a;
+            opacity: 0.9;
+        }
+
+        .mobile-toggle {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* ===== PAGE HEADER ===== */
+        .page-header {
+            background-color: #f8f8f8;
+            padding: 60px 24px;
+            border-bottom: 1px solid #e0e0e0;
+            width: 100%;
+        }
+
+        .page-header-content {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .page-header h1 {
+            font-size: 48px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            text-align: left;
+        }
+
+        .page-header p {
+            font-size: 20px;
+            color: #4a4a4a;
+            max-width: 800px;
+            text-align: left;
+        }
+
+        .breadcrumb {
+            margin-bottom: 16px;
+            color: #4a4a4a;
+            font-size: 14px;
+            text-align: left;
+        }
+
+        .breadcrumb a {
+            color: #1e3a8a;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== CONTENT STYLES ===== */
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .full-width-section {
+            width: 100%;
+            padding: 60px 24px;
+        }
+
+        .full-width-section:nth-child(even) {
+            background-color: #f8f8f8;
+        }
+
+        .section-title {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+            text-align: left;
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            color: #4a4a4a;
+            margin-bottom: 48px;
+            text-align: left;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            font-weight: 500;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: center;
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: #1e3a8a;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #1e3a8a;
+            opacity: 0.9;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 1px solid #1e3a8a;
+            color: #1e3a8a;
+        }
+
+        .btn-outline:hover {
+            background-color: #f0f4ff;
+        }
+
+        .btn-white {
+            background-color: white;
+            color: #1e3a8a;
+        }
+
+        .btn-white:hover {
+            background-color: #f0f0f0;
+        }
+
+        .status-badge {
+            display: inline-block;
+            background-color: #f0f4ff;
+            color: #1e3a8a;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            margin-bottom: 24px;
+        }
+
+        .info-box {
+            background-color: #f8f8f8;
+            padding: 40px;
+            border-radius: 8px;
+            margin: 32px 0;
+            border: 1px solid #e0e0e0;
+        }
+
+        .info-box p {
+            margin-bottom: 16px;
+            color: #4a4a4a;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .back-link {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .back-link a {
+            color: #1e3a8a;
+            font-weight: 500;
+            display: inline-block;
+        }
+
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== UNIQUE IMAGES FOR THIS PAGE - Customs Broker / Office Theme ===== */
+        .hero-image {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .feature-image-1 {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+
+        .feature-image-2 {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+
+        .office-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+
+        /* ===== SERVICE DETAILS ===== */
+        .service-details-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin: 40px 0;
+        }
+
+        .service-detail-card {
+            background-color: white;
+            padding: 24px;
+            border-radius: 12px;
+            border: 1px solid #e0e0e0;
+            transition: all 0.3s;
+        }
+
+        .service-detail-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            border-color: #1e3a8a;
+        }
+
+        .service-detail-card i {
+            font-size: 32px;
+            color: #1e3a8a;
+            margin-bottom: 16px;
+        }
+
+        .service-detail-card h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #1e3a8a;
+        }
+
+        .service-detail-card p {
+            color: #4a4a4a;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* ===== BROKER SERVICES GRID ===== */
+        .broker-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin: 40px 0;
+        }
+
+        .broker-card {
+            background-color: white;
+            padding: 24px;
+            border-radius: 12px;
+            border: 1px solid #e0e0e0;
+            text-align: center;
+            transition: all 0.3s;
+            border-top: 4px solid #1e3a8a;
+        }
+
+        .broker-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+
+        .broker-card i {
+            font-size: 36px;
+            color: #1e3a8a;
+            margin-bottom: 16px;
+        }
+
+        .broker-card h4 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #1e3a8a;
+        }
+
+        .broker-card p {
+            color: #4a4a4a;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        /* ===== PROCESS STEPS ===== */
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin: 40px 0;
+        }
+
+        .step-card {
+            background-color: white;
+            border-radius: 12px;
+            border: 1px solid #e0e0e0;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+
+        .step-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+
+        .step-content {
+            padding: 20px;
+        }
+
+        .step-number {
+            display: inline-block;
+            background-color: #1e3a8a;
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 32px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .step-content h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #1e3a8a;
+        }
+
+        .step-content p {
+            color: #4a4a4a;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* ===== BENEFITS GRID ===== */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            margin: 40px 0;
+        }
+
+        .benefits-card {
+            background-color: white;
+            padding: 24px;
+            border-radius: 12px;
+            border: 1px solid #e0e0e0;
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            transition: all 0.3s;
+        }
+
+        .benefits-card:hover {
+            background-color: #f8f8f8;
+            border-color: #1e3a8a;
+        }
+
+        .benefits-card i {
+            font-size: 28px;
+            color: #1e3a8a;
+            flex-shrink: 0;
+        }
+
+        .benefits-card h4 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #1e3a8a;
+        }
+
+        .benefits-card p {
+            color: #4a4a4a;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* ===== INDUSTRY GRID ===== */
+        .industry-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin: 40px 0;
+        }
+
+        .industry-card {
+            background-color: white;
+            padding: 24px;
+            border-radius: 12px;
+            border: 1px solid #e0e0e0;
+            transition: all 0.3s;
+        }
+
+        .industry-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+
+        .industry-card i {
+            font-size: 32px;
+            color: #1e3a8a;
+            margin-bottom: 16px;
+        }
+
+        .industry-card h4 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #1e3a8a;
+        }
+
+        .industry-card p {
+            color: #4a4a4a;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* ===== FAQ GRID ===== */
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            margin: 40px 0;
+        }
+
+        .faq-item {
+            background-color: white;
+            padding: 24px;
+            border-radius: 12px;
+            border: 1px solid #e0e0e0;
+            transition: all 0.3s;
+        }
+
+        .faq-item:hover {
+            background-color: #f8f8f8;
+        }
+
+        .faq-item h4 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #1e3a8a;
+        }
+
+        .faq-item p {
+            color: #4a4a4a;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* ===== FEATURE LIST ===== */
+        .feature-list {
+            list-style: none;
+            margin: 20px 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+
+        .feature-list li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #4a4a4a;
+        }
+
+        .feature-list li i {
+            color: #1e3a8a;
+            width: 20px;
+        }
+
+        /* ===== CTA SECTION (CENTERED) ===== */
+        .cta-section {
+            width: 100%;
+            padding: 80px 24px;
+            background: linear-gradient(135deg, #1e3a8a 0%, #2a4a9a 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        .cta-section p {
+            font-size: 18px;
+            margin-bottom: 32px;
+            opacity: 0.9;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn-outline-white {
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+
+        .btn-outline-white:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 48px 24px 24px;
+            width: 100%;
+        }
+
+        .footer-content {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .footer-main {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+            margin-bottom: 32px;
+        }
+
+        .footer-col h4 {
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: white;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-col ul li a {
+            opacity: 0.8;
+            transition: opacity 0.2s;
+        }
+
+        .footer-col ul li a:hover {
+            opacity: 1;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 24px;
+            font-size: 14px;
+            opacity: 0.6;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1024px) {
+            .service-details-grid,
+            .broker-grid,
+            .steps-grid,
+            .industry-grid,
+            .faq-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .feature-list {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-main {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .dropdown-menu {
+                width: 500px;
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .mobile-toggle {
+                display: block;
+            }
+
+            .service-details-grid,
+            .broker-grid,
+            .steps-grid,
+            .benefits-grid,
+            .industry-grid,
+            .faq-grid,
+            .footer-main {
+                grid-template-columns: 1fr;
+            }
+
+            .page-header h1 {
+                font-size: 36px;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+
+            .cta-section h2 {
+                font-size: 28px;
+            }
+
+            .info-box {
+                padding: 24px;
+            }
+
+            .hero-image {
+                height: 300px;
+            }
+
+            .feature-image-1,
+            .feature-image-2 {
+                height: 250px;
+            }
+
+            .office-image {
+                height: 200px;
+            }
+
+            .dropdown-menu {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ===== FLUID EDGE-TO-EDGE PRE-HEADER ===== -->
+    <div class="pre-header">
+        <div class="pre-header-content">
+            <div class="pre-header-left">
+                <a href="mailto:info@koshiv.com"><i class="fas fa-envelope"></i> info@koshiv.com</a>
+                <span><i class="fas fa-building"></i> Koshiv Technology and Logistics Pvt Ltd</span>
+                <span><i class="fas fa-calendar-alt"></i> Launching 2026</span>
+                <span><i class="fas fa-file"></i> GST: In Process</span>
+            </div>
+            <div class="pre-header-right">
+                <div class="login-links">
+                    <a href="#">Client Login</a>
+                    <a href="#">Driver Login</a>
+                    <a href="#">Partner Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== MAIN NAVIGATION WITH COMPLETE DROPDOWN MENUS ===== -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="/index.html">KOSHIV<span>Technology and Logistics</span></a>
+            </div>
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="nav-menu">
+                <!-- Home -->
+                <div class="nav-item"><a href="/index.html">Home</a></div>
+                
+                <!-- About -->
+                <div class="nav-item"><a href="/about.html">About</a></div>
+                
+                <!-- SERVICES Dropdown -->
+                <div class="nav-item dropdown active">
+                    <a href="/services.html">Services <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-category">
+                            <h4>Import Services</h4>
+                            <ul>
+                                <li><a href="/services/import-solution.html"><i class="fas fa-arrow-right"></i> Full Import Solution (11)</a></li>
+                                <li><a href="/services/customs-clearance.html"><i class="fas fa-arrow-right"></i> Customs Clearance (12)</a></li>
+                                <li><a href="/services/isf-filing.html"><i class="fas fa-arrow-right"></i> ISF Filing (13)</a></li>
+                                <li><a href="/services/port-drayage.html"><i class="fas fa-arrow-right"></i> Port Drayage (14)</a></li>
+                                <li><a href="/services/transloading.html"><i class="fas fa-arrow-right"></i> Transloading (15)</a></li>
+                                <li><a href="/services/bonded-warehousing.html"><i class="fas fa-arrow-right"></i> Bonded Warehousing (16)</a></li>
+                                <li><a href="/services/fssai-compliance.html"><i class="fas fa-arrow-right"></i> FSSAI Compliance (17)</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-category">
+                            <h4>Export Services</h4>
+                            <ul>
+                                <li><a href="/services/export-solution.html"><i class="fas fa-arrow-right"></i> Full Export Solution (18)</a></li>
+                                <li><a href="/services/export-documentation.html"><i class="fas fa-arrow-right"></i> Export Documentation (19)</a></li>
+                                <li><a href="/services/shipping-bill.html"><i class="fas fa-arrow-right"></i> Shipping Bill Filing (20)</a></li>
+                                <li><a href="/services/container-loading.html"><i class="fas fa-arrow-right"></i> Container Loading (21)</a></li>
+                                <li><a href="/services/export-packing.html"><i class="fas fa-arrow-right"></i> Export Packing (22)</a></li>
+                                <li><a href="/services/certificate-of-origin.html"><i class="fas fa-arrow-right"></i> Certificate of Origin (23)</a></li>
+                                <li><a href="/services/hazmat-export.html"><i class="fas fa-arrow-right"></i> Hazmat Export (24)</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-category">
+                            <h4>Cross-Border</h4>
+                            <ul>
+                                <li><a href="/services/india-nepal.html"><i class="fas fa-arrow-right"></i> India-Nepal Crossings (25)</a></li>
+                                <li><a href="/services/india-bangladesh.html"><i class="fas fa-arrow-right"></i> India-Bangladesh (26)</a></li>
+                                <li><a href="/services/customs-broker.html"><i class="fas fa-arrow-right"></i> Customs Broker (27)</a></li>
+                                <li><a href="/services/border-wait-times.html"><i class="fas fa-arrow-right"></i> Border Wait Times (28)</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-category">
+                            <h4>Specialized</h4>
+                            <ul>
+                                <li><a href="/services/temperature-controlled.html"><i class="fas fa-arrow-right"></i> Temperature-Controlled (29)</a></li>
+                                <li><a href="/services/oversized-cargo.html"><i class="fas fa-arrow-right"></i> Oversized/Heavy Haul (30)</a></li>
+                                <li><a href="/services/hazmat-specialized.html"><i class="fas fa-arrow-right"></i> Hazardous Materials (31)</a></li>
+                                <li><a href="/services/project-cargo.html"><i class="fas fa-arrow-right"></i> Project Cargo (32)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FLEET Dropdown -->
+                <div class="nav-item dropdown">
+                    <a href="/fleet.html">Fleet <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-category">
+                            <h4>Equipment Types</h4>
+                            <ul>
+                                <li><a href="/fleet/dry-vans.html"><i class="fas fa-arrow-right"></i> Dry Vans (33)</a></li>
+                                <li><a href="/fleet/reefers.html"><i class="fas fa-arrow-right"></i> Refrigerated (34)</a></li>
+                                <li><a href="/fleet/flatbeds.html"><i class="fas fa-arrow-right"></i> Flatbeds (35)</a></li>
+                                <li><a href="/fleet/double-drop.html"><i class="fas fa-arrow-right"></i> Double Drop (36)</a></li>
+                                <li><a href="/fleet/tankers.html"><i class="fas fa-arrow-right"></i> Tankers (37)</a></li>
+                                <li><a href="/fleet/hoppers.html"><i class="fas fa-arrow-right"></i> Hoppers (38)</a></li>
+                                <li><a href="/fleet/chassis.html"><i class="fas fa-arrow-right"></i> Chassis (39)</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-category">
+                            <h4>Features</h4>
+                            <ul>
+                                <li><a href="/fleet/features.html"><i class="fas fa-arrow-right"></i> Fleet Features (40)</a></li>
+                                <li><a href="/fleet/gps-tracking.html"><i class="fas fa-arrow-right"></i> GPS Tracking (41)</a></li>
+                                <li><a href="/fleet/maintenance.html"><i class="fas fa-arrow-right"></i> Maintenance (42)</a></li>
+                                <li><a href="/fleet/planning.html"><i class="fas fa-arrow-right"></i> Fleet Planning (43)</a></li>
+                                <li><a href="/fleet/request.html"><i class="fas fa-arrow-right"></i> Tell Us Your Needs (44)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- COVERAGE Dropdown -->
+                <div class="nav-item dropdown">
+                    <a href="/coverage.html">Coverage <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-category">
+                            <h4>Network</h4>
+                            <ul>
+                                <li><a href="/coverage/distribution-centers.html"><i class="fas fa-arrow-right"></i> Distribution Centers (45)</a></li>
+                                <li><a href="/coverage/rail-ramps.html"><i class="fas fa-arrow-right"></i> Rail Ramps (46)</a></li>
+                                <li><a href="/coverage/pan-india.html"><i class="fas fa-arrow-right"></i> Pan-India Coverage (47)</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-category">
+                            <h4>Ports</h4>
+                            <ul>
+                                <li><a href="/coverage/ports/mundra.html"><i class="fas fa-arrow-right"></i> Mundra (48)</a></li>
+                                <li><a href="/coverage/ports/nhava-sheva.html"><i class="fas fa-arrow-right"></i> Nhava Sheva (49)</a></li>
+                                <li><a href="/coverage/ports/kandla.html"><i class="fas fa-arrow-right"></i> Kandla (50)</a></li>
+                                <li><a href="/coverage/ports/chennai.html"><i class="fas fa-arrow-right"></i> Chennai (51)</a></li>
+                                <li><a href="/coverage/ports/kolkata.html"><i class="fas fa-arrow-right"></i> Kolkata (54)</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-category">
+                            <h4>Borders</h4>
+                            <ul>
+                                <li><a href="/borders/petrapole.html"><i class="fas fa-arrow-right"></i> Petrapole (59)</a></li>
+                                <li><a href="/borders/attari.html"><i class="fas fa-arrow-right"></i> Attari (60)</a></li>
+                                <li><a href="/borders/raxaul.html"><i class="fas fa-arrow-right"></i> Raxaul (61)</a></li>
+                                <li><a href="/borders/sunauli.html"><i class="fas fa-arrow-right"></i> Sunauli (62)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CLIENTS Dropdown -->
+                <div class="nav-item dropdown">
+                    <a href="/clients.html">Clients <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-category">
+                            <h4>Portal</h4>
+                            <ul>
+                                <li><a href="/clients/portal.html"><i class="fas fa-arrow-right"></i> Client Portal (66)</a></li>
+                                <li><a href="/clients/register.html"><i class="fas fa-arrow-right"></i> Register Interest (67)</a></li>
+                                <li><a href="/clients/track.html"><i class="fas fa-arrow-right"></i> Track Shipment (68)</a></li>
+                                <li><a href="/clients/quote.html"><i class="fas fa-arrow-right"></i> Request Quote (69)</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-category">
+                            <h4>Resources</h4>
+                            <ul>
+                                <li><a href="/resources/shipping-guide.html"><i class="fas fa-arrow-right"></i> Shipping Guide (72)</a></li>
+                                <li><a href="/resources/documentation.html"><i class="fas fa-arrow-right"></i> Documentation (73)</a></li>
+                                <li><a href="/resources/incoterms.html"><i class="fas fa-arrow-right"></i> Incoterms (74)</a></li>
+                                <li><a href="/resources/shipper-faqs.html"><i class="fas fa-arrow-right"></i> FAQs (75)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- DRIVERS Dropdown -->
+                <div class="nav-item dropdown">
+                    <a href="/drivers.html">Drivers <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-category">
+                            <h4>Portal</h4>
+                            <ul>
+                                <li><a href="/drivers/portal.html"><i class="fas fa-arrow-right"></i> Driver Portal (80)</a></li>
+                                <li><a href="/drivers/apply.html"><i class="fas fa-arrow-right"></i> Pre-Apply (81)</a></li>
+                                <li><a href="/drivers/recruiting.html"><i class="fas fa-arrow-right"></i> Recruiting (85)</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-category">
+                            <h4>Opportunities</h4>
+                            <ul>
+                                <li><a href="/careers/national-routes.html"><i class="fas fa-arrow-right"></i> National Routes (86)</a></li>
+                                <li><a href="/careers/owner-operator.html"><i class="fas fa-arrow-right"></i> Owner Operator (89)</a></li>
+                                <li><a href="/careers/lease-purchase.html"><i class="fas fa-arrow-right"></i> Lease Purchase (90)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- PARTNERS Dropdown -->
+                <div class="nav-item dropdown">
+                    <a href="/partners.html">Partners <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-category">
+                            <h4>Partner Types</h4>
+                            <ul>
+                                <li><a href="/partners/carrier.html"><i class="fas fa-arrow-right"></i> Carriers (102)</a></li>
+                                <li><a href="/partners/broker.html"><i class="fas fa-arrow-right"></i> Brokers (103)</a></li>
+                                <li><a href="/partners/forwarders.html"><i class="fas fa-arrow-right"></i> Forwarders (104)</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-category">
+                            <h4>Resources</h4>
+                            <ul>
+                                <li><a href="/partners/requirements.html"><i class="fas fa-arrow-right"></i> Requirements (107)</a></li>
+                                <li><a href="/partners/tiers.html"><i class="fas fa-arrow-right"></i> Partner Tiers (108)</a></li>
+                                <li><a href="/partners/faq.html"><i class="fas fa-arrow-right"></i> Partner FAQs (109)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- RESOURCES Dropdown -->
+                <div class="nav-item dropdown">
+                    <a href="/resources.html">Resources <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-category">
+                            <h4>Knowledge</h4>
+                            <ul>
+                                <li><a href="/blog/index.html"><i class="fas fa-arrow-right"></i> Blog (111)</a></li>
+                                <li><a href="/news/index.html"><i class="fas fa-arrow-right"></i> Industry News (112)</a></li>
+                                <li><a href="/events/webinars.html"><i class="fas fa-arrow-right"></i> Webinars (113)</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-category">
+                            <h4>Tools</h4>
+                            <ul>
+                                <li><a href="/tools/transit-calculator.html"><i class="fas fa-arrow-right"></i> Transit Time (116)</a></li>
+                                <li><a href="/tools/rate-calculator.html"><i class="fas fa-arrow-right"></i> Rate Calculator (117)</a></li>
+                                <li><a href="/tools/duty-calculator.html"><i class="fas fa-arrow-right"></i> Duty Calculator (118)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- ABOUT Dropdown -->
+                <div class="nav-item dropdown">
+                    <a href="/about.html">About <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-category">
+                            <h4>Company</h4>
+                            <ul>
+                                <li><a href="/about/story.html"><i class="fas fa-arrow-right"></i> Our Story (127)</a></li>
+                                <li><a href="/about/team.html"><i class="fas fa-arrow-right"></i> Our Team (129)</a></li>
+                                <li><a href="/about/certifications.html"><i class="fas fa-arrow-right"></i> Certifications (130)</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-category">
+                            <h4>Careers</h4>
+                            <ul>
+                                <li><a href="/careers/index.html"><i class="fas fa-arrow-right"></i> View Openings (133)</a></li>
+                                <li><a href="/careers/drivers.html"><i class="fas fa-arrow-right"></i> Driver Jobs (134)</a></li>
+                                <li><a href="/careers/benefits.html"><i class="fas fa-arrow-right"></i> Benefits (136)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- LEGAL & SITEMAP -->
+                <div class="nav-item"><a href="/legal.html">Legal</a></div>
+                <div class="nav-item"><a href="/sitemap.html">Sitemap</a></div>
+                
+                <!-- CONTACT Button -->
+                <div class="nav-item">
+                    <a href="/contact.html" class="contact-btn">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== PAGE HEADER ===== -->
+    <div class="page-header">
+        <div class="page-header-content">
+            <div class="breadcrumb">
+                <a href="/index.html">Home</a> / <a href="/services.html">Services</a> / <a href="/services/cross-border.html">Cross-Border Services</a> / Customs Broker
+            </div>
+            <h1>Customs Broker Services</h1>
+            <p>Professional customs brokerage services for smooth import and export clearance. Expert documentation, duty calculation, and regulatory compliance.</p>
+        </div>
+    </div>
+
+    <!-- ===== HERO IMAGE (UNIQUE: Customs office / clearance counter) ===== -->
+    <div class="full-width-section" style="padding-top: 0;">
+        <div class="container">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8ed7c83a7f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" 
+                 alt="Customs clearance office counter" 
+                 class="hero-image">
+        </div>
+    </div>
+
+    <!-- ===== CONTENT SECTION ===== -->
+    <div class="full-width-section">
+        <div class="container">
+            <span class="status-badge"><i class="far fa-clock"></i> Planned for Q3 2026</span>
+            
+            <div class="info-box">
+                <p><i class="fas fa-info-circle" style="color: #1e3a8a; margin-right: 8px;"></i> This page is under development. We are working on bringing you accurate information about our Customs Broker services.</p>
+                <p>Koshiv Technology and Logistics Pvt Ltd is launching in 2026. Please check back later or contact us for specific inquiries.</p>
+            </div>
+
+            <h2 class="section-title">Service Overview</h2>
+            <p style="margin-bottom: 32px; color: #4a4a4a;">Our licensed customs brokers provide expert clearance services for import and export shipments. We handle all aspects of customs compliance, documentation, and coordination with customs authorities to ensure smooth and timely clearance of your goods.</p>
+
+            <!-- Service Details Grid -->
+            <div class="service-details-grid">
+                <div class="service-detail-card">
+                    <i class="fas fa-file-signature"></i>
+                    <h3>Import Clearance</h3>
+                    <p>Complete import customs clearance including bill of entry filing, duty calculation, and goods release.</p>
+                </div>
+                <div class="service-detail-card">
+                    <i class="fas fa-file-export"></i>
+                    <h3>Export Clearance</h3>
+                    <p>Export customs clearance with shipping bill preparation and let export order coordination.</p>
+                </div>
+                <div class="service-detail-card">
+                    <i class="fas fa-calculator"></i>
+                    <h3>Duty Assessment</h3>
+                    <p>Accurate calculation of customs duties, taxes, and cess applicable to your shipments.</p>
+                </div>
+                <div class="service-detail-card">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Documentation</h3>
+                    <p>Preparation and verification of all customs documentation required for clearance.</p>
+                </div>
+                <div class="service-detail-card">
+                    <i class="fas fa-search"></i>
+                    <h3>HS Code Classification</h3>
+                    <p>Expert classification of goods under the Harmonized System for accurate duty assessment.</p>
+                </div>
+                <div class="service-detail-card">
+                    <i class="fas fa-balance-scale"></i>
+                    <h3>Compliance Advisory</h3>
+                    <p>Guidance on regulatory compliance, import/export restrictions, and licensing requirements.</p>
+                </div>
+            </div>
+
+            <!-- Feature Image 1 (UNIQUE: Customs broker at work) -->
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8ed7c83a7f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" 
+                 alt="Customs broker reviewing documents" 
+                 class="feature-image-1">
+
+            <!-- Broker Services Grid -->
+            <h2 class="section-title" style="margin-top: 60px;">Our Brokerage Services</h2>
+            <div class="broker-grid">
+                <div class="broker-card">
+                    <i class="fas fa-file-import"></i>
+                    <h4>Bill of Entry</h4>
+                    <p>Preparation and filing of import documents</p>
+                </div>
+                <div class="broker-card">
+                    <i class="fas fa-file-export"></i>
+                    <h4>Shipping Bill</h4>
+                    <p>Export declaration filing</p>
+                </div>
+                <div class="broker-card">
+                    <i class="fas fa-tag"></i>
+                    <h4>HS Code</h4>
+                    <p>Product classification</p>
+                </div>
+                <div class="broker-card">
+                    <i class="fas fa-calculator"></i>
+                    <h4>Duty Calculation</h4>
+                    <p>Accurate duty assessment</p>
+                </div>
+                <div class="broker-card">
+                    <i class="fas fa-file-invoice"></i>
+                    <h4>IGST Refund</h4>
+                    <p>Export refund processing</p>
+                </div>
+                <div class="broker-card">
+                    <i class="fas fa-certificate"></i>
+                    <h4>License Support</h4>
+                    <p>Import/export license assistance</p>
+                </div>
+                <div class="broker-card">
+                    <i class="fas fa-search"></i>
+                    <h4>Customs Audit</h4>
+                    <p>Audit support and representation</p>
+                </div>
+                <div class="broker-card">
+                    <i class="fas fa-headset"></i>
+                    <h4>Consultation</h4>
+                    <p>Regulatory guidance</p>
+                </div>
+            </div>
+
+            <!-- Process Steps -->
+            <h2 class="section-title" style="margin-top: 60px;">Customs Clearance Process</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-content">
+                        <span class="step-number">1</span>
+                        <h3>Document Collection</h3>
+                        <p>Gather all required documents: invoice, packing list, bill of lading, import/export license.</p>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-content">
+                        <span class="step-number">2</span>
+                        <h3>HS Code Classification</h3>
+                        <p>Determine correct HS codes for accurate duty assessment.</p>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-content">
+                        <span class="step-number">3</span>
+                        <h3>Document Preparation</h3>
+                        <p>Prepare bill of entry or shipping bill with all required details.</p>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-content">
+                        <span class="step-number">4</span>
+                        <h3>Electronic Filing</h3>
+                        <p>File documents through ICEGATE or customs EDI system.</p>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-content">
+                        <span class="step-number">5</span>
+                        <h3>Assessment</h3>
+                        <p>Customs assessment and query resolution.</p>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-content">
+                        <span class="step-number">6</span>
+                        <h3>Goods Release</h3>
+                        <p>Obtain out-of-charge or let export order for shipment release.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature Image 2 (UNIQUE: Customs inspection area) -->
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8ed7c83a7f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" 
+                 alt="Customs inspection area at port" 
+                 class="feature-image-2">
+
+            <!-- Key Features -->
+            <h2 class="section-title">Our Brokerage Features</h2>
+            <ul class="feature-list">
+                <li><i class="fas fa-check"></i> Licensed customs brokers</li>
+                <li><i class="fas fa-check"></i> PAN-India coverage</li>
+                <li><i class="fas fa-check"></i> Electronic filing through ICEGATE</li>
+                <li><i class="fas fa-check"></i> Duty payment facilitation</li>
+                <li><i class="fas fa-check"></i> Bond and license management</li>
+                <li><i class="fas fa-check"></i> Drawback and refund processing</li>
+                <li><i class="fas fa-check"></i> Customs audit representation</li>
+                <li><i class="fas fa-check"></i> Regulatory update notifications</li>
+            </ul>
+
+            <!-- Benefits Section -->
+            <h2 class="section-title" style="margin-top: 60px;">Why Choose Our Customs Brokerage</h2>
+            <div class="benefits-grid">
+                <div class="benefits-card">
+                    <i class="fas fa-bolt"></i>
+                    <div>
+                        <h4>Fast Clearance</h4>
+                        <p>Experienced brokers ensure quick processing and minimal delays at customs.</p>
+                    </div>
+                </div>
+                <div class="benefits-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <div>
+                        <h4>Compliance Assurance</h4>
+                        <p>Expert knowledge of customs regulations ensures full compliance.</p>
+                    </div>
+                </div>
+                <div class="benefits-card">
+                    <i class="fas fa-dollar-sign"></i>
+                    <div>
+                        <h4>Cost Optimization</h4>
+                        <p>Accurate classification and duty assessment prevents overpayment.</p>
+                    </div>
+                </div>
+                <div class="benefits-card">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h4>Time Savings</h4>
+                        <p>We handle all customs procedures, saving you valuable time.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Industries Served -->
+            <h2 class="section-title" style="margin-top: 60px;">Industries We Serve</h2>
+            <div class="industry-grid">
+                <div class="industry-card">
+                    <i class="fas fa-industry"></i>
+                    <h4>Manufacturing</h4>
+                    <p>Raw materials, machinery, finished goods</p>
+                </div>
+                <div class="industry-card">
+                    <i class="fas fa-tshirt"></i>
+                    <h4>Textiles & Apparel</h4>
+                    <p>Fabric, garments, accessories</p>
+                </div>
+                <div class="industry-card">
+                    <i class="fas fa-flask"></i>
+                    <h4>Chemicals</h4>
+                    <p>Industrial chemicals, pharmaceuticals</p>
+                </div>
+                <div class="industry-card">
+                    <i class="fas fa-car"></i>
+                    <h4>Automotive</h4>
+                    <p>Vehicles, parts, components</p>
+                </div>
+                <div class="industry-card">
+                    <i class="fas fa-utensils"></i>
+                    <h4>Food & Beverage</h4>
+                    <p>Processed foods, ingredients</p>
+                </div>
+                <div class="industry-card">
+                    <i class="fas fa-laptop"></i>
+                    <h4>Electronics</h4>
+                    <p>Components, finished goods</p>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <h2 class="section-title" style="margin-top: 60px;">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>What is a customs broker?</h4>
+                    <p>A licensed professional who represents importers/exporters in customs clearance and ensures compliance with regulations.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Why do I need a customs broker?</h4>
+                    <p>Customs procedures are complex. A broker ensures proper documentation, accurate duty payment, and timely clearance.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What documents do you need?</h4>
+                    <p>Commercial invoice, packing list, bill of lading, import/export license, and product-specific permits if applicable.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How long does clearance take?</h4>
+                    <p>Typically 24-72 hours for most shipments, depending on complexity and any inspections required.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do you handle all ports?</h4>
+                    <p>Yes, we have PAN-India coverage through our network of licensed customs brokers.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What is HS code classification?</h4>
+                    <p>Harmonized System codes are used to classify products for customs duty assessment and regulatory purposes.</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 40px;">
+                <a href="/contact.html" class="btn btn-primary">Contact Us for Inquiries</a>
+            </div>
+
+            <div class="back-link">
+                <a href="/services/cross-border.html">← Back to Cross-Border Services</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== CTA SECTION (CENTERED) ===== -->
+    <div class="cta-section">
+        <div class="container">
+            <h2>Need customs clearance assistance?</h2>
+            <p>Contact our team to learn more about our planned customs broker services and how we can help with your import/export clearance.</p>
+            <div class="cta-buttons">
+                <a href="/contact.html" class="btn btn-white">Contact Us</a>
+                <a href="/sitemap.html" class="btn btn-outline-white">View Sitemap</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-col">
+                    <h4>KOSHIV</h4>
+                    <ul>
+                        <li>Technology and Logistics Pvt Ltd</li>
+                        <li>Launching 2026</li>
+                        <li><a href="/sitemap.html">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/services.html">Services</a></li>
+                        <li><a href="/fleet.html">Fleet</a></li>
+                        <li><a href="/coverage.html">Coverage</a></li>
+                        <li><a href="/clients.html">Clients</a></li>
+                        <li><a href="/drivers.html">Drivers</a></li>
+                        <li><a href="/partners.html">Partners</a></li>
+                        <li><a href="/resources.html">Resources</a></li>
+                        <li><a href="/legal.html">Legal</a></li>
+                        <li><a href="/sitemap.html">Sitemap</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Cross-Border Services</h4>
+                    <ul>
+                        <li><a href="/services/india-nepal.html">India-Nepal Crossings (25)</a></li>
+                        <li><a href="/services/india-bangladesh.html">India-Bangladesh (26)</a></li>
+                        <li><a href="/services/customs-broker.html">Customs Broker (27)</a></li>
+                        <li><a href="/services/border-wait-times.html">Border Wait Times (28)</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@koshiv.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Mumbai, India</li>
+                        <li><a href="/contact.html">Contact Page</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                © 2026 Koshiv Technology and Logistics Pvt Ltd. All rights reserved. | Page 27/157
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-toggle').addEventListener('click', function() {
+            alert('Mobile menu would open here - navigation links: Home, About, Services, Fleet, Coverage, Clients, Drivers, Partners, Resources, About, Legal, Sitemap, Contact');
+        });
+    </script>
+</body>
+</html>
