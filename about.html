@@ -1,0 +1,1208 @@
+<!--
+     ====================================================================
+     COPYRIGHT INFORMATION
+     ====================================================================
+     File: about.html
+     Author: Koushal Jha
+     Created: March 2026
+     Last Modified: March 9, 2026
+     Version: 1.0.0
+     ====================================================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ===== PRIMARY META TAGS ===== -->
+    <title>About Us | Koshiv Technology and Logistics Pvt Ltd | Mumbai</title>
+    <meta name="title" content="About Us - Koshiv Technology and Logistics | Import Export Trucking Company Mumbai">
+    <meta name="description" content="Learn about Koshiv Technology and Logistics - our story, founding team with 40+ years combined family experience in transport, and mission to modernize Indian logistics. Launching 2026.">
+    <meta name="keywords" content="about Koshiv, logistics company India, transport family business, Mumbai logistics startup, import export company India, student entrepreneur logistics, trucking company founders">
+    <meta name="author" content="Koushal Jha">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="distribution" content="global">
+    
+    <!-- ===== OPEN GRAPH / SOCIAL MEDIA META TAGS ===== -->
+    <meta property="og:title" content="About Koshiv Technology and Logistics - Family Legacy Meets Modern Tech">
+    <meta property="og:description" content="Discover the story behind Koshiv: 40+ years of family transport experience combined with fresh technology perspective from a 3rd year CSE student.">
+    <meta property="og:image" content="https://www.koshiv.com/images/og-about.jpg">
+    <meta property="og:url" content="https://www.koshiv.com/about.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Koshiv Technology and Logistics">
+    <meta property="og:locale" content="en_IN">
+    
+    <!-- ===== TWITTER CARD META TAGS ===== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About Koshiv - Logistics with 40+ Years Family Experience">
+    <meta name="twitter:description" content="Founded by a 3rd year CSE student with family roots in transport. Building India's most transparent logistics company.">
+    <meta name="twitter:image" content="https://www.koshiv.com/images/twitter-about.jpg">
+    
+    <!-- ===== GEO META TAGS ===== -->
+    <meta name="geo.region" content="IN-MH">
+    <meta name="geo.placename" content="Mumbai">
+    <meta name="geo.position" content="19.0760;72.8777">
+    <meta name="ICBM" content="19.0760, 72.8777">
+    
+    <!-- ===== CANONICAL URL ===== -->
+    <link rel="canonical" href="https://www.koshiv.com/about.html">
+    
+    <!-- ===== FAVICON ===== -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <style>
+        /* ===== RESET & BASE STYLES ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #1a1a1a;
+            background-color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* ===== FLUID HEADER ARCHITECTURE (Edge-to-Edge) ===== */
+        .pre-header {
+            background-color: #f8f8f8;
+            padding: 8px 24px;
+            font-size: 14px;
+            border-bottom: 1px solid #e0e0e0;
+            width: 100%;
+        }
+
+        .pre-header-content {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .pre-header-left {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .pre-header-left a {
+            color: #1e3a8a;
+        }
+
+        .pre-header-left span {
+            color: #4a4a4a;
+        }
+
+        .pre-header-right {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .login-links {
+            display: flex;
+            gap: 16px;
+        }
+
+        .login-links a {
+            color: #4a4a4a;
+        }
+
+        .login-links a:hover {
+            color: #1e3a8a;
+        }
+
+        /* ===== MAIN NAVIGATION (Fluid Edge-to-Edge) ===== */
+        .main-nav {
+            background-color: white;
+            padding: 16px 24px;
+            border-bottom: 1px solid #e0e0e0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            width: 100%;
+        }
+
+        .nav-container {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .logo span {
+            font-size: 14px;
+            font-weight: 400;
+            color: #4a4a4a;
+            margin-left: 8px;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+
+        .nav-item {
+            font-weight: 500;
+            position: relative;
+        }
+
+        .nav-item a {
+            color: #1a1a1a;
+        }
+
+        .nav-item a:hover {
+            color: #1e3a8a;
+        }
+
+        .nav-item.active a {
+            color: #1e3a8a;
+            font-weight: 600;
+        }
+
+        .contact-btn {
+            background-color: #1e3a8a;
+            color: white !important;
+            padding: 8px 20px;
+            border-radius: 4px;
+        }
+
+        .contact-btn:hover {
+            background-color: #1e3a8a;
+            opacity: 0.9;
+        }
+
+        .mobile-toggle {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* ===== DROPDOWN MENU ===== */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background-color: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            padding: 20px;
+            width: 700px;
+            max-width: 90vw;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: none;
+            z-index: 1000;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: grid;
+        }
+
+        .dropdown-category h4 {
+            color: #1e3a8a;
+            font-weight: 600;
+            margin-bottom: 12px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .dropdown-category ul li {
+            margin-bottom: 8px;
+        }
+
+        .dropdown-category ul li a {
+            color: #4a4a4a;
+            font-size: 14px;
+        }
+
+        .dropdown-category ul li a:hover {
+            color: #1e3a8a;
+        }
+
+        /* ===== PAGE HEADER (Expansive) ===== */
+        .page-header {
+            background-color: #f8f8f8;
+            padding: 60px 24px;
+            border-bottom: 1px solid #e0e0e0;
+            width: 100%;
+        }
+
+        .page-header-content {
+            width: 100%;
+        }
+
+        .page-header h1 {
+            font-size: 48px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            text-align: left;
+        }
+
+        .page-header p {
+            font-size: 20px;
+            color: #4a4a4a;
+            max-width: 800px;
+            text-align: left;
+        }
+
+        .breadcrumb {
+            margin-bottom: 16px;
+            color: #4a4a4a;
+            font-size: 14px;
+            text-align: left;
+        }
+
+        .breadcrumb a {
+            color: #1e3a8a;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== EXPANSIVE BODY CONTENT ===== */
+        .full-width-section {
+            width: 100%;
+            padding: 60px 24px;
+        }
+
+        .full-width-section:nth-child(even) {
+            background-color: #f8f8f8;
+        }
+
+        .section-title {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+            text-align: left;
+            width: 100%;
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            color: #4a4a4a;
+            margin-bottom: 48px;
+            text-align: left;
+            width: 100%;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            font-weight: 500;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: center;
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: #1e3a8a;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #1e3a8a;
+            opacity: 0.9;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 1px solid #1e3a8a;
+            color: #1e3a8a;
+        }
+
+        .btn-outline:hover {
+            background-color: #f0f4ff;
+        }
+
+        /* ===== GRID SYSTEMS ===== */
+        .grid-4 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            width: 100%;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            width: 100%;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+            width: 100%;
+        }
+
+        /* ===== STORY SECTION ===== */
+        .story-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+            width: 100%;
+        }
+
+        .story-content h2 {
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+
+        .story-content p {
+            margin-bottom: 20px;
+            color: #4a4a4a;
+            line-height: 1.6;
+        }
+
+        .story-image {
+            background-color: #f0f4ff;
+            border-radius: 4px;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #1e3a8a;
+            font-size: 18px;
+            border: 1px solid #d0e0ff;
+        }
+
+        /* ===== FOUNDER CARDS ===== */
+        .founder-card {
+            background-color: white;
+            padding: 32px;
+            border-radius: 4px;
+            border: 1px solid #e0e0e0;
+            transition: transform 0.2s;
+            height: 100%;
+        }
+
+        .founder-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .founder-card h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #1e3a8a;
+        }
+
+        .founder-card .role {
+            color: #4a4a4a;
+            font-weight: 500;
+            margin-bottom: 16px;
+            font-size: 16px;
+        }
+
+        .founder-card .experience {
+            color: #4a4a4a;
+            margin-bottom: 16px;
+            line-height: 1.6;
+        }
+
+        .founder-card ul li {
+            margin-bottom: 8px;
+            color: #4a4a4a;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
+
+        .founder-card ul li i {
+            color: #1e3a8a;
+            width: 20px;
+            margin-right: 8px;
+        }
+
+        /* ===== MISSION CARDS ===== */
+        .mission-card {
+            background-color: white;
+            padding: 32px;
+            border-radius: 4px;
+            border: 1px solid #e0e0e0;
+            height: 100%;
+        }
+
+        .mission-card h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #1e3a8a;
+        }
+
+        .mission-card p {
+            color: #4a4a4a;
+            line-height: 1.6;
+        }
+
+        /* ===== VALUE CARDS ===== */
+        .value-card {
+            background-color: white;
+            padding: 24px;
+            border-radius: 4px;
+            border: 1px solid #e0e0e0;
+            height: 100%;
+        }
+
+        .value-card h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #1e3a8a;
+        }
+
+        .value-card p {
+            color: #4a4a4a;
+            line-height: 1.6;
+        }
+
+        /* ===== STATUS CARD ===== */
+        .status-card {
+            background-color: #f0f4ff;
+            padding: 24px;
+            border-radius: 4px;
+            border: 1px solid #d0e0ff;
+            height: 100%;
+        }
+
+        .status-card h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #1e3a8a;
+        }
+
+        .status-card p {
+            color: #4a4a4a;
+            margin-bottom: 8px;
+        }
+
+        .status-badge {
+            display: inline-block;
+            background-color: #1e3a8a;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+
+        /* ===== TIMELINE ITEM ===== */
+        .timeline-item {
+            background-color: white;
+            padding: 24px;
+            border-radius: 4px;
+            margin-bottom: 16px;
+            border-left: 4px solid #1e3a8a;
+        }
+
+        .timeline-item h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .timeline-item p {
+            color: #4a4a4a;
+        }
+
+        /* ===== LEGACY QUOTE ===== */
+        .legacy-quote {
+            background-color: white;
+            padding: 40px;
+            border-radius: 4px;
+            border: 1px solid #e0e0e0;
+            margin: 40px 0;
+        }
+
+        .legacy-quote i {
+            color: #1e3a8a;
+            font-size: 24px;
+            margin-right: 8px;
+        }
+
+        .legacy-quote p {
+            font-size: 20px;
+            font-style: italic;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
+
+        /* ===== CTA SECTION ===== */
+        .cta-section {
+            width: 100%;
+            padding: 60px 24px;
+            background-color: #1e3a8a;
+            color: white;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        .cta-section p {
+            font-size: 18px;
+            margin-bottom: 32px;
+            opacity: 0.9;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn-white {
+            background-color: white;
+            color: #1e3a8a;
+        }
+
+        .btn-white:hover {
+            background-color: #f0f0f0;
+        }
+
+        .btn-outline-white {
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+
+        .btn-outline-white:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+
+        /* ===== CONTAINED FOOTER (Centered container with left-aligned text) ===== */
+        .footer {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 48px 24px 24px;
+            width: 100%;
+        }
+
+        .footer-content {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .footer-main {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+            margin-bottom: 32px;
+        }
+
+        .footer-col h4 {
+            font-weight: 600;
+            margin-bottom: 16px;
+            text-align: left;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 8px;
+            text-align: left;
+        }
+
+        .footer-col ul li a {
+            opacity: 0.8;
+        }
+
+        .footer-col ul li a:hover {
+            opacity: 1;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 24px;
+            font-size: 14px;
+            opacity: 0.6;
+            text-align: left;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1024px) {
+            .grid-4,
+            .grid-3 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .story-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-main {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .dropdown-menu {
+                width: 500px;
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .mobile-toggle {
+                display: block;
+            }
+
+            .grid-4,
+            .grid-3,
+            .grid-2,
+            .footer-main {
+                grid-template-columns: 1fr;
+            }
+
+            .page-header h1 {
+                font-size: 36px;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+
+            .dropdown-menu {
+                display: none !important;
+            }
+
+            .cta-section h2 {
+                font-size: 28px;
+            }
+
+            .story-image {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ===== FLUID EDGE-TO-EDGE PRE-HEADER ===== -->
+    <div class="pre-header">
+        <div class="pre-header-content">
+            <div class="pre-header-left">
+                <a href="mailto:info@koshiv.com"><i class="fas fa-envelope"></i> info@koshiv.com</a>
+                <span><i class="fas fa-building"></i> Koshiv Technology and Logistics Pvt Ltd</span>
+                <span><i class="fas fa-calendar-alt"></i> Launching 2026</span>
+                <span><i class="fas fa-file"></i> GST: In Process</span>
+            </div>
+            <div class="pre-header-right">
+                <div class="login-links">
+                    <a href="#">Client Login</a>
+                    <a href="#">Driver Login</a>
+                    <a href="#">Partner Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== FLUID EDGE-TO-EDGE MAIN NAVIGATION ===== -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">KOSHIV<span>Technology and Logistics</span></a>
+            </div>
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="nav-menu">
+                <div class="nav-item"><a href="index.html">Home</a></div>
+                <div class="nav-item"><a href="about.html">About</a></div>
+                <div class="nav-item"><a href="services.html">Services</a></div>
+                <div class="nav-item"><a href="fleet.html">Fleet</a></div>
+                <div class="nav-item"><a href="coverage.html">Coverage</a></div>
+                <div class="nav-item"><a href="clients.html">Clients</a></div>
+                <div class="nav-item"><a href="drivers.html">Drivers</a></div>
+                <div class="nav-item"><a href="partners.html">Partners</a></div>
+                <div class="nav-item"><a href="resources.html">Resources</a></div>
+                <div class="nav-item dropdown active">
+                    <a href="about.html">ABOUT <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <!-- Company (Pages 127-132) -->
+                        <div class="dropdown-category">
+                            <h4>COMPANY</h4>
+                            <ul>
+                                <li><a href="about/story.html">127. Our Story</a></li>
+                                <li><a href="about/mission.html">128. Mission & Values</a></li>
+                                <li><a href="about/team.html">129. Founding Team</a></li>
+                                <li><a href="about/certifications.html">130. Certifications (In Process)</a></li>
+                                <li><a href="about/sustainability.html">131. Sustainability Goals</a></li>
+                                <li><a href="about/community.html">132. Community Commitment</a></li>
+                            </ul>
+                        </div>
+                        <!-- Careers (Pages 133-137) -->
+                        <div class="dropdown-category">
+                            <h4>CAREERS</h4>
+                            <ul>
+                                <li><a href="careers/index.html">133. View All Openings</a></li>
+                                <li><a href="careers/drivers.html">134. Driver Jobs</a></li>
+                                <li><a href="careers/non-driver.html">135. Non-Driver Jobs</a></li>
+                                <li><a href="careers/benefits.html">136. Benefits (Planned)</a></li>
+                                <li><a href="about/culture.html">137. Culture</a></li>
+                            </ul>
+                        </div>
+                        <!-- News & Media (Pages 138-142) -->
+                        <div class="dropdown-category">
+                            <h4>NEWS & MEDIA</h4>
+                            <ul>
+                                <li><a href="news/press-releases.html">138. Press Releases</a></li>
+                                <li><a href="news/coverage.html">139. In the News</a></li>
+                                <li><a href="news/launch.html">140. Launch Announcement</a></li>
+                                <li><a href="media/index.html">141. Media Kit</a></li>
+                                <li><a href="media/brand.html">142. Brand Assets</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-item"><a href="contact.html" class="contact-btn">Contact</a></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== PAGE HEADER ===== -->
+    <div class="page-header">
+        <div class="page-header-content" style="padding: 0 24px;">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / About Us
+            </div>
+            <h1>About Koshiv Technology and Logistics</h1>
+            <p>Building a modern logistics company with 40+ years of family transport experience and fresh technology perspective.</p>
+        </div>
+    </div>
+
+    <!-- ===== OUR STORY SECTION (Pages 127) ===== -->
+    <div class="full-width-section">
+        <div class="story-grid" style="padding: 0 24px;">
+            <div class="story-content">
+                <h2>Our Story</h2>
+                <p>Koshiv Technology and Logistics Pvt Ltd was founded by a 3rd year B.Tech Computer Science student who grew up in a family with deep roots in the transport industry. Watching his father, grandfather, and other family members navigate the logistics world for decades, he saw both the strengths and the gaps.</p>
+                <p>The transport industry in India is largely unorganized, with outdated processes, lack of transparency, and minimal technology adoption. Yet, it's the backbone of our economy.</p>
+                <p>Koshiv is our attempt to bridge this gap - combining four generations of family transport experience with modern technology. We're not claiming to have all the answers yet. We're in the process of building, learning, and preparing for our 2026 launch.</p>
+                <a href="about/story.html" class="btn btn-outline">Read Full Story (Page 127)</a>
+            </div>
+            <div class="story-image">
+                <i class="fas fa-truck" style="font-size: 64px; margin-right: 16px;"></i>
+                <span>Family Transport Legacy Since 1980s</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== MISSION & VALUES SECTION (Pages 128) ===== -->
+    <div class="full-width-section">
+        <h2 class="section-title" style="padding: 0 24px;">Mission & Values</h2>
+        <p class="section-subtitle" style="padding: 0 24px;">The principles that guide how we build Koshiv.</p>
+
+        <div class="grid-3" style="padding: 0 24px; margin-bottom: 40px;">
+            <div class="mission-card">
+                <h3>Our Mission</h3>
+                <p>To bring transparency, efficiency, and technology to Indian logistics while honoring the hard-earned wisdom of family transport veterans.</p>
+                <a href="about/mission.html" style="color: #1e3a8a; margin-top: 16px; display: inline-block;">Learn More →</a>
+            </div>
+            <div class="mission-card">
+                <h3>Our Vision</h3>
+                <p>To build a trusted logistics partner that clients and drivers both prefer - through honest pricing, real-time visibility, and respect for everyone in the supply chain.</p>
+                <a href="about/mission.html" style="color: #1e3a8a; margin-top: 16px; display: inline-block;">Learn More →</a>
+            </div>
+            <div class="mission-card">
+                <h3>Our Approach</h3>
+                <p>Start small, be honest about our journey, learn from every client and partner, and grow sustainably without overpromising.</p>
+                <a href="about/mission.html" style="color: #1e3a8a; margin-top: 16px; display: inline-block;">Learn More →</a>
+            </div>
+        </div>
+
+        <h3 class="section-title" style="padding: 0 24px; font-size: 24px;">Core Values</h3>
+        <div class="grid-4" style="padding: 0 24px;">
+            <div class="value-card">
+                <h3>Honesty</h3>
+                <p>We don't pretend to be something we're not. We're transparent about our current status, our plans, and our limitations.</p>
+            </div>
+            <div class="value-card">
+                <h3>Respect for Experience</h3>
+                <p>We honor the 40+ years of transport wisdom in our family. Technology should serve experience, not replace it.</p>
+            </div>
+            <div class="value-card">
+                <h3>Customer First</h3>
+                <p>We build with the customer's real needs in mind - transparency, reliability, and clear communication.</p>
+            </div>
+            <div class="value-card">
+                <h3>Driver Respect</h3>
+                <p>Drivers are the backbone of logistics. We're building policies and technology that respect their time and effort.</p>
+            </div>
+            <div class="value-card">
+                <h3>Sustainable Growth</h3>
+                <p>We're starting small, learning from every interaction, and growing only when we're ready.</p>
+            </div>
+            <div class="value-card">
+                <h3>Technology with Purpose</h3>
+                <p>Every feature we build must solve a real problem, not just look impressive.</p>
+            </div>
+        </div>
+        <div style="padding: 0 24px; margin-top: 24px;">
+            <a href="about/mission.html" class="btn btn-outline">View Mission & Values (Page 128)</a>
+        </div>
+    </div>
+
+    <!-- ===== FOUNDING TEAM SECTION (Pages 129) ===== -->
+    <div class="full-width-section">
+        <h2 class="section-title" style="padding: 0 24px;">Our Founding Team</h2>
+        <p class="section-subtitle" style="padding: 0 24px;">Built by a student founder with family members who have decades of transport experience.</p>
+
+        <div class="grid-4" style="padding: 0 24px;">
+            <div class="founder-card">
+                <h3>Koushal Jha</h3>
+                <div class="role">Founder</div>
+                <div class="experience">3rd year B.Tech Computer Science Engineering student. Building Koshiv to bring modern technology to traditional logistics.</div>
+                <ul>
+                    <li><i class="fas fa-graduation-cap"></i> Currently pursuing CSE</li>
+                    <li><i class="fas fa-code"></i> Lead developer of this platform</li>
+                </ul>
+            </div>
+            <div class="founder-card">
+                <h3>Jay Govind Jha</h3>
+                <div class="role">Co-Founder</div>
+                <div class="experience">10+ years experience in transport operations, fleet management, and logistics coordination. Former manager at Kushal Roadlines (KRL).</div>
+                <ul>
+                    <li><i class="fas fa-truck"></i> Fleet Operations Expert</li>
+                    <li><i class="fas fa-chart-line"></i> Transport Management</li>
+                </ul>
+            </div>
+            <div class="founder-card">
+                <h3>Uday Chandra Jha</h3>
+                <div class="role">Co-Founder</div>
+                <div class="experience">20+ years of driving experience across India. Expert in 4-wheeler and 8-wheeler operations, route planning, and on-ground logistics.</div>
+                <ul>
+                    <li><i class="fas fa-road"></i> Pan-India Driving Experience</li>
+                    <li><i class="fas fa-map-marked-alt"></i> Route Expert</li>
+                </ul>
+            </div>
+            <div class="founder-card">
+                <h3>Raj Mohan Jha</h3>
+                <div class="role">Co-Founder</div>
+                <div class="experience">40+ years in the transport industry. Lifetime of experience in logistics, fleet operations, and understanding the real needs of drivers and transport businesses.</div>
+                <ul>
+                    <li><i class="fas fa-clock"></i> 40+ Years Experience</li>
+                    <li><i class="fas fa-star"></i> Industry Veteran</li>
+                </ul>
+            </div>
+        </div>
+        <div style="padding: 0 24px; margin-top: 24px;">
+            <a href="about/team.html" class="btn btn-outline">Meet the Full Team (Page 129)</a>
+        </div>
+    </div>
+
+    <!-- ===== FAMILY LEGACY SECTION ===== -->
+    <div class="full-width-section">
+        <div class="legacy-quote" style="padding: 0 24px;">
+            <i class="fas fa-quote-left"></i>
+            <p>Our family has been in the transport business for over four decades. From driving trucks across India to managing fleet operations, we've seen the industry evolve - and we've also seen the same problems persist. Koshiv is not just another logistics company. It's a student's vision, backed by family experience, to build something better.</p>
+            <p style="margin-top: 24px; font-weight: 600;">— The Koshiv Family</p>
+        </div>
+    </div>
+
+    <!-- ===== COMPANY STATUS SECTION (Pages 130-132) ===== -->
+    <div class="full-width-section">
+        <h2 class="section-title" style="padding: 0 24px;">Company Status</h2>
+        <p class="section-subtitle" style="padding: 0 24px;">Where we stand today - honest and transparent.</p>
+
+        <div class="grid-4" style="padding: 0 24px;">
+            <div class="status-card">
+                <h3><a href="about/certifications.html">Certifications (Page 130)</a></h3>
+                <p>Company registration in process</p>
+                <p>GST application pending</p>
+                <p>AEO certification planned</p>
+                <span class="status-badge">In Process</span>
+            </div>
+            <div class="status-card">
+                <h3><a href="about/sustainability.html">Sustainability Goals (Page 131)</a></h3>
+                <p>Modern fuel-efficient fleet</p>
+                <p>Paperless operations planned</p>
+                <p>Eco-friendly initiatives</p>
+                <span class="status-badge">Planning Phase</span>
+            </div>
+            <div class="status-card">
+                <h3><a href="about/community.html">Community Commitment (Page 132)</a></h3>
+                <p>Local hiring focus</p>
+                <p>Driver welfare programs</p>
+                <p>Community engagement</p>
+                <span class="status-badge">In Development</span>
+            </div>
+            <div class="status-card">
+                <h3>Domain & Brand</h3>
+                <p>www.koshiv.com - ✓ Purchased</p>
+                <p>Company registration - This week</p>
+                <p>Launch target - Q2 2026</p>
+                <span class="status-badge">On Track</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== TIMELINE SECTION ===== -->
+    <div class="full-width-section">
+        <h2 class="section-title" style="padding: 0 24px;">Our Plan</h2>
+        <p class="section-subtitle" style="padding: 0 24px;">Realistic timeline based on where we are today.</p>
+        
+        <div style="padding: 0 24px;">
+            <div class="timeline-item">
+                <h3>March 2026</h3>
+                <p>Company registration completion • Website launch • Early interest collection</p>
+            </div>
+            <div class="timeline-item">
+                <h3>April 2026</h3>
+                <p>GST registration • First truck procurement planning • Building initial team</p>
+            </div>
+            <div class="timeline-item">
+                <h3>May - June 2026</h3>
+                <p>Operational setup • First client onboarding • Soft launch</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Q3 2026 onwards</h3>
+                <p>Full operations • Gradual fleet expansion • Service area growth</p>
+            </div>
+            <a href="about/timeline.html" class="btn btn-outline" style="margin-top: 16px;">View Full Timeline (Page 121)</a>
+        </div>
+    </div>
+
+    <!-- ===== CAREERS PREVIEW (Pages 133-137) ===== -->
+    <div class="full-width-section">
+        <h2 class="section-title" style="padding: 0 24px;">Join Our Team</h2>
+        <p class="section-subtitle" style="padding: 0 24px;">Career opportunities at Koshiv.</p>
+
+        <div class="grid-4" style="padding: 0 24px;">
+            <div class="value-card">
+                <h3><a href="careers/drivers.html">Driver Jobs</a></h3>
+                <p>OTR, regional, and local positions available. Competitive pay and home time.</p>
+                <span class="status-badge" style="background: #f0f4ff; color: #1e3a8a;">Page 134</span>
+            </div>
+            <div class="value-card">
+                <h3><a href="careers/non-driver.html">Non-Driver Jobs</a></h3>
+                <p>Operations, dispatch, safety, and administrative positions.</p>
+                <span class="status-badge" style="background: #f0f4ff; color: #1e3a8a;">Page 135</span>
+            </div>
+            <div class="value-card">
+                <h3><a href="careers/benefits.html">Benefits</a></h3>
+                <p>Health insurance, retirement, paid time off, and more (planned).</p>
+                <span class="status-badge" style="background: #f0f4ff; color: #1e3a8a;">Page 136</span>
+            </div>
+            <div class="value-card">
+                <h3><a href="about/culture.html">Our Culture</a></h3>
+                <p>Respect, transparency, and growth opportunities for all team members.</p>
+                <span class="status-badge" style="background: #f0f4ff; color: #1e3a8a;">Page 137</span>
+            </div>
+        </div>
+        <div style="padding: 0 24px; margin-top: 24px;">
+            <a href="careers/index.html" class="btn btn-outline">View All Openings (Page 133)</a>
+        </div>
+    </div>
+
+    <!-- ===== NEWS & MEDIA PREVIEW (Pages 138-142) ===== -->
+    <div class="full-width-section">
+        <h2 class="section-title" style="padding: 0 24px;">News & Media</h2>
+        <p class="section-subtitle" style="padding: 0 24px;">Latest updates and resources for media.</p>
+
+        <div class="grid-4" style="padding: 0 24px;">
+            <div class="resource-card">
+                <h3><a href="news/press-releases.html">Press Releases</a></h3>
+                <p>Official announcements and news from Koshiv.</p>
+                <span class="status-tag">Page 138</span>
+            </div>
+            <div class="resource-card">
+                <h3><a href="news/coverage.html">In the News</a></h3>
+                <p>Media coverage and mentions of Koshiv.</p>
+                <span class="status-tag">Page 139</span>
+            </div>
+            <div class="resource-card">
+                <h3><a href="news/launch.html">Launch Announcement</a></h3>
+                <p>Details about our upcoming 2026 launch.</p>
+                <span class="status-tag">Page 140</span>
+            </div>
+            <div class="resource-card">
+                <h3><a href="media/index.html">Media Kit</a></h3>
+                <p>Logos, brand assets, and media resources.</p>
+                <span class="status-tag">Page 141</span>
+            </div>
+        </div>
+        <div style="padding: 0 24px; margin-top: 24px;">
+            <a href="media/brand.html" class="btn btn-outline">Brand Assets (Page 142)</a>
+        </div>
+    </div>
+
+    <!-- ===== PAGE LIST SECTION - ALL 16 ABOUT PAGES ===== -->
+    <div class="page-list-section">
+        <div style="padding: 0 24px;">
+            <h2 class="section-title">About Us Information Pages</h2>
+            <p class="section-subtitle">All 16 about-related pages are linked below. Click any link to visit that page (pages under development will be available soon).</p>
+
+            <div class="page-list-grid">
+                <!-- Company (127-132) -->
+                <div class="page-list-card">
+                    <h4>Company (127-132)</h4>
+                    <ul>
+                        <li><a href="about/story.html">127. Our Story</a></li>
+                        <li><a href="about/mission.html">128. Mission & Values</a></li>
+                        <li><a href="about/team.html">129. Founding Team</a></li>
+                        <li><a href="about/certifications.html">130. Certifications</a></li>
+                        <li><a href="about/sustainability.html">131. Sustainability Goals</a></li>
+                        <li><a href="about/community.html">132. Community Commitment</a></li>
+                    </ul>
+                </div>
+
+                <!-- Careers (133-137) -->
+                <div class="page-list-card">
+                    <h4>Careers (133-137)</h4>
+                    <ul>
+                        <li><a href="careers/index.html">133. View All Openings</a></li>
+                        <li><a href="careers/drivers.html">134. Driver Jobs</a></li>
+                        <li><a href="careers/non-driver.html">135. Non-Driver Jobs</a></li>
+                        <li><a href="careers/benefits.html">136. Benefits</a></li>
+                        <li><a href="about/culture.html">137. Culture</a></li>
+                    </ul>
+                </div>
+
+                <!-- News & Media (138-142) -->
+                <div class="page-list-card">
+                    <h4>News & Media (138-142)</h4>
+                    <ul>
+                        <li><a href="news/press-releases.html">138. Press Releases</a></li>
+                        <li><a href="news/coverage.html">139. In the News</a></li>
+                        <li><a href="news/launch.html">140. Launch Announcement</a></li>
+                        <li><a href="media/index.html">141. Media Kit</a></li>
+                        <li><a href="media/brand.html">142. Brand Assets</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="margin-top: 32px; padding: 20px; background: white; border-radius: 4px;">
+                <p style="font-weight: 500;">Total About Pages: <strong style="color: #1e3a8a;">16 pages</strong> (Pages 127-142 from your complete list)</p>
+                <p style="font-size: 14px; color: #4a4a4a; margin-top: 8px;">Individual pages are under development. Clicking links will show placeholder content until pages are created.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== CTA SECTION ===== -->
+    <div class="cta-section">
+        <div style="padding: 0 24px;">
+            <h2>Want to be part of our journey?</h2>
+            <p>Whether you're a potential client, driver, partner, or just want to learn more - we'd love to hear from you.</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-white">Contact Us</a>
+                <a href="careers/index.html" class="btn btn-outline-white">Explore Careers</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== CONTAINED FOOTER (Centered container with left-aligned text) ===== -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-col">
+                    <h4>KOSHIV</h4>
+                    <ul>
+                        <li>Technology and Logistics Pvt Ltd</li>
+                        <li>Launching 2026</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="fleet.html">Fleet</a></li>
+                        <li><a href="coverage.html">Coverage</a></li>
+                        <li><a href="clients.html">Clients</a></li>
+                        <li><a href="drivers.html">Drivers</a></li>
+                        <li><a href="partners.html">Partners</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="about/story.html">Our Story (127)</a></li>
+                        <li><a href="about/team.html">Team (129)</a></li>
+                        <li><a href="careers/index.html">Careers (133)</a></li>
+                        <li><a href="news/press-releases.html">Press (138)</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@koshiv.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Mumbai, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                © 2026 Koshiv Technology and Logistics Pvt Ltd. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-toggle').addEventListener('click', function() {
+            alert('Mobile menu would open here - navigation links: Home, About, Services, Fleet, Coverage, Clients, Drivers, Partners, Resources, Contact');
+        });
+
+        console.log('About Us page loaded - All 16 about pages (127-142) are linked correctly');
+    </script>
+</body>
+</html>
