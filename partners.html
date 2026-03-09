@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partners Hub - Koshiv Technology and Logistics Pvt Ltd</title>
+    <meta name="description" content="Partner portal and resources for Koshiv Technology and Logistics. Information for carriers, brokers, freight forwarders, and customs brokers. Launching 2026.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <style>
+        /* ===== RESET & BASE STYLES ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #1a1a1a;
+            background-color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* ===== FLUID HEADER ARCHITECTURE (Edge-to-Edge) ===== */
+        .pre-header {
+            background-color: #f8f8f8;
+            padding: 8px 24px;
+            font-size: 14px;
+            border-bottom: 1px solid #e0e0e0;
+            width: 100%;
+        }
+
+        .pre-header-content {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .pre-header-left {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .pre-header-left a {
+            color: #1e3a8a;
+        }
+
+        .pre-header-left span {
+            color: #4a4a4a;
+        }
+
+        .pre-header-right {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .login-links {
+            display: flex;
+            gap: 16px;
+        }
+
+        .login-links a {
+            color: #4a4a4a;
+        }
+
+        .login-links a:hover {
+            color: #1e3a8a;
+        }
+
+        /* ===== MAIN NAVIGATION (Fluid Edge-to-Edge) ===== */
+        .main-nav {
+            background-color: white;
+            padding: 16px 24px;
+            border-bottom: 1px solid #e0e0e0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            width: 100%;
+        }
+
+        .nav-container {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .logo span {
+            font-size: 14px;
+            font-weight: 400;
+            color: #4a4a4a;
+            margin-left: 8px;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+
+        .nav-item {
+            font-weight: 500;
+            position: relative;
+        }
+
+        .nav-item a {
+            color: #1a1a1a;
+        }
+
+        .nav-item a:hover {
+            color: #1e3a8a;
+        }
+
+        .nav-item.active a {
+            color: #1e3a8a;
+            font-weight: 600;
+        }
+
+        .contact-btn {
+            background-color: #1e3a8a;
+            color: white !important;
+            padding: 8px 20px;
+            border-radius: 4px;
+        }
+
+        .contact-btn:hover {
+            background-color: #1e3a8a;
+            opacity: 0.9;
+        }
+
+        .mobile-toggle {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* ===== DROPDOWN MENU ===== */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background-color: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            padding: 20px;
+            width: 700px;
+            max-width: 90vw;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: none;
+            z-index: 1000;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: grid;
+        }
+
+        .dropdown-category h4 {
+            color: #1e3a8a;
+            font-weight: 600;
+            margin-bottom: 12px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .dropdown-category ul li {
+            margin-bottom: 8px;
+        }
+
+        .dropdown-category ul li a {
+            color: #4a4a4a;
+            font-size: 14px;
+        }
+
+        .dropdown-category ul li a:hover {
+            color: #1e3a8a;
+        }
+
+        /* ===== PAGE HEADER (Expansive) ===== */
+        .page-header {
+            background-color: #f8f8f8;
+            padding: 60px 24px;
+            border-bottom: 1px solid #e0e0e0;
+            width: 100%;
+        }
+
+        .page-header-content {
+            width: 100%;
+        }
+
+        .page-header h1 {
+            font-size: 48px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            text-align: left;
+        }
+
+        .page-header p {
+            font-size: 20px;
+            color: #4a4a4a;
+            max-width: 800px;
+            text-align: left;
+        }
+
+        .breadcrumb {
+            margin-bottom: 16px;
+            color: #4a4a4a;
+            font-size: 14px;
+            text-align: left;
+        }
+
+        .breadcrumb a {
+            color: #1e3a8a;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== EXPANSIVE BODY CONTENT ===== */
+        .full-width-section {
+            width: 100%;
+            padding: 60px 24px;
+        }
+
+        .full-width-section:nth-child(even) {
+            background-color: #f8f8f8;
+        }
+
+        .section-title {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+            text-align: left;
+            width: 100%;
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            color: #4a4a4a;
+            margin-bottom: 48px;
+            text-align: left;
+            width: 100%;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            font-weight: 500;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: center;
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: #1e3a8a;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #1e3a8a;
+            opacity: 0.9;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 1px solid #1e3a8a;
+            color: #1e3a8a;
+        }
+
+        .btn-outline:hover {
+            background-color: #f0f4ff;
+        }
+
+        /* ===== PARTNER STATUS NOTE ===== */
+        .partner-status {
+            background-color: #f0f4ff;
+            padding: 24px;
+            border-radius: 4px;
+            margin: 0 0 40px 0;
+            text-align: left;
+            border: 1px solid #d0e0ff;
+            width: 100%;
+        }
+
+        .partner-status p {
+            font-size: 16px;
+            color: #1e3a8a;
+        }
+
+        .partner-status a {
+            color: #1e3a8a;
+            text-decoration: underline;
+            font-weight: 500;
+        }
+
+        /* ===== GRID SYSTEMS ===== */
+        .grid-4 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            width: 100%;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            width: 100%;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+            width: 100%;
+        }
+
+        /* ===== PARTNER CARD STYLES ===== */
+        .partner-card {
+            background-color: white;
+            padding: 24px;
+            border-radius: 4px;
+            border: 1px solid #e0e0e0;
+            transition: transform 0.2s;
+            height: 100%;
+        }
+
+        .partner-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .partner-card h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #1e3a8a;
+        }
+
+        .partner-card p {
+            color: #4a4a4a;
+            margin-bottom: 16px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .partner-icon {
+            font-size: 32px;
+            color: #1e3a8a;
+            margin-bottom: 16px;
+        }
+
+        .status-tag {
+            display: inline-block;
+            background-color: #f0f4ff;
+            color: #1e3a8a;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin-right: 8px;
+        }
+
+        .partner-link {
+            display: inline-block;
+            margin-top: 16px;
+            color: #1e3a8a;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .partner-link i {
+            font-size: 12px;
+            margin-left: 4px;
+        }
+
+        /* ===== TIER CARD ===== */
+        .tier-card {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2a4a9a 100%);
+            color: white;
+            padding: 32px;
+            border-radius: 4px;
+            height: 100%;
+        }
+
+        .tier-card h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: white;
+        }
+
+        .tier-card p {
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 24px;
+            font-size: 16px;
+        }
+
+        .tier-card .btn-white {
+            background-color: white;
+            color: #1e3a8a;
+        }
+
+        .tier-card .btn-outline-white {
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+
+        .tier-card .btn-outline-white:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+
+        .tier-badge {
+            display: inline-block;
+            background-color: rgba(255,255,255,0.2);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin-right: 8px;
+        }
+
+        /* ===== PROGRAM CARD ===== */
+        .program-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid #e0e0e0;
+            height: 100%;
+        }
+
+        .program-card h4 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .program-card ul li {
+            margin-bottom: 8px;
+            font-size: 14px;
+            color: #4a4a4a;
+            display: flex;
+            align-items: center;
+        }
+
+        .program-card ul li i {
+            color: #1e3a8a;
+            width: 20px;
+            margin-right: 8px;
+        }
+
+        /* ===== PAGE LIST SECTION ===== */
+        .page-list-section {
+            width: 100%;
+            padding: 40px 24px;
+            background-color: #f8f8f8;
+        }
+
+        .page-list-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            width: 100%;
+        }
+
+        .page-list-card {
+            background: white;
+            padding: 20px;
+            border-radius: 4px;
+        }
+
+        .page-list-card h4 {
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #1e3a8a;
+        }
+
+        .page-list-card ul li {
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
+
+        .page-list-card ul li a {
+            color: #4a4a4a;
+        }
+
+        .page-list-card ul li a:hover {
+            color: #1e3a8a;
+        }
+
+        /* ===== CTA SECTION ===== */
+        .cta-section {
+            width: 100%;
+            padding: 60px 24px;
+            background-color: #1e3a8a;
+            color: white;
+            text-align: center; /* Center align the content */
+        }
+
+        .cta-section h2 {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            text-align: center; /* Center aligned as requested */
+        }
+
+        .cta-section p {
+            font-size: 18px;
+            margin-bottom: 32px;
+            opacity: 0.9;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center; /* Center aligned as requested */
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            justify-content: center; /* Center the buttons */
+        }
+
+        .btn-white {
+            background-color: white;
+            color: #1e3a8a;
+        }
+
+        .btn-white:hover {
+            background-color: #f0f0f0;
+        }
+
+        .btn-outline-white {
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+
+        .btn-outline-white:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+
+        /* ===== CONTAINED FOOTER (Centered container with left-aligned text) ===== */
+        .footer {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 48px 24px 24px;
+            width: 100%;
+        }
+
+        .footer-content {
+            max-width: 1280px;
+            margin: 0 auto; /* Centers the footer container */
+        }
+
+        .footer-main {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+            margin-bottom: 32px;
+        }
+
+        .footer-col h4 {
+            font-weight: 600;
+            margin-bottom: 16px;
+            text-align: left; /* Left-aligned text inside centered container */
+        }
+
+        .footer-col ul li {
+            margin-bottom: 8px;
+            text-align: left; /* Left-aligned text inside centered container */
+        }
+
+        .footer-col ul li a {
+            opacity: 0.8;
+        }
+
+        .footer-col ul li a:hover {
+            opacity: 1;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 24px;
+            font-size: 14px;
+            opacity: 0.6;
+            text-align: left; /* Left-aligned text inside centered container */
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1024px) {
+            .grid-4,
+            .page-list-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .grid-3 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-main {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .dropdown-menu {
+                width: 500px;
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .mobile-toggle {
+                display: block;
+            }
+
+            .grid-4,
+            .grid-3,
+            .grid-2,
+            .page-list-grid,
+            .footer-main {
+                grid-template-columns: 1fr;
+            }
+
+            .page-header h1 {
+                font-size: 36px;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+
+            .dropdown-menu {
+                display: none !important;
+            }
+
+            .cta-section h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ===== FLUID EDGE-TO-EDGE PRE-HEADER ===== -->
+    <div class="pre-header">
+        <div class="pre-header-content">
+            <div class="pre-header-left">
+                <a href="mailto:info@koshiv.com"><i class="fas fa-envelope"></i> info@koshiv.com</a>
+                <span><i class="fas fa-building"></i> Koshiv Technology and Logistics Pvt Ltd</span>
+                <span><i class="fas fa-calendar-alt"></i> Launching 2026</span>
+                <span><i class="fas fa-file"></i> GST: In Process</span>
+            </div>
+            <div class="pre-header-right">
+                <div class="login-links">
+                    <a href="#">Client Login</a>
+                    <a href="#">Driver Login</a>
+                    <a href="#">Partner Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== FLUID EDGE-TO-EDGE MAIN NAVIGATION ===== -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">KOSHIV<span>Technology and Logistics</span></a>
+            </div>
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="nav-menu">
+                <div class="nav-item"><a href="index.html">Home</a></div>
+                <div class="nav-item"><a href="about.html">About</a></div>
+                <div class="nav-item"><a href="services.html">Services</a></div>
+                <div class="nav-item"><a href="fleet.html">Fleet</a></div>
+                <div class="nav-item"><a href="coverage.html">Coverage</a></div>
+                <div class="nav-item"><a href="clients.html">Clients</a></div>
+                <div class="nav-item"><a href="drivers.html">Drivers</a></div>
+                <div class="nav-item dropdown active">
+                    <a href="partners.html">PARTNERS <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <!-- Partner Portal (Pages 97-101) -->
+                        <div class="dropdown-category">
+                            <h4>PARTNER PORTAL</h4>
+                            <ul>
+                                <li><a href="partners/portal.html">97. Partner Portal</a></li>
+                                <li><a href="partners/register.html">98. Register Interest</a></li>
+                                <li><a href="partners/sample-loads.html">99. View Sample Loads</a></li>
+                                <li><a href="partners/benefits.html">100. Partnership Benefits</a></li>
+                                <li><a href="partners/contact.html">101. Contact Partnerships</a></li>
+                            </ul>
+                        </div>
+                        <!-- Partner Types (Pages 102-106) -->
+                        <div class="dropdown-category">
+                            <h4>PARTNER TYPES</h4>
+                            <ul>
+                                <li><a href="partners/carrier.html">102. Carrier Partners</a></li>
+                                <li><a href="partners/broker.html">103. Broker Partners</a></li>
+                                <li><a href="partners/forwarders.html">104. Freight Forwarders</a></li>
+                                <li><a href="partners/customs-brokers.html">105. Customs Brokers</a></li>
+                                <li><a href="partners/suppliers.html">106. Supplier Partners</a></li>
+                            </ul>
+                        </div>
+                        <!-- Partner Resources (Pages 107-110) -->
+                        <div class="dropdown-category">
+                            <h4>PARTNER RESOURCES</h4>
+                            <ul>
+                                <li><a href="partners/requirements.html">107. Requirements Checklist</a></li>
+                                <li><a href="partners/tiers.html">108. Partner Program Tiers</a></li>
+                                <li><a href="partners/faq.html">109. Partner FAQs</a></li>
+                                <li><a href="partners/early-access.html">110. Early Access Application</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-item"><a href="contact.html" class="contact-btn">Contact</a></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== PAGE HEADER ===== -->
+    <div class="page-header">
+        <div class="page-header-content" style="padding: 0 24px;">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / Partners
+            </div>
+            <h1>Partners Hub</h1>
+            <p>Opportunities and resources for carriers, brokers, freight forwarders, and customs brokers. Join our partner network.</p>
+        </div>
+    </div>
+
+    <!-- ===== PARTNER STATUS NOTE ===== -->
+    <div style="padding: 0 24px;">
+        <div class="partner-status">
+            <p><i class="fas fa-info-circle"></i> Partner program is in development phase. Registration interest is now open for carriers, brokers, and service providers interested in our 2026 launch.</p>
+        </div>
+    </div>
+
+    <!-- ===== PARTNER PORTAL SECTION (Pages 97-101) ===== -->
+    <div class="full-width-section">
+        <h2 class="section-title" style="padding: 0 24px;">Partner Portal</h2>
+        <p class="section-subtitle" style="padding: 0 24px;">Access partner resources, view available loads, and manage your partnership.</p>
+
+        <div class="grid-4" style="padding: 0 24px;">
+            <!-- Page 97 -->
+            <div class="partner-card">
+                <div class="partner-icon"><i class="fas fa-handshake"></i></div>
+                <h3><a href="partners/portal.html">Partner Portal</a></h3>
+                <p>Secure login portal for registered partners to access load boards, settlements, and documents.</p>
+                <span class="status-tag">Page 97</span>
+                <a href="partners/portal.html" class="partner-link">Access Portal <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Page 98 -->
+            <div class="partner-card">
+                <div class="partner-icon"><i class="fas fa-pen"></i></div>
+                <h3><a href="partners/register.html">Register Interest</a></h3>
+                <p>Register your interest in becoming a Koshiv partner. We'll contact you with more information.</p>
+                <span class="status-tag">Page 98</span>
+                <a href="partners/register.html" class="partner-link">Register Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Page 99 -->
+            <div class="partner-card">
+                <div class="partner-icon"><i class="fas fa-map-marked-alt"></i></div>
+                <h3><a href="partners/sample-loads.html">View Sample Loads</a></h3>
+                <p>Preview sample loads and rates available to partners when we launch.</p>
+                <span class="status-tag">Page 99</span>
+                <a href="partners/sample-loads.html" class="partner-link">View Samples <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Page 100 -->
+            <div class="partner-card">
+                <div class="partner-icon"><i class="fas fa-gift"></i></div>
+                <h3><a href="partners/benefits.html">Partnership Benefits</a></h3>
+                <p>Learn about the benefits of partnering with Koshiv, including competitive rates and support.</p>
+                <span class="status-tag">Page 100</span>
+                <a href="partners/benefits.html" class="partner-link">View Benefits <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Page 101 -->
+            <div class="partner-card">
+                <div class="partner-icon"><i class="fas fa-phone-alt"></i></div>
+                <h3><a href="partners/contact.html">Contact Partnerships</a></h3>
+                <p>Get in touch with our partnerships team for questions and inquiries.</p>
+                <span class="status-tag">Page 101</span>
+                <a href="partners/contact.html" class="partner-link">Contact <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== PARTNER TYPES SECTION (Pages 102-106) ===== -->
+    <div class="full-width-section">
+        <h2 class="section-title" style="padding: 0 24px;">Partner Types</h2>
+        <p class="section-subtitle" style="padding: 0 24px;">Explore different partnership opportunities with Koshiv.</p>
+
+        <div class="grid-4" style="padding: 0 24px;">
+            <!-- Page 102 -->
+            <div class="partner-card">
+                <h3><a href="partners/carrier.html">Carrier Partners</a></h3>
+                <p>For owner operators and small fleet owners looking for consistent loads and partnerships.</p>
+                <span class="status-tag">Page 102</span>
+                <a href="partners/carrier.html" class="partner-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Page 103 -->
+            <div class="partner-card">
+                <h3><a href="partners/broker.html">Broker Partners</a></h3>
+                <p>For freight brokers seeking reliable carrier partners and capacity solutions.</p>
+                <span class="status-tag">Page 103</span>
+                <a href="partners/broker.html" class="partner-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Page 104 -->
+            <div class="partner-card">
+                <h3><a href="partners/forwarders.html">Freight Forwarders</a></h3>
+                <p>For freight forwarders needing drayage and inland transportation solutions.</p>
+                <span class="status-tag">Page 104</span>
+                <a href="partners/forwarders.html" class="partner-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Page 105 -->
+            <div class="partner-card">
+                <h3><a href="partners/customs-brokers.html">Customs Brokers</a></h3>
+                <p>For customs brokers looking to collaborate on import/export clearance.</p>
+                <span class="status-tag">Page 105</span>
+                <a href="partners/customs-brokers.html" class="partner-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Page 106 -->
+            <div class="partner-card">
+                <h3><a href="partners/suppliers.html">Supplier Partners</a></h3>
+                <p>For suppliers of equipment, parts, and services to the logistics industry.</p>
+                <span class="status-tag">Page 106</span>
+                <a href="partners/suppliers.html" class="partner-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== PARTNER RESOURCES SECTION (Pages 107-110) ===== -->
+    <div class="full-width-section">
+        <h2 class="section-title" style="padding: 0 24px;">Partner Resources</h2>
+        <p class="section-subtitle" style="padding: 0 24px;">Tools and information to help you become a successful Koshiv partner.</p>
+
+        <div class="grid-4" style="padding: 0 24px;">
+            <!-- Page 107 -->
+            <div class="program-card">
+                <h4><a href="partners/requirements.html">Requirements Checklist</a></h4>
+                <ul>
+                    <li><i class="fas fa-check"></i> Authority requirements</li>
+                    <li><i class="fas fa-check"></i> Insurance requirements</li>
+                    <li><i class="fas fa-check"></i> Safety qualifications</li>
+                </ul>
+                <span class="status-tag">Page 107</span>
+                <a href="partners/requirements.html" class="partner-link">View Checklist</a>
+            </div>
+
+            <!-- Page 108 -->
+            <div class="program-card">
+                <h4><a href="partners/tiers.html">Partner Program Tiers</a></h4>
+                <ul>
+                    <li><i class="fas fa-check"></i> Bronze, Silver, Gold</li>
+                    <li><i class="fas fa-check"></i> Benefits by tier</li>
+                    <li><i class="fas fa-check"></i> Qualification criteria</li>
+                </ul>
+                <span class="status-tag">Page 108</span>
+                <a href="partners/tiers.html" class="partner-link">View Tiers</a>
+            </div>
+
+            <!-- Page 109 -->
+            <div class="program-card">
+                <h4><a href="partners/faq.html">Partner FAQs</a></h4>
+                <ul>
+                    <li><i class="fas fa-check"></i> Common questions</li>
+                    <li><i class="fas fa-check"></i> Partnership process</li>
+                    <li><i class="fas fa-check"></i> Getting started</li>
+                </ul>
+                <span class="status-tag">Page 109</span>
+                <a href="partners/faq.html" class="partner-link">View FAQs</a>
+            </div>
+
+            <!-- Page 110 -->
+            <div class="tier-card">
+                <h4 style="color: white;">Early Access Application</h4>
+                <p style="color: rgba(255,255,255,0.9);">Apply now for early access to our partner program and receive priority onboarding.</p>
+                <span class="tier-badge">Page 110</span>
+                <div style="margin-top: 16px;">
+                    <a href="partners/early-access.html" class="btn btn-white">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== PARTNER PROGRAM HIGHLIGHT ===== -->
+    <div class="full-width-section">
+        <div class="grid-2" style="padding: 0 24px;">
+            <div class="tier-card" style="height: auto;">
+                <h3>Partner Program Tiers</h3>
+                <p>Our tiered partnership program rewards volume and performance with better rates and benefits.</p>
+                <div style="display: flex; gap: 16px; margin: 24px 0; flex-wrap: wrap;">
+                    <span class="tier-badge">Bronze</span>
+                    <span class="tier-badge">Silver</span>
+                    <span class="tier-badge">Gold</span>
+                    <span class="tier-badge">Platinum</span>
+                </div>
+                <a href="partners/tiers.html" class="btn btn-white">View Details</a>
+            </div>
+            <div class="partner-card" style="height: auto;">
+                <h3>Why Partner With Koshiv?</h3>
+                <ul style="margin-top: 16px;">
+                    <li style="margin-bottom: 12px;"><i class="fas fa-check" style="color: #1e3a8a;"></i> Competitive rates and quick pay options</li>
+                    <li style="margin-bottom: 12px;"><i class="fas fa-check" style="color: #1e3a8a;"></i> Dedicated partner support team</li>
+                    <li style="margin-bottom: 12px;"><i class="fas fa-check" style="color: #1e3a8a;"></i> Access to consistent loads</li>
+                    <li style="margin-bottom: 12px;"><i class="fas fa-check" style="color: #1e3a8a;"></i> Technology platform for easy booking</li>
+                    <li style="margin-bottom: 12px;"><i class="fas fa-check" style="color: #1e3a8a;"></i> Growth opportunities with our network</li>
+                </ul>
+                <a href="partners/benefits.html" class="partner-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== PAGE LIST SECTION - ALL 14 PARTNER PAGES ===== -->
+    <div class="page-list-section">
+        <div style="padding: 0 24px;">
+            <h2 class="section-title">Partner Information Pages</h2>
+            <p class="section-subtitle">All 14 partner-related pages are linked below. Click any link to visit that page (pages under development will be available soon).</p>
+
+            <div class="page-list-grid">
+                <!-- Partner Portal (97-101) -->
+                <div class="page-list-card">
+                    <h4>Partner Portal (97-101)</h4>
+                    <ul>
+                        <li><a href="partners/portal.html">97. Partner Portal</a></li>
+                        <li><a href="partners/register.html">98. Register Interest</a></li>
+                        <li><a href="partners/sample-loads.html">99. View Sample Loads</a></li>
+                        <li><a href="partners/benefits.html">100. Partnership Benefits</a></li>
+                        <li><a href="partners/contact.html">101. Contact Partnerships</a></li>
+                    </ul>
+                </div>
+
+                <!-- Partner Types (102-106) -->
+                <div class="page-list-card">
+                    <h4>Partner Types (102-106)</h4>
+                    <ul>
+                        <li><a href="partners/carrier.html">102. Carrier Partners</a></li>
+                        <li><a href="partners/broker.html">103. Broker Partners</a></li>
+                        <li><a href="partners/forwarders.html">104. Freight Forwarders</a></li>
+                        <li><a href="partners/customs-brokers.html">105. Customs Brokers</a></li>
+                        <li><a href="partners/suppliers.html">106. Supplier Partners</a></li>
+                    </ul>
+                </div>
+
+                <!-- Partner Resources (107-110) -->
+                <div class="page-list-card">
+                    <h4>Partner Resources (107-110)</h4>
+                    <ul>
+                        <li><a href="partners/requirements.html">107. Requirements Checklist</a></li>
+                        <li><a href="partners/tiers.html">108. Partner Program Tiers</a></li>
+                        <li><a href="partners/faq.html">109. Partner FAQs</a></li>
+                        <li><a href="partners/early-access.html">110. Early Access Application</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="margin-top: 32px; padding: 20px; background: white; border-radius: 4px;">
+                <p style="font-weight: 500;">Total Partner Pages: <strong style="color: #1e3a8a;">14 pages</strong> (Pages 97-110 from your complete list)</p>
+                <p style="font-size: 14px; color: #4a4a4a; margin-top: 8px;">Individual pages are under development. Clicking links will show placeholder content until pages are created.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== CTA SECTION (Center-aligned heading and paragraph as requested) ===== -->
+    <div class="cta-section">
+        <div style="padding: 0 24px;">
+            <h2>Ready to partner with us?</h2>
+            <p>Register your interest today and be among the first to join our partner network when we launch in 2026.</p>
+            <div class="cta-buttons">
+                <a href="partners/register.html" class="btn btn-white">Register Interest</a>
+                <a href="partners/contact.html" class="btn btn-outline-white">Contact Partnerships</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== CONTAINED FOOTER (Centered container with left-aligned text) ===== -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-col">
+                    <h4>KOSHIV</h4>
+                    <ul>
+                        <li>Technology and Logistics Pvt Ltd</li>
+                        <li>Launching 2026</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="fleet.html">Fleet</a></li>
+                        <li><a href="coverage.html">Coverage</a></li>
+                        <li><a href="clients.html">Clients</a></li>
+                        <li><a href="drivers.html">Drivers</a></li>
+                        <li><a href="partners.html">Partners</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Partner Types</h4>
+                    <ul>
+                        <li><a href="partners/carrier.html">Carriers (102)</a></li>
+                        <li><a href="partners/broker.html">Brokers (103)</a></li>
+                        <li><a href="partners/forwarders.html">Forwarders (104)</a></li>
+                        <li><a href="partners/customs-brokers.html">Customs (105)</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@koshiv.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Mumbai, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                © 2026 Koshiv Technology and Logistics Pvt Ltd. All rights reserved. | Partner Pages 97-110
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-toggle').addEventListener('click', function() {
+            alert('Mobile menu would open here - navigation links: Home, About, Services, Fleet, Coverage, Clients, Drivers, Partners, Contact');
+        });
+
+        console.log('Partners Hub page loaded - All 14 partner pages (97-110) are linked correctly');
+    </script>
+</body>
+</html>

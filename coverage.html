@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coverage Overview - Koshiv Technology and Logistics Pvt Ltd</title>
+    <meta name="description" content="Overview of coverage areas planned by Koshiv Technology and Logistics. Information about ports, border crossings, and distribution centers. Launching 2026.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <style>
+        /* ===== RESET & BASE STYLES ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #1a1a1a;
+            background-color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* ===== FLUID HEADER ARCHITECTURE (Edge-to-Edge) ===== */
+        .pre-header {
+            background-color: #f8f8f8;
+            padding: 8px 24px; /* Specific horizontal padding */
+            font-size: 14px;
+            border-bottom: 1px solid #e0e0e0;
+            width: 100%;
+        }
+
+        .pre-header-content {
+            width: 100%;
+            display: flex;
+            justify-content: space-between; /* Pushes left and right apart */
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .pre-header-left {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .pre-header-left a {
+            color: #1e3a8a;
+        }
+
+        .pre-header-left span {
+            color: #4a4a4a;
+        }
+
+        .pre-header-right {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .login-links {
+            display: flex;
+            gap: 16px;
+        }
+
+        .login-links a {
+            color: #4a4a4a;
+        }
+
+        .login-links a:hover {
+            color: #1e3a8a;
+        }
+
+        /* ===== MAIN NAVIGATION (Fluid Edge-to-Edge) ===== */
+        .main-nav {
+            background-color: white;
+            padding: 16px 24px; /* Specific horizontal padding */
+            border-bottom: 1px solid #e0e0e0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            width: 100%;
+        }
+
+        .nav-container {
+            width: 100%;
+            display: flex;
+            justify-content: space-between; /* Logo left, nav right */
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .logo span {
+            font-size: 14px;
+            font-weight: 400;
+            color: #4a4a4a;
+            margin-left: 8px;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+
+        .nav-item {
+            font-weight: 500;
+            position: relative;
+        }
+
+        .nav-item a {
+            color: #1a1a1a;
+        }
+
+        .nav-item a:hover {
+            color: #1e3a8a;
+        }
+
+        .nav-item.active a {
+            color: #1e3a8a;
+            font-weight: 600;
+        }
+
+        .contact-btn {
+            background-color: #1e3a8a;
+            color: white !important;
+            padding: 8px 20px;
+            border-radius: 4px;
+        }
+
+        .contact-btn:hover {
+            background-color: #1e3a8a;
+            opacity: 0.9;
+        }
+
+        .mobile-toggle {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* ===== COVERAGE DROPDOWN MENU ===== */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            right: 0; /* Align to right of nav item */
+            background-color: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            padding: 20px;
+            width: 700px;
+            max-width: 90vw;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: none;
+            z-index: 1000;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: grid;
+        }
+
+        .dropdown-category h4 {
+            color: #1e3a8a;
+            font-weight: 600;
+            margin-bottom: 12px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .dropdown-category ul li {
+            margin-bottom: 8px;
+        }
+
+        .dropdown-category ul li a {
+            color: #4a4a4a;
+            font-size: 14px;
+        }
+
+        .dropdown-category ul li a:hover {
+            color: #1e3a8a;
+        }
+
+        /* ===== PAGE HEADER (Expansive - No max-width) ===== */
+        .page-header {
+            background-color: #f8f8f8;
+            padding: 60px 24px;
+            border-bottom: 1px solid #e0e0e0;
+            width: 100%;
+        }
+
+        .page-header-content {
+            width: 100%;
+        }
+
+        .page-header h1 {
+            font-size: 48px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            text-align: left;
+            max-width: 1280px; /* Optional for readability, but left-aligned */
+        }
+
+        .page-header p {
+            font-size: 20px;
+            color: #4a4a4a;
+            max-width: 800px;
+            text-align: left;
+        }
+
+        .breadcrumb {
+            margin-bottom: 16px;
+            color: #4a4a4a;
+            font-size: 14px;
+            text-align: left;
+        }
+
+        .breadcrumb a {
+            color: #1e3a8a;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== EXPANSIVE BODY CONTENT (No max-width restrictions) ===== */
+        .full-width-section {
+            width: 100%;
+            padding: 60px 24px;
+        }
+
+        .full-width-section:nth-child(even) {
+            background-color: #f8f8f8;
+        }
+
+        .section-title {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+            text-align: left;
+            width: 100%;
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            color: #4a4a4a;
+            margin-bottom: 48px;
+            text-align: left;
+            width: 100%;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            font-weight: 500;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: center;
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: #1e3a8a;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #1e3a8a;
+            opacity: 0.9;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 1px solid #1e3a8a;
+            color: #1e3a8a;
+        }
+
+        .btn-outline:hover {
+            background-color: #f0f4ff;
+        }
+
+        /* ===== COVERAGE STATUS NOTE (Expansive) ===== */
+        .coverage-status {
+            background-color: #f0f4ff;
+            padding: 24px;
+            border-radius: 4px;
+            margin: 0 0 40px 0;
+            text-align: left;
+            border: 1px solid #d0e0ff;
+            width: 100%;
+        }
+
+        .coverage-status p {
+            font-size: 16px;
+            color: #1e3a8a;
+        }
+
+        .coverage-status a {
+            color: #1e3a8a;
+            text-decoration: underline;
+            font-weight: 500;
+        }
+
+        /* ===== FOUR-COLUMN GRID (Expansive desktop layout) ===== */
+        .grid-4 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            width: 100%;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            width: 100%;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            width: 100%;
+        }
+
+        /* ===== CARD STYLES ===== */
+        .region-card {
+            background-color: white;
+            padding: 24px;
+            border-radius: 4px;
+            border: 1px solid #e0e0e0;
+            transition: transform 0.2s;
+            height: 100%;
+        }
+
+        .region-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .region-card h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #1e3a8a;
+        }
+
+        .region-card p {
+            color: #4a4a4a;
+            margin-bottom: 16px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .status-tag {
+            display: inline-block;
+            background-color: #f0f4ff;
+            color: #1e3a8a;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin-right: 8px;
+        }
+
+        .region-link {
+            display: inline-block;
+            margin-top: 16px;
+            color: #1e3a8a;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .region-link i {
+            font-size: 12px;
+            margin-left: 4px;
+        }
+
+        /* ===== PORT CARD STYLES ===== */
+        .port-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid #e0e0e0;
+            height: 100%;
+        }
+
+        .port-card h4 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .port-card .location {
+            color: #1e3a8a;
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+
+        .port-card p {
+            color: #4a4a4a;
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+
+        /* ===== BORDER CARD STYLES ===== */
+        .border-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid #e0e0e0;
+            height: 100%;
+        }
+
+        .border-card h4 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .border-card .route {
+            color: #1e3a8a;
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+
+        .border-card p {
+            color: #4a4a4a;
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+
+        /* ===== MAP PLACEHOLDER (Expansive) ===== */
+        .map-placeholder {
+            background-color: #e9eef2;
+            height: 450px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 40px 0;
+            position: relative;
+            border: 1px solid #d0d5d9;
+            width: 100%;
+        }
+
+        .map-marker {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            background-color: #1e3a8a;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .map-marker::after {
+            content: '';
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            background-color: rgba(30, 58, 138, 0.2);
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                width: 24px;
+                height: 24px;
+                opacity: 0.5;
+            }
+            70% {
+                width: 48px;
+                height: 48px;
+                opacity: 0;
+            }
+            100% {
+                width: 24px;
+                height: 24px;
+                opacity: 0;
+            }
+        }
+
+        .marker-label {
+            position: absolute;
+            transform: translate(-50%, -120%);
+            background-color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            white-space: nowrap;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        /* ===== CATEGORY HEADERS ===== */
+        .category-header {
+            font-size: 24px;
+            font-weight: 600;
+            margin: 40px 0 24px 0;
+            color: #1e3a8a;
+            text-align: left;
+            width: 100%;
+        }
+
+        /* ===== PAGE LIST SECTION (Expansive) ===== */
+        .page-list-section {
+            width: 100%;
+            padding: 40px 24px;
+            background-color: #f8f8f8;
+        }
+
+        .page-list-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            width: 100%;
+        }
+
+        .page-list-card {
+            background: white;
+            padding: 20px;
+            border-radius: 4px;
+        }
+
+        .page-list-card h4 {
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #1e3a8a;
+        }
+
+        .page-list-card ul li {
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
+
+        .page-list-card ul li a {
+            color: #4a4a4a;
+        }
+
+        .page-list-card ul li a:hover {
+            color: #1e3a8a;
+        }
+
+        /* ===== CTA SECTION (Expansive) ===== */
+        .cta-section {
+            width: 100%;
+            padding: 60px 24px;
+            background-color: #1e3a8a;
+            color: white;
+        }
+
+        .cta-section h2 {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            text-align: left;
+        }
+
+        .cta-section p {
+            font-size: 18px;
+            margin-bottom: 32px;
+            opacity: 0.9;
+            max-width: 700px;
+            text-align: left;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        .btn-white {
+            background-color: white;
+            color: #1e3a8a;
+        }
+
+        .btn-white:hover {
+            background-color: #f0f0f0;
+        }
+
+        .btn-outline-white {
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+
+        .btn-outline-white:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+
+        /* ===== CONTAINED FOOTER ARCHITECTURE (1280px center) ===== */
+        .footer {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 48px 24px 24px;
+            width: 100%;
+        }
+
+        .footer-content {
+            max-width: 1280px;
+            margin: 0 auto; /* Centers the footer content */
+        }
+
+        .footer-main {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+            margin-bottom: 32px;
+        }
+
+        .footer-col h4 {
+            font-weight: 600;
+            margin-bottom: 16px;
+            text-align: left;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 8px;
+            text-align: left;
+        }
+
+        .footer-col ul li a {
+            opacity: 0.8;
+        }
+
+        .footer-col ul li a:hover {
+            opacity: 1;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 24px;
+            font-size: 14px;
+            opacity: 0.6;
+            text-align: left;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1024px) {
+            .grid-4,
+            .page-list-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .grid-3 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-main {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .dropdown-menu {
+                width: 500px;
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .mobile-toggle {
+                display: block;
+            }
+
+            .grid-4,
+            .grid-3,
+            .grid-2,
+            .page-list-grid,
+            .footer-main {
+                grid-template-columns: 1fr;
+            }
+
+            .page-header h1 {
+                font-size: 36px;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+
+            .dropdown-menu {
+                display: none !important;
+            }
+
+            .map-placeholder {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ===== FLUID EDGE-TO-EDGE PRE-HEADER ===== -->
+    <div class="pre-header">
+        <div class="pre-header-content">
+            <div class="pre-header-left">
+                <a href="mailto:info@koshiv.com"><i class="fas fa-envelope"></i> info@koshiv.com</a>
+                <span><i class="fas fa-building"></i> Koshiv Technology and Logistics Pvt Ltd</span>
+                <span><i class="fas fa-calendar-alt"></i> Launching 2026</span>
+                <span><i class="fas fa-file"></i> GST: In Process</span>
+            </div>
+            <div class="pre-header-right">
+                <div class="login-links">
+                    <a href="#">Client Login</a>
+                    <a href="#">Driver Login</a>
+                    <a href="#">Partner Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== FLUID EDGE-TO-EDGE MAIN NAVIGATION ===== -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">KOSHIV<span>Technology and Logistics</span></a>
+            </div>
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="nav-menu">
+                <div class="nav-item"><a href="index.html">Home</a></div>
+                <div class="nav-item"><a href="about.html">About</a></div>
+                <div class="nav-item"><a href="services.html">Services</a></div>
+                <div class="nav-item"><a href="fleet.html">Fleet</a></div>
+                <div class="nav-item dropdown active">
+                    <a href="coverage.html">COVERAGE <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <!-- Distribution Centers & Network (Pages 45-47) -->
+                        <div class="dropdown-category">
+                            <h4>NETWORK</h4>
+                            <ul>
+                                <li><a href="coverage/distribution-centers.html">45. Major Distribution Centers</a></li>
+                                <li><a href="coverage/rail-ramps.html">46. Rail Ramp Connections</a></li>
+                                <li><a href="coverage/pan-india.html">47. Pan-India Coverage</a></li>
+                            </ul>
+                        </div>
+                        <!-- Ports (Pages 48-56) -->
+                        <div class="dropdown-category">
+                            <h4>PORTS</h4>
+                            <ul>
+                                <li><a href="coverage/ports/mundra.html">48. Mundra Port</a></li>
+                                <li><a href="coverage/ports/nhava-sheva.html">49. Nhava Sheva Port</a></li>
+                                <li><a href="coverage/ports/kandla.html">50. Kandla Port</a></li>
+                                <li><a href="coverage/ports/chennai.html">51. Chennai Port</a></li>
+                                <li><a href="coverage/ports/ennore.html">52. Ennore Port</a></li>
+                                <li><a href="coverage/ports/tuticorin.html">53. Tuticorin Port</a></li>
+                                <li><a href="coverage/ports/kolkata.html">54. Kolkata Port</a></li>
+                                <li><a href="coverage/ports/vizag.html">55. Vizag Port</a></li>
+                                <li><a href="coverage/ports/kochi.html">56. Kochi Port</a></li>
+                            </ul>
+                        </div>
+                        <!-- Maps & Borders (Pages 57-65) -->
+                        <div class="dropdown-category">
+                            <h4>MAPS & BORDERS</h4>
+                            <ul>
+                                <li><a href="coverage/map.html">57. Interactive Map</a></li>
+                                <li><a href="coverage/borders.html">58. Border Crossings</a></li>
+                                <li><a href="borders/petrapole.html">59. Petrapole Crossing</a></li>
+                                <li><a href="borders/attari.html">60. Attari Crossing</a></li>
+                                <li><a href="borders/raxaul.html">61. Raxaul Crossing</a></li>
+                                <li><a href="borders/sunauli.html">62. Sunauli Crossing</a></li>
+                                <li><a href="borders/jogbani.html">63. Jogbani Crossing</a></li>
+                                <li><a href="borders/moreh.html">64. Moreh Crossing</a></li>
+                                <li><a href="coverage/full-map.html">65. Full Coverage Map</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-item"><a href="contact.html" class="contact-btn">Contact</a></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== PAGE HEADER (Expansive - No max-width) ===== -->
+    <div class="page-header">
+        <div class="page-header-content" style="padding: 0 24px;">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / Coverage
+            </div>
+            <h1>Our Coverage Area</h1>
+            <p>Information about ports, border crossings, and distribution centers we plan to serve upon our 2026 launch. All details are subject to change as we finalize our network planning.</p>
+        </div>
+    </div>
+
+    <!-- ===== EXPANSIVE BODY CONTENT ===== -->
+
+    <!-- Coverage Status Note -->
+    <div style="padding: 0 24px;">
+        <div class="coverage-status">
+            <p><i class="fas fa-info-circle"></i> Coverage network is in planning phase. Specific locations and operational dates will be confirmed as we approach launch. Contact us for specific route inquiries.</p>
+        </div>
+    </div>
+
+    <!-- Interactive Map -->
+    <div class="full-width-section">
+        <h2 class="section-title" style="padding: 0 24px;">Planned Coverage Map</h2>
+        <p class="section-subtitle" style="padding: 0 24px;">Interactive map showing our planned locations. <a href="coverage/map.html">View full interactive map (Page 57)</a></p>
+        
+        <div class="map-placeholder" style="width: calc(100% - 48px); margin-left: 24px; margin-right: 24px;">
+            <!-- Mumbai -->
+            <div class="map-marker" style="top: 55%; left: 30%;">
+                <span class="marker-label">Mumbai (HQ)</span>
+            </div>
+            <!-- Delhi -->
+            <div class="map-marker" style="top: 30%; left: 35%;">
+                <span class="marker-label">Delhi NCR</span>
+            </div>
+            <!-- Chennai -->
+            <div class="map-marker" style="top: 75%; left: 35%;">
+                <span class="marker-label">Chennai</span>
+            </div>
+            <!-- Kolkata -->
+            <div class="map-marker" style="top: 45%; left: 55%;">
+                <span class="marker-label">Kolkata</span>
+            </div>
+            <!-- Mundra -->
+            <div class="map-marker" style="top: 40%; left: 20%;">
+                <span class="marker-label">Mundra</span>
+            </div>
+            <!-- Petrapole -->
+            <div class="map-marker" style="top: 42%; left: 58%;">
+                <span class="marker-label">Petrapole</span>
+            </div>
+            <div style="position: absolute; bottom: 20px; right: 20px; background: white; padding: 8px 16px; border-radius: 4px; font-size: 14px;">
+                <i class="fas fa-map-marker-alt" style="color: #1e3a8a;"></i> 21 coverage pages available
+            </div>
+        </div>
+    </div>
+
+    <!-- Distribution Centers & Network (Pages 45-47) -->
+    <div class="full-width-section">
+        <h2 class="section-title" style="padding: 0 24px;">Distribution Centers & Network</h2>
+        <p class="section-subtitle" style="padding: 0 24px;">Major distribution centers and rail connections we plan to serve.</p>
+
+        <div class="grid-4" style="padding: 0 24px;">
+            <!-- Page 45 -->
+            <div class="region-card">
+                <h3><a href="coverage/distribution-centers.html">Major Distribution Centers</a></h3>
+                <p>Planned service to major distribution centers across India including Mumbai, Delhi NCR, Chennai, Kolkata, Bengaluru, Hyderabad, and Pune.</p>
+                <span class="status-tag">Page 45</span>
+                <a href="coverage/distribution-centers.html" class="region-link">View Details <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Page 46 -->
+            <div class="region-card">
+                <h3><a href="coverage/rail-ramps.html">Rail Ramp Connections</a></h3>
+                <p>Connectivity to major rail ramps for intermodal transportation including CONCOR, CWC, and private rail terminals.</p>
+                <span class="status-tag">Page 46</span>
+                <a href="coverage/rail-ramps.html" class="region-link">View Details <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Page 47 -->
+            <div class="region-card">
+                <h3><a href="coverage/pan-india.html">Pan-India Coverage</a></h3>
+                <p>Our phased plan for building pan-India coverage starting with major metros and expanding to Tier 2 and Tier 3 cities.</p>
+                <span class="status-tag">Page 47</span>
+                <a href="coverage/pan-india.html" class="region-link">View Details <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Placeholder for visual balance - could be removed -->
+            <div class="region-card" style="background: transparent; border: 1px dashed #e0e0e0;">
+                <h3 style="color: #4a4a4a;">More Coming Soon</h3>
+                <p>Additional distribution centers will be added as we expand our network.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ports Section (Pages 48-56) -->
+    <div class="full-width-section">
+        <h2 class="section-title" style="padding: 0 24px;">Ports</h2>
+        <p class="section-subtitle" style="padding: 0 24px;">Major Indian ports we plan to serve for import/export operations.</p>
+
+        <!-- West Coast Ports -->
+        <h3 class="category-header" style="padding: 0 24px;">West Coast</h3>
+        <div class="grid-4" style="padding: 0 24px; margin-bottom: 40px;">
+            <!-- Page 48 -->
+            <div class="port-card">
+                <h4><a href="coverage/ports/mundra.html">Mundra Port</a></h4>
+                <div class="location">Gujarat</div>
+                <p>India's largest private port. Planned services for containerized and bulk cargo.</p>
+                <span class="status-tag">Page 48</span>
+                <a href="coverage/ports/mundra.html" class="region-link">Details</a>
+            </div>
+            
+            <!-- Page 49 -->
+            <div class="port-card">
+                <h4><a href="coverage/ports/nhava-sheva.html">Nhava Sheva Port</a></h4>
+                <div class="location">Maharashtra (JNPT)</div>
+                <p>India's largest container port. Planned services for import/export containers.</p>
+                <span class="status-tag">Page 49</span>
+                <a href="coverage/ports/nhava-sheva.html" class="region-link">Details</a>
+            </div>
+            
+            <!-- Page 50 -->
+            <div class="port-card">
+                <h4><a href="coverage/ports/kandla.html">Kandla Port</a></h4>
+                <div class="location">Gujarat</div>
+                <p>Major port handling bulk, break-bulk, and containerized cargo.</p>
+                <span class="status-tag">Page 50</span>
+                <a href="coverage/ports/kandla.html" class="region-link">Details</a>
+            </div>
+
+            <!-- Placeholder -->
+            <div class="port-card" style="background: #f9f9f9;">
+                <h4 style="color: #4a4a4a;">Additional Ports</h4>
+                <div class="location">Coming 2026</div>
+                <p>More west coast ports to be announced.</p>
+            </div>
+        </div>
+
+        <!-- East Coast Ports -->
+        <h3 class="category-header" style="padding: 0 24px;">East Coast</h3>
+        <div class="grid-4" style="padding: 0 24px; margin-bottom: 40px;">
+            <!-- Page 51 -->
+            <div class="port-card">
+                <h4><a href="coverage/ports/chennai.html">Chennai Port</a></h4>
+                <div class="location">Tamil Nadu</div>
+                <p>Major port on the east coast handling containers, vehicles, and bulk cargo.</p>
+                <span class="status-tag">Page 51</span>
+                <a href="coverage/ports/chennai.html" class="region-link">Details</a>
+            </div>
+            
+            <!-- Page 52 -->
+            <div class="port-card">
+                <h4><a href="coverage/ports/ennore.html">Ennore Port</a></h4>
+                <div class="location">Tamil Nadu (Kamarajar)</div>
+                <p>Port handling coal, iron ore, and other bulk commodities.</p>
+                <span class="status-tag">Page 52</span>
+                <a href="coverage/ports/ennore.html" class="region-link">Details</a>
+            </div>
+            
+            <!-- Page 53 -->
+            <div class="port-card">
+                <h4><a href="coverage/ports/tuticorin.html">Tuticorin Port</a></h4>
+                <div class="location">Tamil Nadu (V.O. Chidambaranar)</div>
+                <p>Port serving southern India with container and bulk cargo facilities.</p>
+                <span class="status-tag">Page 53</span>
+                <a href="coverage/ports/tuticorin.html" class="region-link">Details</a>
+            </div>
+
+            <!-- Placeholder -->
+            <div class="port-card" style="background: #f9f9f9;">
+                <h4 style="color: #4a4a4a;">Additional Ports</h4>
+                <div class="location">Coming 2026</div>
+                <p>More east coast ports to be announced.</p>
+            </div>
+        </div>
+
+        <!-- Eastern & Southern Ports -->
+        <h3 class="category-header" style="padding: 0 24px;">Eastern & Southern</h3>
+        <div class="grid-4" style="padding: 0 24px;">
+            <!-- Page 54 -->
+            <div class="port-card">
+                <h4><a href="coverage/ports/kolkata.html">Kolkata Port</a></h4>
+                <div class="location">West Bengal</div>
+                <p>Major port serving eastern India and landlocked Nepal.</p>
+                <span class="status-tag">Page 54</span>
+                <a href="coverage/ports/kolkata.html" class="region-link">Details</a>
+            </div>
+            
+            <!-- Page 55 -->
+            <div class="port-card">
+                <h4><a href="coverage/ports/vizag.html">Vizag Port</a></h4>
+                <div class="location">Andhra Pradesh</div>
+                <p>Port handling iron ore, coal, and other bulk commodities.</p>
+                <span class="status-tag">Page 55</span>
+                <a href="coverage/ports/vizag.html" class="region-link">Details</a>
+            </div>
+            
+            <!-- Page 56 -->
+            <div class="port-card">
+                <h4><a href="coverage/ports/kochi.html">Kochi Port</a></h4>
+                <div class="location">Kerala</div>
+                <p>Major port on the west coast handling containers and bulk cargo.</p>
+                <span class="status-tag">Page 56</span>
+                <a href="coverage/ports/kochi.html" class="region-link">Details</a>
+            </div>
+
+            <!-- Placeholder -->
+            <div class="port-card" style="background: #f9f9f9;">
+                <h4 style="color: #4a4a4a;">Additional Ports</h4>
+                <div class="location">Coming 2026</div>
+                <p>More ports to be announced.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Border Crossings Section (Pages 58-64) -->
+    <div class="full-width-section">
+        <h2 class="section-title" style="padding: 0 24px;">Border Crossings</h2>
+        <p class="section-subtitle" style="padding: 0 24px;">Planned services for India-Nepal and India-Bangladesh border crossings.</p>
+
+        <!-- Page 58 - Border Crossings Overview -->
+        <div style="padding: 0 24px; margin-bottom: 32px;">
+            <div style="background: white; padding: 24px; border-radius: 4px; border: 1px solid #e0e0e0;">
+                <h3 style="font-size: 20px; margin-bottom: 8px;"><a href="coverage/borders.html">Border Crossings Overview</a></h3>
+                <p>Overview of all India-Nepal and India-Bangladesh border crossings we plan to serve.</p>
+                <span class="status-tag">Page 58</span>
+                <a href="coverage/borders.html" class="region-link">View Details <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="grid-4" style="padding: 0 24px;">
+            <!-- Page 59 -->
+            <div class="border-card">
+                <h4><a href="borders/petrapole.html">Petrapole Crossing</a></h4>
+                <div class="route">India-Bangladesh</div>
+                <p>West Bengal - Largest land port for India-Bangladesh trade.</p>
+                <span class="status-tag">Page 59</span>
+                <a href="borders/petrapole.html" class="region-link">Details</a>
+            </div>
+
+            <!-- Page 60 -->
+            <div class="border-card">
+                <h4><a href="borders/attari.html">Attari Crossing</a></h4>
+                <div class="route">India-Pakistan</div>
+                <p>Punjab - Major land route for trade with Pakistan and Afghanistan.</p>
+                <span class="status-tag">Page 60</span>
+                <a href="borders/attari.html" class="region-link">Details</a>
+            </div>
+
+            <!-- Page 61 -->
+            <div class="border-card">
+                <h4><a href="borders/raxaul.html">Raxaul Crossing</a></h4>
+                <div class="route">India-Nepal</div>
+                <p>Bihar - Major trade route between India and Nepal.</p>
+                <span class="status-tag">Page 61</span>
+                <a href="borders/raxaul.html" class="region-link">Details</a>
+            </div>
+
+            <!-- Page 62 -->
+            <div class="border-card">
+                <h4><a href="borders/sunauli.html">Sunauli Crossing</a></h4>
+                <div class="route">India-Nepal</div>
+                <p>Uttar Pradesh - Important border crossing for India-Nepal trade.</p>
+                <span class="status-tag">Page 62</span>
+                <a href="borders/sunauli.html" class="region-link">Details</a>
+            </div>
+
+            <!-- Page 63 -->
+            <div class="border-card">
+                <h4><a href="borders/jogbani.html">Jogbani Crossing</a></h4>
+                <div class="route">India-Nepal</div>
+                <p>Bihar - Border crossing serving eastern Nepal.</p>
+                <span class="status-tag">Page 63</span>
+                <a href="borders/jogbani.html" class="region-link">Details</a>
+            </div>
+
+            <!-- Page 64 -->
+            <div class="border-card">
+                <h4><a href="borders/moreh.html">Moreh Crossing</a></h4>
+                <div class="route">India-Myanmar</div>
+                <p>Manipur - Key border for India's Act East Policy.</p>
+                <span class="status-tag">Page 64</span>
+                <a href="borders/moreh.html" class="region-link">Details</a>
+            </div>
+
+            <!-- Placeholders -->
+            <div class="border-card" style="background: #f9f9f9;">
+                <h4 style="color: #4a4a4a;">Additional Crossings</h4>
+                <div class="route">Coming 2026</div>
+                <p>More border crossings to be announced.</p>
+            </div>
+
+            <div class="border-card" style="background: #f9f9f9;">
+                <h4 style="color: #4a4a4a;">Additional Crossings</h4>
+                <div class="route">Coming 2026</div>
+                <p>More border crossings to be announced.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Full Map Section - Page 65 -->
+    <div class="full-width-section">
+        <h2 class="section-title" style="padding: 0 24px;">Full Coverage Map</h2>
+        <p class="section-subtitle" style="padding: 0 24px;">Complete interactive map with all planned locations.</p>
+
+        <div style="padding: 0 24px;">
+            <div style="background: white; padding: 32px; border-radius: 4px; border: 1px solid #e0e0e0;">
+                <div class="grid-2" style="gap: 40px;">
+                    <div>
+                        <h3 style="font-size: 24px; margin-bottom: 16px;">Interactive Map</h3>
+                        <p style="margin-bottom: 20px;">View all planned ports, border crossings, and distribution centers on our interactive map. Filter by location type and get detailed information about each site.</p>
+                        <span class="status-tag" style="margin-right: 16px;">Page 65</span>
+                        <a href="coverage/full-map.html" class="btn btn-primary">Open Full Map</a>
+                    </div>
+                    <div style="background: #f0f4ff; padding: 24px; border-radius: 4px;">
+                        <p><i class="fas fa-map-marked-alt" style="color: #1e3a8a; font-size: 32px; margin-bottom: 16px;"></i></p>
+                        <p><strong>Total Locations:</strong> 25+ planned</p>
+                        <p><strong>Ports:</strong> 9</p>
+                        <p><strong>Border Crossings:</strong> 6</p>
+                        <p><strong>Distribution Centers:</strong> 10+</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page List Section - All 21 Pages -->
+    <div class="page-list-section">
+        <div style="padding: 0 24px;">
+            <h2 class="section-title">Coverage Information Pages</h2>
+            <p class="section-subtitle">All 21 coverage-related pages are linked below. Click any link to visit that page (pages under development will be available soon).</p>
+
+            <div class="page-list-grid">
+                <!-- Network Pages (45-47) -->
+                <div class="page-list-card">
+                    <h4>Network (45-47)</h4>
+                    <ul>
+                        <li><a href="coverage/distribution-centers.html">45. Major Distribution Centers</a></li>
+                        <li><a href="coverage/rail-ramps.html">46. Rail Ramp Connections</a></li>
+                        <li><a href="coverage/pan-india.html">47. Pan-India Coverage</a></li>
+                    </ul>
+                </div>
+
+                <!-- Ports (48-56) -->
+                <div class="page-list-card">
+                    <h4>Ports (48-56)</h4>
+                    <ul>
+                        <li><a href="coverage/ports/mundra.html">48. Mundra Port</a></li>
+                        <li><a href="coverage/ports/nhava-sheva.html">49. Nhava Sheva Port</a></li>
+                        <li><a href="coverage/ports/kandla.html">50. Kandla Port</a></li>
+                        <li><a href="coverage/ports/chennai.html">51. Chennai Port</a></li>
+                        <li><a href="coverage/ports/ennore.html">52. Ennore Port</a></li>
+                        <li><a href="coverage/ports/tuticorin.html">53. Tuticorin Port</a></li>
+                        <li><a href="coverage/ports/kolkata.html">54. Kolkata Port</a></li>
+                        <li><a href="coverage/ports/vizag.html">55. Vizag Port</a></li>
+                        <li><a href="coverage/ports/kochi.html">56. Kochi Port</a></li>
+                    </ul>
+                </div>
+
+                <!-- Maps & Borders (57-65) -->
+                <div class="page-list-card">
+                    <h4>Maps & Borders (57-65)</h4>
+                    <ul>
+                        <li><a href="coverage/map.html">57. Interactive Map</a></li>
+                        <li><a href="coverage/borders.html">58. Border Crossings</a></li>
+                        <li><a href="borders/petrapole.html">59. Petrapole Crossing</a></li>
+                        <li><a href="borders/attari.html">60. Attari Crossing</a></li>
+                        <li><a href="borders/raxaul.html">61. Raxaul Crossing</a></li>
+                        <li><a href="borders/sunauli.html">62. Sunauli Crossing</a></li>
+                        <li><a href="borders/jogbani.html">63. Jogbani Crossing</a></li>
+                        <li><a href="borders/moreh.html">64. Moreh Crossing</a></li>
+                        <li><a href="coverage/full-map.html">65. Full Coverage Map</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="margin-top: 32px; padding: 20px; background: white; border-radius: 4px;">
+                <p style="font-weight: 500;">Total Coverage Pages: <strong style="color: #1e3a8a;">21 pages</strong> (Pages 45-65 from your complete list)</p>
+                <p style="font-size: 14px; color: #4a4a4a; margin-top: 8px;">Individual pages are under development. Clicking links will show placeholder content until pages are created.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== EXPANSIVE CTA SECTION ===== -->
+    <div class="cta-section">
+        <div style="padding: 0 24px;">
+            <h2>Need coverage in a specific location?</h2>
+            <p>Let us know what routes or locations you need - we'll factor it into our network planning.</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-white">Contact Us</a>
+                <a href="coverage/full-map.html" class="btn btn-outline-white">View Full Map (Page 65)</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== CONTAINED FOOTER (1280px center) ===== -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-col">
+                    <h4>KOSHIV</h4>
+                    <ul>
+                        <li>Technology and Logistics Pvt Ltd</li>
+                        <li>Launching 2026</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="fleet.html">Fleet</a></li>
+                        <li><a href="coverage.html">Coverage</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Coverage</h4>
+                    <ul>
+                        <li><a href="coverage/ports/mundra.html">Mundra Port (48)</a></li>
+                        <li><a href="coverage/ports/nhava-sheva.html">Nhava Sheva (49)</a></li>
+                        <li><a href="coverage/ports/chennai.html">Chennai Port (51)</a></li>
+                        <li><a href="borders/petrapole.html">Petrapole (59)</a></li>
+                        <li><a href="coverage/full-map.html">Full Map (65)</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@koshiv.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Mumbai, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                © 2026 Koshiv Technology and Logistics Pvt Ltd. All rights reserved. | Coverage Pages 45-65
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-toggle').addEventListener('click', function() {
+            alert('Mobile menu would open here - navigation links: Home, About, Services, Fleet, Coverage, Contact');
+        });
+
+        console.log('Coverage Overview page loaded - All 21 coverage pages (45-65) are linked correctly');
+    </script>
+</body>
+</html>

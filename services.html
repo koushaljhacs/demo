@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Overview - Koshiv Technology and Logistics Pvt Ltd</title>
+    <meta name="description" content="Overview of import, export, cross-border and specialized logistics services planned by Koshiv Technology and Logistics. Launching 2026.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <style>
+        /* ===== RESET & BASE STYLES ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #1a1a1a;
+            background-color: #ffffff;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* FULL WIDTH CONTAINER for Body Content */
+        .container {
+            width: 100%;
+            max-width: 100%;
+            padding: 0 40px;
+            margin: 0;
+        }
+
+        .section-title {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+            text-align: left;
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            color: #4a4a4a;
+            margin-bottom: 48px;
+            text-align: left;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            font-weight: 500;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: center;
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: #1e3a8a;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #1e3a8a;
+            opacity: 0.9;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 1px solid #1e3a8a;
+            color: #1e3a8a;
+        }
+
+        .btn-outline:hover {
+            background-color: #f0f4ff;
+        }
+
+        /* ===== PRE-HEADER - EDGE TO EDGE ===== */
+        .pre-header {
+            background-color: #f8f8f8;
+            padding: 8px 0;
+            font-size: 14px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .pre-header-content {
+            width: 100%;
+            padding: 0 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .pre-header-left {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .pre-header-left a {
+            color: #1e3a8a;
+        }
+
+        .pre-header-left span {
+            color: #4a4a4a;
+        }
+
+        .pre-header-right {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .login-links {
+            display: flex;
+            gap: 16px;
+        }
+
+        .login-links a {
+            color: #4a4a4a;
+        }
+
+        .login-links a:hover {
+            color: #1e3a8a;
+        }
+
+        /* ===== MAIN NAVIGATION - EDGE TO EDGE ===== */
+        .main-nav {
+            background-color: white;
+            padding: 16px 0;
+            border-bottom: 1px solid #e0e0e0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            width: 100%;
+            padding: 0 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .logo span {
+            font-size: 14px;
+            font-weight: 400;
+            color: #4a4a4a;
+            margin-left: 8px;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+
+        .nav-item {
+            font-weight: 500;
+            position: relative;
+        }
+
+        .nav-item a {
+            color: #1a1a1a;
+        }
+
+        .nav-item a:hover {
+            color: #1e3a8a;
+        }
+
+        .nav-item.active a {
+            color: #1e3a8a;
+            font-weight: 600;
+        }
+
+        .contact-btn {
+            background-color: #1e3a8a;
+            color: white !important;
+            padding: 8px 20px;
+            border-radius: 4px;
+        }
+
+        .contact-btn:hover {
+            background-color: #1e3a8a;
+            opacity: 0.9;
+        }
+
+        .mobile-toggle {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* ===== EXPANDED DROPDOWN MENU - ALL 26 SERVICES ===== */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background-color: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            padding: 20px;
+            width: 700px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: none;
+            z-index: 1000;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: grid;
+        }
+
+        .dropdown-category {
+            margin-bottom: 12px;
+        }
+
+        .dropdown-category h4 {
+            color: #1e3a8a;
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .dropdown-category ul li {
+            margin-bottom: 6px;
+        }
+
+        .dropdown-category ul li a {
+            color: #4a4a4a;
+            font-size: 13px;
+        }
+
+        .dropdown-category ul li a:hover {
+            color: #1e3a8a;
+        }
+
+        /* ===== PAGE HEADER ===== */
+        .page-header {
+            background-color: #f8f8f8;
+            padding: 60px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .page-header-content {
+            width: 100%;
+            padding: 0 40px;
+            text-align: left;
+        }
+
+        .page-header h1 {
+            font-size: 48px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .page-header p {
+            font-size: 20px;
+            color: #4a4a4a;
+            max-width: 1000px;
+        }
+
+        .breadcrumb {
+            margin-bottom: 16px;
+            color: #4a4a4a;
+            font-size: 14px;
+        }
+
+        .breadcrumb a {
+            color: #1e3a8a;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== STATUS LEGEND - FIXED TO LEFT ===== */
+        .status-legend {
+            display: flex;
+            gap: 24px;
+            justify-content: flex-start;
+            margin-top: 32px;
+            flex-wrap: wrap;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .q2-badge {
+            background-color: #f0f4ff;
+            color: #1e3a8a;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .q3-badge {
+            background-color: #e6f7ff;
+            color: #0066a0;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        /* ===== SERVICE CATEGORIES OVERVIEW ===== */
+        .categories-section {
+            padding: 80px 0;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Expanded for full width */
+            gap: 24px;
+            margin-bottom: 48px;
+        }
+
+        .category-card {
+            background-color: #f8f8f8;
+            padding: 32px;
+            border-radius: 4px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .category-card h2 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #1e3a8a;
+        }
+
+        .category-card p {
+            color: #4a4a4a;
+            margin-bottom: 24px;
+            line-height: 1.6;
+            font-size: 15px;
+        }
+
+        .service-list h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .service-list ul li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .service-list ul li i {
+            color: #1e3a8a;
+            width: 20px;
+            margin-right: 12px;
+            font-size: 14px;
+            margin-top: 4px;
+        }
+
+        .status-tag {
+            display: inline-block;
+            background-color: #f0f4ff;
+            color: #1e3a8a;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 11px;
+            margin-left: 8px;
+        }
+
+        /* ===== SERVICES GRID ===== */
+        .services-section {
+            padding: 60px 0;
+            background-color: #f8f8f8;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Expanded for full width */
+            gap: 24px;
+        }
+
+        .service-card {
+            background-color: white;
+            padding: 24px;
+            border-radius: 4px;
+            border: 1px solid #e0e0e0;
+            transition: transform 0.2s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .service-card h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .service-card .category {
+            font-size: 14px;
+            color: #1e3a8a;
+            margin-bottom: 12px;
+        }
+
+        .service-card p {
+            color: #4a4a4a;
+            font-size: 14px;
+            margin-bottom: 16px;
+            line-height: 1.5;
+        }
+
+        .service-card .status {
+            font-size: 13px;
+            color: #4a4a4a;
+            border-top: 1px solid #e0e0e0;
+            padding-top: 12px;
+            margin-top: 8px;
+        }
+
+        .service-link {
+            display: inline-block;
+            margin-top: 12px;
+            color: #1e3a8a;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        /* ===== FOOTER - CENTERED LAYOUT ===== */
+        .footer {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 48px 24px 24px;
+        }
+
+        .footer-content {
+            max-width: 1280px; /* Kept centered as requested */
+            margin: 0 auto;
+        }
+
+        .footer-main {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+            margin-bottom: 32px;
+        }
+
+        .footer-col h4 {
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 8px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 24px;
+            text-align: center;
+            font-size: 14px;
+            opacity: 0.6;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1200px) {
+            .category-grid, .services-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu { display: none; }
+            .mobile-toggle { display: block; }
+            .services-grid, .category-grid { grid-template-columns: 1fr; }
+            .page-header h1 { font-size: 36px; }
+            .footer-main { grid-template-columns: repeat(2, 1fr); }
+            .pre-header-content, .nav-container, .container, .page-header-content { padding: 0 24px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- PRE-HEADER -->
+    <div class="pre-header">
+        <div class="pre-header-content">
+            <div class="pre-header-left">
+                <a href="mailto:info@koshiv.com"><i class="fas fa-envelope"></i> info@koshiv.com</a>
+                <span><i class="fas fa-building"></i> Koshiv Technology and Logistics Pvt Ltd</span>
+                <span><i class="fas fa-calendar-alt"></i> Launching 2026</span>
+                <span><i class="fas fa-file"></i> GST: In Process</span>
+            </div>
+            <div class="pre-header-right">
+                <div class="login-links">
+                    <a href="#">Client Login</a>
+                    <a href="#">Driver Login</a>
+                    <a href="#">Partner Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN NAVIGATION -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">KOSHIV<span>Technology and Logistics</span></a>
+            </div>
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="nav-menu">
+                <div class="nav-item"><a href="index.html">Home</a></div>
+                <div class="nav-item"><a href="about.html">About</a></div>
+                <div class="nav-item dropdown active">
+                    <a href="services.html">Services <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-category">
+                            <h4>IMPORT SERVICES</h4>
+                            <ul>
+                                <li><a href="services/import.html">Overview</a></li>
+                                <li><a href="services/import-solution.html">Full Import Solution</a></li>
+                                <li><a href="services/customs-clearance.html">Customs Clearance</a></li>
+                                <li><a href="services/isf-filing.html">ISF Filing</a></li>
+                                <li><a href="services/port-drayage.html">Port Drayage</a></li>
+                                <li><a href="services/transloading.html">Transloading</a></li>
+                                <li><a href="services/bonded-warehousing.html">Bonded Warehousing</a></li>
+                                <li><a href="services/fssai-compliance.html">FSSAI/Plant Quarantine</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-category">
+                            <h4>EXPORT SERVICES</h4>
+                            <ul>
+                                <li><a href="services/export.html">Overview</a></li>
+                                <li><a href="services/export-solution.html">Full Export Solution</a></li>
+                                <li><a href="services/export-documentation.html">Export Documentation</a></li>
+                                <li><a href="services/shipping-bill.html">Shipping Bill Filing</a></li>
+                                <li><a href="services/container-loading.html">Container Loading</a></li>
+                                <li><a href="services/export-packing.html">Export Packing</a></li>
+                                <li><a href="services/certificate-of-origin.html">Certificate of Origin</a></li>
+                                <li><a href="services/hazmat-export.html">Hazmat Export</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-item"><a href="fleet.html">Fleet</a></div>
+                <div class="nav-item"><a href="contact.html" class="contact-btn">Contact</a></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <div class="page-header-content">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / Services
+            </div>
+            <h1>Our Services</h1>
+            <p>Import, export, cross-border and specialized logistics services planned for 2026 launch. All information on this page is subject to update as we progress.</p>
+            
+            <div class="status-legend">
+                <div class="legend-item">
+                    <span class="q2-badge">Q2 2026</span>
+                    <span>Import, Export, Temperature-Controlled Services</span>
+                </div>
+                <div class="legend-item">
+                    <span class="q3-badge">Q3 2026</span>
+                    <span>Cross-Border, Specialized Services</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICE CATEGORIES OVERVIEW -->
+    <section class="categories-section">
+        <div class="container">
+            <h2 class="section-title">Service Categories</h2>
+            <p class="section-subtitle">We are planning to offer the following logistics services upon our 2026 launch.</p>
+
+            <div class="category-grid">
+                <!-- Import Services Category -->
+                <div class="category-card">
+                    <h2>Import Services</h2>
+                    <p>Complete solutions for importing goods into India, including customs clearance, documentation, and port transportation.</p>
+                    <div class="service-list">
+                        <ul>
+                            <li><i class="fas fa-arrow-right"></i> Full Import Solution <span class="status-tag">Planned 2026</span></li>
+                            <li><i class="fas fa-arrow-right"></i> Customs Clearance <span class="status-tag">Planned 2026</span></li>
+                            <li><i class="fas fa-arrow-right"></i> Port Drayage <span class="status-tag">Planned 2026</span></li>
+                            <li><i class="fas fa-arrow-right"></i> Bonded Warehousing <span class="status-tag">Planned 2026</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Export Services Category -->
+                <div class="category-card">
+                    <h2>Export Services</h2>
+                    <p>End-to-end export solutions including documentation, shipping bill filing, container loading and packing.</p>
+                    <div class="service-list">
+                        <ul>
+                            <li><i class="fas fa-arrow-right"></i> Full Export Solution <span class="status-tag">Planned 2026</span></li>
+                            <li><i class="fas fa-arrow-right"></i> Shipping Bill Filing <span class="status-tag">Planned 2026</span></li>
+                            <li><i class="fas fa-arrow-right"></i> Container Loading <span class="status-tag">Planned 2026</span></li>
+                            <li><i class="fas fa-arrow-right"></i> Export Packing <span class="status-tag">Planned 2026</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Cross-Border Services Category -->
+                <div class="category-card">
+                    <h2>Cross-Border Services</h2>
+                    <p>Specialized services for India-Nepal and India-Bangladesh cross-border transportation and customs coordination.</p>
+                    <div class="service-list">
+                        <ul>
+                            <li><i class="fas fa-arrow-right"></i> India-Nepal Crossings <span class="status-tag">Planned 2026</span></li>
+                            <li><i class="fas fa-arrow-right"></i> India-Bangladesh Crossings <span class="status-tag">Planned 2026</span></li>
+                            <li><i class="fas fa-arrow-right"></i> Customs Broker Coordination <span class="status-tag">Planned 2026</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Specialized Services Category -->
+                <div class="category-card">
+                    <h2>Specialized Services</h2>
+                    <p>Temperature-controlled, oversized cargo, hazardous materials, and project cargo services for specialized requirements.</p>
+                    <div class="service-list">
+                        <ul>
+                            <li><i class="fas fa-arrow-right"></i> Temperature-Controlled <span class="status-tag">Planned 2026</span></li>
+                            <li><i class="fas fa-arrow-right"></i> Oversized/Heavy Haul <span class="status-tag">Planned 2026</span></li>
+                            <li><i class="fas fa-arrow-right"></i> Project Cargo <span class="status-tag">Planned 2026</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPLETE SERVICES LIST (All 26 individual cards) -->
+    <section class="services-section">
+        <div class="container">
+            <h2 class="section-title">All Planned Services</h2>
+            <p class="section-subtitle">Complete list of services we are planning to offer upon our 2026 launch.</p>
+
+            <div class="services-grid">
+                <!-- Import Services (7) -->
+                <div class="service-card">
+                    <div class="category">Import Services</div>
+                    <h3>Full Import Solution</h3>
+                    <p>Complete end-to-end import logistics management.</p>
+                    <div class="status">Planned Q2 2026</div>
+                </div>
+                <div class="service-card">
+                    <div class="category">Import Services</div>
+                    <h3>Customs Clearance</h3>
+                    <p>Professional customs brokerage at major ports.</p>
+                    <div class="status">Planned Q2 2026</div>
+                </div>
+                <div class="service-card">
+                    <div class="category">Import Services</div>
+                    <h3>ISF Filing</h3>
+                    <p>Security filing for US-bound shipments.</p>
+                    <div class="status">Planned Q2 2026</div>
+                </div>
+                <div class="service-card">
+                    <div class="category">Import Services</div>
+                    <h3>Port Drayage</h3>
+                    <p>Container transport from port to warehouse.</p>
+                    <div class="status">Planned Q2 2026</div>
+                </div>
+                <div class="service-card">
+                    <div class="category">Import Services</div>
+                    <h3>Transloading</h3>
+                    <p>Cargo transfer between containers and trailers.</p>
+                    <div class="status">Planned Q2 2026</div>
+                </div>
+                <div class="service-card">
+                    <div class="category">Import Services</div>
+                    <h3>Bonded Warehousing</h3>
+                    <p>Secure storage under customs bond.</p>
+                    <div class="status">Planned Q2 2026</div>
+                </div>
+                <div class="service-card">
+                    <div class="category">Import Services</div>
+                    <h3>FSSAI Compliance</h3>
+                    <p>Compliance services for food products.</p>
+                    <div class="status">Planned Q2 2026</div>
+                </div>
+
+                <!-- Export Services (7) -->
+                <div class="service-card">
+                    <div class="category">Export Services</div>
+                    <h3>Full Export Solution</h3>
+                    <p>Complete management for global export.</p>
+                    <div class="status">Planned Q2 2026</div>
+                </div>
+                <div class="service-card">
+                    <div class="category">Export Services</div>
+                    <h3>Export Documentation</h3>
+                    <p>Preparation of trade and legal documents.</p>
+                    <div class="status">Planned Q2 2026</div>
+                </div>
+                <div class="service-card">
+                    <div class="category">Export Services</div>
+                    <h3>Shipping Bill Filing</h3>
+                    <p>Electronic customs filing for export.</p>
+                    <div class="status">Planned Q2 2026</div>
+                </div>
+                <div class="service-card">
+                    <div class="category">Export Services</div>
+                    <h3>Container Loading</h3>
+                    <p>Professional stuffing and bracing of cargo.</p>
+                    <div class="status">Planned Q2 2026</div>
+                </div>
+                <div class="service-card">
+                    <div class="category">Export Services</div>
+                    <h3>Export Packing</h3>
+                    <p>International standard packing and crating.</p>
+                    <div class="status">Planned Q2 2026</div>
+                </div>
+                <div class="service-card">
+                    <div class="category">Export Services</div>
+                    <h3>Certificate of Origin</h3>
+                    <p>Treaty-based COO assistance.</p>
+                    <div class="status">Planned Q2 2026</div>
+                </div>
+                <div class="service-card">
+                    <div class="category">Export Services</div>
+                    <h3>Hazmat Export</h3>
+                    <p>Hazardous material documentation.</p>
+                    <div class="status">Planned Q2 2026</div>
+                </div>
+
+                <!-- Cross-Border Services (4) -->
+                <div class="service-card">
+                    <div class="category">Cross-Border</div>
+                    <h3>India-Nepal Crossings</h3>
+                    <p>Land transport via major border land-ports.</p>
+                    <div class="status">Planned Q3 2026</div>
+                </div>
+                <div class="service-card">
+                    <div class="category">Cross-Border</div>
+                    <h3>India-Bangladesh</h3>
+                    <p>Logistics via Petrapole/Benapole corridors.</p>
+                    <div class="status">Planned Q3 2026</div>
+                </div>
+                <div class="service-card">
+                    <div class="category">Cross-Border</div>
+                    <h3>Broker Coordination</h3>
+                    <p>Multi-broker border management.</p>
+                    <div class="status">Planned Q3 2026</div>
+                </div>
+                <div class="service-card">
+                    <div class="category">Cross-Border</div>
+                    <h3>Border Wait Times</h3>
+                    <p>Congestion monitoring and transit alerts.</p>
+                    <div class="status">Planned Q3 2026</div>
+                </div>
+
+                <!-- Specialized Services (8 cards to complete grid) -->
+                <div class="service-card">
+                    <div class="category">Specialized</div>
+                    <h3>Temperature-Controlled</h3>
+                    <p>Cold-chain transport for perishables.</p>
+                    <div class="status">Planned Q2 2026</div>
+                </div>
+                <div class="service-card">
+                    <div class="category">Specialized</div>
+                    <h3>Oversized/Heavy Haul</h3>
+                    <p>Out-of-gauge machinery transport.</p>
+                    <div class="status">Planned Q3 2026</div>
+                </div>
+                <div class="service-card">
+                    <div class="category">Specialized</div>
+                    <h3>Hazardous Materials</h3>
+                    <p>Class 1-9 dangerous goods shipping.</p>
+                    <div class="status">Planned Q3 2026</div>
+                </div>
+                <div class="service-card">
+                    <div class="category">Specialized</div>
+                    <h3>Project Cargo</h3>
+                    <p>Turnkey power plant and factory moves.</p>
+                    <div class="status">Planned Q3 2026</div>
+                </div>
+            </div>
+
+            <!-- Status Note -->
+            <div class="status-note">
+                <p><i class="fas fa-info-circle"></i> All services listed on this page are planned for 2026 launch. Detailed information for each service is under development. Please check individual service pages or <a href="contact.html">contact us</a> for specific inquiries.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION - FULL WIDTH -->
+    <section class="cta-section" style="padding: 60px 0; background-color: #1e3a8a; color: white; text-align: center;">
+        <div class="container">
+            <h2>Interested in our services?</h2>
+            <p style="margin-bottom: 32px; opacity: 0.9;">Whether you're a potential client looking for logistics solutions or just want to learn more, we'd love to hear from you.</p>
+            <div class="cta-buttons" style="display: flex; gap: 16px; justify-content: center;">
+                <a href="contact.html" class="btn btn-primary" style="background: white; color: #1e3a8a;">Contact Us</a>
+                <a href="involve.html" class="btn btn-outline" style="border-color: white; color: white;">Get Involved</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER - CENTERED -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-col">
+                    <h4>KOSHIV</h4>
+                    <ul>
+                        <li>Technology and Logistics Pvt Ltd</li>
+                        <li>Launching 2026</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Service Categories</h4>
+                    <ul>
+                        <li><a href="services/import.html">Import</a></li>
+                        <li><a href="services/export.html">Export</a></li>
+                        <li><a href="services/cross-border.html">Cross-Border</a></li>
+                        <li><a href="services/specialized.html">Specialized</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@koshiv.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Mumbai, India</li>
+                        <li>GST: In Process</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                © 2026 Koshiv Technology and Logistics Pvt Ltd. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-toggle').addEventListener('click', function() {
+            alert('Mobile menu navigation: Home, About, Services, Fleet, Contact');
+        });
+    </script>
+</body>
+</html>
