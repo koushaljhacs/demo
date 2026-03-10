@@ -1,0 +1,111 @@
+# ====================================================================
+# .htaccess for Koshiv Technology and Logistics
+# ====================================================================
+# File: .htaccess
+# Author: Koushal Jha
+# Created: March 2026
+# Version: 1.0.0
+# ====================================================================
+
+# Enable rewrite engine
+RewriteEngine On
+
+# ------------------------------
+# REDIRECT NON-WWW TO WWW (Choose ONE option)
+# ------------------------------
+
+# Option 1: Force www (recommended for SEO)
+RewriteCond %{HTTP_HOST} ^koshiv.com [NC]
+RewriteRule ^(.*)$ https://www.koshiv.com/$1 [L,R=301]
+
+# Option 2: Force non-www (alternative)
+# RewriteCond %{HTTP_HOST} ^www\.koshiv\.com [NC]
+# RewriteRule ^(.*)$ https://koshiv.com/$1 [L,R=301]
+
+# ------------------------------
+# FORCE HTTPS (SSL)
+# ------------------------------
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]
+
+# ------------------------------
+# CUSTOM ERROR PAGES
+# ------------------------------
+ErrorDocument 404 /404.html
+ErrorDocument 500 /500.html
+ErrorDocument 403 /403.html
+
+# ------------------------------
+# COMPRESSION (GZIP)
+# ------------------------------
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript
+    AddOutputFilterByType DEFLATE application/javascript application/x-javascript
+    AddOutputFilterByType DEFLATE application/xml application/xml+rss
+    AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# ------------------------------
+# CACHING HEADERS
+# ------------------------------
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType text/javascript "access plus 1 month"
+    ExpiresByType text/html "access plus 1 hour"
+    ExpiresByType application/xml "access plus 1 hour"
+</IfModule>
+
+# ------------------------------
+# SECURITY HEADERS
+# ------------------------------
+<IfModule mod_headers.c>
+    # Protect against XSS attacks
+    Header set X-XSS-Protection "1; mode=block"
+    
+    # Prevent MIME-type sniffing
+    Header set X-Content-Type-Options "nosniff"
+    
+    # Prevent clickjacking
+    Header set X-Frame-Options "SAMEORIGIN"
+    
+    # Referrer policy
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# ------------------------------
+# BLOCK BAD BOTS
+# ------------------------------
+RewriteCond %{HTTP_USER_AGENT} ^.*(SemrushBot|AhrefsBot|MegaIndex|MJ12bot|BLEXBot).*$ [NC]
+RewriteRule .* - [F,L]
+
+# ------------------------------
+# URL REWRITING (Optional - for clean URLs)
+# ------------------------------
+# Example: about.html -> /about/
+# RewriteRule ^about/?$ about/about.html [L]
+# RewriteRule ^services/?$ services/services.html [L]
+# RewriteRule ^fleet/?$ fleet/fleet.html [L]
+
+# ------------------------------
+# DIRECTORY ACCESS PROTECTION
+# ------------------------------
+# Prevent directory listing
+Options -Indexes
+
+# Protect sensitive files
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+<FilesMatch "(^#.*#|\.(bak|config|dist|fla|inc|ini|log|psd|sh|sql|swp)|~)$">
+    Order allow,deny
+    Deny from all
+    Satisfy All
+</FilesMatch>

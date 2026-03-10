@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     ====================================================================
+     SITEMAP INDEX FILE
+     ====================================================================
+     File: sitemap_index.xml
+     Author: Koushal Jha
+     Created: March 2026
+     Last Modified: March 10, 2026
+     Version: 1.0.0
+     ====================================================================
+     This index file points to individual sitemaps. Currently points to main
+     sitemap.xml. Can be expanded later if site grows beyond 50,000 URLs.
+     ====================================================================
+-->
+
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Main sitemap containing all 157 core pages -->
+    <sitemap>
+        <loc>https://www.koshiv.com/sitemap.xml</loc>
+        <lastmod>2026-03-10</lastmod>
+    </sitemap>
+    
+    <!-- 
+        FUTURE EXPANSION: As the site grows, additional sitemaps can be added:
+        
+        <sitemap>
+            <loc>https://www.koshiv.com/sitemap-services.xml</loc>
+            <lastmod>2026-03-10</lastmod>
+        </sitemap>
+        
+        <sitemap>
+            <loc>https://www.koshiv.com/sitemap-blog.xml</loc>
+            <lastmod>2026-03-10</lastmod>
+        </sitemap>
+        
+        <sitemap>
+            <loc>https://www.koshiv.com/sitemap-resources.xml</loc>
+            <lastmod>2026-03-10</lastmod>
+        </sitemap>
+    -->
+</sitemapindex>

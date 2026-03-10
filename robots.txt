@@ -1,0 +1,94 @@
+# ====================================================================
+# ROBOTS.TXT for Koshiv Technology and Logistics Pvt Ltd
+# ====================================================================
+# File: robots.txt
+# Author: Koushal Jha
+# Created: March 2026
+# Last Modified: March 10, 2026
+# Version: 1.0.0
+# ====================================================================
+# This file instructs search engine crawlers which parts of the site
+# they can and cannot access. It also points to XML sitemaps.
+# ====================================================================
+
+# ------------------------------
+# User-agent: *
+# Applies to all search engines
+# ------------------------------
+User-agent: *
+Allow: /
+
+# ------------------------------
+# DISALLOW RULES
+# Block crawlers from accessing:
+# ------------------------------
+
+# Admin and system directories (if created in future)
+# Disallow: /admin/
+# Disallow: /cgi-bin/
+# Disallow: /wp-admin/           # If WordPress is used
+# Disallow: /includes/
+
+# Private or staging areas
+# Disallow: /private/
+# Disallow: /test/
+# Disallow: /temp/
+
+# Duplicate content or parameterized URLs
+# Disallow: /*?print=true
+# Disallow: /*?format=pdf
+
+# ------------------------------
+# CRAWL DELAY (Optional)
+# Helps prevent server overload
+# Note: Not all bots respect this
+# ------------------------------
+# Crawl-delay: 5
+
+# ------------------------------
+# SITEMAP LOCATIONS
+# Tells search engines where to find XML sitemaps
+# ------------------------------
+Sitemap: https://www.koshiv.com/sitemap.xml
+Sitemap: https://www.koshiv.com/sitemap_index.xml
+
+# ------------------------------
+# SPECIFIC BOT RULES (Optional)
+# ------------------------------
+
+# Googlebot specific rules
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 2
+
+# Bingbot specific rules
+User-agent: bingbot
+Allow: /
+Crawl-delay: 2
+
+# Baidu spider (Chinese search engine)
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 5
+
+# Yandex bot (Russian search engine)
+User-agent: Yandex
+Allow: /
+Crawl-delay: 2
+
+# ------------------------------
+# HOST (Optional - helps with canonical domain)
+# ------------------------------
+Host: https://www.koshiv.com
+
+# ------------------------------
+# COMMENTS FOR FUTURE MAINTENANCE
+# ------------------------------
+# Last verified: March 10, 2026
+# Total pages in sitemap: 157 core pages + 24 subdomains
+# Next review: June 2026
+#
+# TO ADD NEW DISALLOW RULES:
+# 1. Add path after "Disallow:"
+# 2. Ensure rule is under correct User-agent
+# 3. Test with Google's robots.txt tester
