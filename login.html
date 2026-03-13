@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koshiv · Sign in</title>
+    
+    <!-- Meta -->
+    <meta name="description" content="Koshiv Technology and Logistics - Universal Portal Access">
+    <meta name="author" content="Koshiv Technology and Logistics Pvt Ltd">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-bg: #050811;
+            --accent-blue: #3b82f6;
+            --accent-purple: #8b5cf6;
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --text-main: #ffffff;
+            --text-dim: rgba(255, 255, 255, 0.6);
+            --border-glow: conic-gradient(from 0deg, transparent 0%, var(--accent-blue) 25%, transparent 50%, var(--accent-purple) 75%, transparent 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--primary-bg);
+            min-height: 100vh;
+            display: flex;
+            color: var(--text-main);
+            position: relative;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* High Graphics Background Animation */
+        .bg-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: radial-gradient(circle at 0% 0%, #0c1226 0%, #050811 100%);
+        }
+
+        .orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            z-index: -1;
+            opacity: 0.4;
+            animation: orbFloat 20s infinite alternate ease-in-out;
+        }
+
+        .orb-1 { width: 400px; height: 400px; background: var(--accent-blue); top: -10%; left: -5%; }
+        .orb-2 { width: 350px; height: 350px; background: var(--accent-purple); bottom: 10%; right: 5%; animation-delay: -5s; }
+        .orb-3 { width: 300px; height: 300px; background: #1e3a8a; bottom: -5%; left: 20%; animation-delay: -10s; }
+
+        @keyframes orbFloat {
+            0% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(50px, 30px) scale(1.1); }
+            100% { transform: translate(-20px, 60px) scale(0.9); }
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            min-height: 100vh;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ===== LEFT SIDE - PREMIUM GLASS ===== */
+        .brand-side {
+            flex: 1.2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            position: relative;
+        }
+
+        .glass-card-wrapper {
+            position: relative;
+            padding: 2px;
+            border-radius: 42px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 600px;
+            width: 100%;
+            animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .glass-card-wrapper::before {
+            content: '';
+            position: absolute;
+            width: 150%;
+            height: 150%;
+            background: var(--border-glow);
+            animation: rotateBorder 6s linear infinite;
+            z-index: 0;
+        }
+
+        @keyframes rotateBorder {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .glass-card {
+            background: rgba(10, 15, 30, 0.9);
+            backdrop-filter: blur(40px) saturate(200%);
+            -webkit-backdrop-filter: blur(40px) saturate(200%);
+            border-radius: 40px;
+            padding: 60px;
+            width: 100%;
+            height: 100%;
+            box-shadow: 
+                0 25px 50px -12px rgba(0, 0, 0, 0.5),
+                inset 0 1px 1px rgba(255, 255, 255, 0.05);
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .logo-container { margin-bottom: 40px; }
+
+        .logo {
+            font-size: 52px;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            background: linear-gradient(to right, #ffffff, #94a3b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .est {
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 5px;
+            color: var(--accent-blue);
+            text-transform: uppercase;
+        }
+
+        .brand-title {
+            font-size: 46px;
+            font-weight: 700;
+            line-height: 1.1;
+            margin: 25px 0;
+            height: 105px; 
+            background: linear-gradient(135deg, #fff 0%, rgba(255,255,255,0.7) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .brand-description {
+            font-size: 17px;
+            line-height: 1.6;
+            color: var(--text-dim);
+            margin-bottom: 50px;
+            font-weight: 400;
+            min-height: 80px; 
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 40px;
+        }
+
+        .stat-item { padding: 15px 0; }
+
+        .stat-number {
+            font-size: 32px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 4px;
+        }
+
+        .stat-label {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent-blue);
+        }
+
+        .company-info {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid var(--glass-border);
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.4);
+            line-height: 1.8;
+        }
+
+        /* ===== RIGHT SIDE - LOGIN ===== */
+        .login-side {
+            flex: 0.85;
+            background: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            position: relative;
+            clip-path: polygon(8% 0, 100% 0, 100% 100%, 0 100%);
+            box-shadow: -20px 0 50px rgba(0,0,0,0.2);
+        }
+
+        .login-container {
+            max-width: 400px;
+            width: 100%;
+            animation: slideInRight 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        @keyframes slideInRight {
+            from { opacity: 0; transform: translateX(40px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        .login-header h1 {
+            font-size: 34px;
+            font-weight: 700;
+            color: #0f172a;
+            letter-spacing: -0.02em;
+        }
+
+        .login-header p {
+            font-size: 15px;
+            color: #64748b;
+            margin-top: 8px;
+            margin-bottom: 40px;
+        }
+
+        .form-group { margin-bottom: 24px; }
+        .form-group label {
+            display: block;
+            font-size: 12px;
+            font-weight: 700;
+            color: #475569;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .input-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .input-wrapper i:not(.pw-icon) {
+            position: absolute;
+            left: 16px;
+            color: #94a3b8;
+            transition: color 0.3s;
+        }
+
+        .input-wrapper input {
+            width: 100%;
+            padding: 16px 16px 16px 48px;
+            border: 2px solid #e2e8f0;
+            border-radius: 16px;
+            font-family: inherit;
+            font-size: 15px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            color: #1e293b;
+            background: #fff;
+        }
+
+        .input-wrapper input:focus {
+            outline: none;
+            border-color: transparent;
+            background: #fff;
+            box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--accent-blue);
+        }
+
+        /* Improved CAPTCHA Section */
+        .captcha-section {
+            background: #f8fafc;
+            border-radius: 20px;
+            padding: 24px;
+            margin: 30px 0;
+            border: 1px dashed #cbd5e1;
+            position: relative;
+        }
+
+        .captcha-box-container {
+            position: relative;
+            margin-bottom: 16px;
+        }
+
+        .captcha-box {
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 18px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 30px;
+            font-weight: 800;
+            letter-spacing: 8px;
+            text-align: center;
+            /* Correct centering for letter-spacing */
+            text-indent: 8px; 
+            color: #0f172a;
+            border: 2px solid #e2e8f0;
+            user-select: none;
+            cursor: pointer;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .captcha-box:hover {
+            border-color: var(--accent-blue);
+            background: #f1f5f9;
+        }
+
+        .captcha-refresh-hint {
+            display: block;
+            text-align: center;
+            font-size: 11px;
+            color: #94a3b8;
+            margin-top: 8px;
+            font-weight: 500;
+        }
+
+        .captcha-input {
+            width: 100%;
+            padding: 16px;
+            border: 2px solid #e2e8f0;
+            border-radius: 16px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 15px;
+            transition: all 0.3s;
+            color: #0f172a;
+            letter-spacing: 2px;
+        }
+        
+        .captcha-input:focus {
+            outline: none;
+            border-color: var(--accent-blue);
+            background: #fff;
+            box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 18px;
+            background: #0f172a;
+            color: #fff;
+            border: none;
+            border-radius: 16px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            box-shadow: 0 10px 15px -3px rgba(15, 23, 42, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-submit:hover {
+            transform: translateY(-2px);
+            background: #1e293b;
+            box-shadow: 0 20px 25px -5px rgba(15, 23, 42, 0.2);
+        }
+
+        .login-links {
+            margin-top: 30px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .login-links a {
+            color: #64748b;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .error {
+            display: none;
+            background: #fef2f2;
+            border: 1px solid #fee2e2;
+            color: #dc2626;
+            padding: 14px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            animation: shake 0.4s ease-in-out;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+        }
+
+        @media (max-width: 900px) {
+            .container { flex-direction: column; }
+            .brand-side { padding: 60px 20px; order: 1; }
+            .login-side { padding: 60px 20px; order: 2; clip-path: none; }
+            .glass-card-wrapper { max-width: 95%; margin: 0 auto; }
+            .glass-card { padding: 40px 25px; }
+            .brand-title { font-size: 32px; height: auto; }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-canvas"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="container">
+        <!-- LEFT SIDE -->
+        <div class="brand-side">
+            <div class="glass-card-wrapper">
+                <div class="glass-card">
+                    <div class="logo-container">
+                        <span class="logo">KOSHIV</span>
+                        <div class="est">EST. 2026</div>
+                    </div>
+                    
+                    <div class="brand-title" id="typewriter-title"></div>
+                    
+                    <div class="brand-description" id="typewriter-desc"></div>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">22+</div>
+                            <div class="stat-label">CITIES</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">7</div>
+                            <div class="stat-label">PORTS</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">6</div>
+                            <div class="stat-label">BORDERS</div>
+                        </div>
+                    </div>
+                    
+                    <div class="company-info">
+                        <strong>Koshiv Technology and Logistics Pvt Ltd</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="login-side">
+            <div class="login-container">
+                <div class="login-header">
+                    <h1>Welcome back</h1>
+                    <p>Sign in to access your dashboard</p>
+                </div>
+
+                <div class="error" id="errorMessage">
+                    <i class="fas fa-circle-exclamation" style="margin-right: 8px"></i>
+                    <span id="errorText">Invalid username or password</span>
+                </div>
+
+                <form id="loginForm" action="#" method="post">
+                    <div class="form-group">
+                        <label>Username</label>
+                        <div class="input-wrapper">
+                            <i class="far fa-user"></i>
+                            <input type="text" name="username" placeholder="Enter your username" autocomplete="username">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Password</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" name="password" id="password" placeholder="··········" autocomplete="current-password">
+                            <button type="button" class="password-toggle" onclick="togglePassword()" style="position: absolute; right: 16px; background: none; border: none; color: #94a3b8; cursor: pointer;">
+                                <i class="far fa-eye pw-icon" id="pwIcon"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Verified Code Box (CAPTCHA) -->
+                    <div class="captcha-section">
+                        <label style="display:block; font-size:12px; font-weight:700; color:#475569; margin-bottom:12px; text-transform:uppercase; letter-spacing:0.05em;">Security Verification</label>
+                        <div class="captcha-box-container">
+                            <div class="captcha-box" id="captchaDisplay" title="Click to refresh">
+                                <!-- JS Populated -->
+                            </div>
+                            <span class="captcha-refresh-hint"><i class="fas fa-sync-alt" style="margin-right:5px"></i> Click the code to refresh</span>
+                        </div>
+                        <input type="text" class="captcha-input" id="captchaInput" placeholder="Enter security code" maxlength="5">
+                    </div>
+
+                    <button type="submit" class="btn-submit" id="submitBtn">
+                        <span>Sign In</span>
+                    </button>
+
+                    <input type="hidden" name="csrf_token" value="placeholder">
+                </form>
+
+                <div class="login-links">
+                    <a href="#">Forgot password?</a>
+                    <a href="#">Need help?</a>
+                    <a href="index.html">Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const titleText = "Technology Driven\nLogistics Solutions";
+        const descText = "Integrated platform for clients, drivers, and partners. Real-time tracking, transparent pricing, and modern fleet across India's major logistics corridors.";
+
+        async function typewriterEffect(elementId, text, speed = 50) {
+            const element = document.getElementById(elementId);
+            element.innerHTML = '';
+            
+            let i = 0;
+            const lines = text.split('\n');
+            
+            for (let line of lines) {
+                for (let char of line) {
+                    element.insertAdjacentText('beforeend', char);
+                    await new Promise(resolve => setTimeout(resolve, speed));
+                }
+                if (lines.indexOf(line) < lines.length - 1) {
+                    element.insertAdjacentHTML('beforeend', '<br>');
+                }
+            }
+        }
+
+        window.onload = async () => {
+            await typewriterEffect('typewriter-title', titleText, 60);
+            await typewriterEffect('typewriter-desc', descText, 25);
+        };
+
+        function togglePassword() {
+            const pw = document.getElementById('password');
+            const icon = document.getElementById('pwIcon');
+            if (pw.type === 'password') {
+                pw.type = 'text';
+                icon.className = 'far fa-eye-slash pw-icon';
+            } else {
+                pw.type = 'password';
+                icon.className = 'far fa-eye pw-icon';
+            }
+        }
+
+        function generateCaptcha() {
+            const chars = '23456789ABCDEFGHJKLMNPQRSTUVWXYZ';
+            let captcha = '';
+            for (let i = 0; i < 5; i++) {
+                captcha += chars[Math.floor(Math.random() * chars.length)];
+            }
+            return captcha;
+        }
+
+        let currentCaptcha = generateCaptcha();
+        const display = document.getElementById('captchaDisplay');
+        display.textContent = currentCaptcha;
+
+        display.addEventListener('click', () => {
+            currentCaptcha = generateCaptcha();
+            display.textContent = currentCaptcha;
+            document.getElementById('captchaInput').value = '';
+        });
+
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const username = this.username.value;
+            const password = this.password.value;
+            const cInput = document.getElementById('captchaInput').value;
+            const err = document.getElementById('errorMessage');
+            const btn = document.getElementById('submitBtn');
+
+            err.style.display = 'none';
+
+            if (!username || !password) {
+                document.getElementById('errorText').textContent = "Please enter username and password";
+                err.style.display = 'block';
+                return;
+            }
+
+            if (cInput.toUpperCase() !== currentCaptcha) {
+                document.getElementById('errorText').textContent = "Invalid security code";
+                err.style.display = 'block';
+                // Auto-refresh captcha on failure
+                currentCaptcha = generateCaptcha();
+                display.textContent = currentCaptcha;
+                document.getElementById('captchaInput').value = '';
+                return;
+            }
+
+            btn.innerHTML = '<i class="fas fa-circle-notch fa-spin"></i> Authenticating...';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                window.location.href = 'dashboard.html';
+            }, 1500);
+        });
+    </script>
+</body>
+</html>
