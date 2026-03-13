@@ -3,30 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Koshiv Logistics - Import/Export Trucking | Launching 2026 | Mumbai</title>
+    <title>Koshiv Technology and Logistics | Launching 2026</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Koshiv Logistics launches in 2026. Import/export trucking services with modern fleet, real-time tracking, and transparent pricing. Founded by a 3rd year B.Tech CSE student from Mumbai.">
+    <meta name="description" content="Koshiv Technology and Logistics launches in 2026. Import/export trucking services with modern fleet, real-time tracking, and transparent pricing.">
     <meta name="keywords" content="logistics, trucking, import export, Mumbai, India, freight, transportation, cargo, shipping">
-    <meta name="author" content="Koshiv Logistics">
+    <meta name="author" content="Koshiv Technology and Logistics">
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="Koshiv Logistics - Import/Export Trucking Services">
-    <meta property="og:description" content="Modern tech-driven logistics company launching 2026. Built by a 3rd year CSE student with 40+ years of family industry experience.">
-    <!-- content="https://koshiv.com/images/og-image.jpg" --><meta property="og:image" content="images/a4b7cde7-2811-4df5-9823-df20b359e878.jpg">
-    <!-- content="https://koshiv.com" --><meta property="og:url" content="index.html">
+    <meta property="og:title" content="Koshiv Technology and Logistics">
+    <meta property="og:description" content="Modern tech-driven logistics company launching 2026.">
+    <meta property="og:url" content="index.html">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Koshiv Logistics">
-    
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Koshiv Logistics - Launching 2026">
-    <meta name="twitter:description" content="Modern tech-driven logistics company. Reserve your early adopter spot today!">
-    <!-- content="https://koshiv.com/images/twitter-image.jpg" --><meta name="twitter:image" content="images/a4b7cde7-2811-4df5-9823-df20b359e878.jpg">
+    <meta property="og:site_name" content="Koshiv Technology and Logistics">
     
     <!-- Canonical URL -->
-    <!-- href="https://koshiv.com" --><link rel="canonical" href="index.html">
+    <link rel="canonical" href="index.html">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -132,10 +125,58 @@
             background-color: #f9fafb;
         }
 
+        /* ===== DEVELOPMENT PLACEHOLDERS & MARQUEE ===== */
+        .dev-marquee {
+            background-color: #fef08a; 
+            color: #854d0e;
+            padding: 6px 0;
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+            z-index: 2000;
+            border-bottom: 1px solid #fde047;
+        }
+
+        .marquee-content {
+            display: inline-block;
+            animation: marquee 25s linear infinite;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(100vw); }
+            100% { transform: translateX(-100%); }
+        }
+
+        .dev-placeholder-box {
+            background-color: #f9fafb;
+            border: 2px dashed #9ca3af;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #4b5563;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        .dev-placeholder-box i {
+            font-size: 32px;
+            margin-bottom: 16px;
+            color: #9ca3af;
+        }
+
+        .dev-placeholder-box h3 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 8px;
+        }
+
         /* ===== PRE-HEADER ===== */
         .pre-header {
             background-color: #f3f4f6;
-            padding: 8px 0;
+            padding: 4px 0;
             font-size: 13px;
             font-weight: 500;
             border-bottom: 1px solid #e5e7eb;
@@ -145,12 +186,12 @@
             width: 100%;
             max-width: 100%;
             margin: 0;
-            padding: 0 4vw;
+            padding: 0 0.5vw;
             display: flex;
             justify-content: flex-start;
             align-items: center;
             flex-wrap: wrap;
-            gap: 32px;
+            gap: 24px;
         }
 
         .pre-header-left {
@@ -210,18 +251,19 @@
         .early-quote-btn {
             background-color: #1e3a8a;
             color: #ffffff;
-            padding: 6px 16px;
+            padding: 4px 12px;
             border-radius: 4px;
             font-weight: 600;
-            font-size: 13px;
+            font-size: 12px;
         }
 
         .pre-launch-banner {
             background-color: #fef3c7;
-            padding: 10px 0;
+            padding: 8px 0;
             font-size: 14px;
             font-weight: 500;
             border-bottom: 1px solid #fde68a;
+            text-align: center;
         }
 
         .pre-launch-banner a {
@@ -234,7 +276,7 @@
         /* ===== MAIN NAVIGATION ===== */
         .main-nav {
             background-color: #ffffff;
-            padding: 16px 0;
+            padding: 8px 0;
             border-bottom: 1px solid #e5e7eb;
             position: sticky;
             top: 0;
@@ -243,7 +285,7 @@
         }
 
         .main-nav.sticky {
-            padding: 8px 0;
+            padding: 4px 0;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
         }
 
@@ -251,7 +293,7 @@
             width: 100%;
             max-width: 100%;
             margin: 0;
-            padding: 0 4vw;
+            padding: 0 0.5vw;
             display: flex;
             justify-content: flex-start;
             align-items: center;
@@ -259,7 +301,7 @@
         }
 
         .logo {
-            font-size: 28px;
+            font-size: 24px;
             font-weight: 800;
             letter-spacing: -0.02em;
             white-space: nowrap;
@@ -270,7 +312,7 @@
         }
 
         .logo span {
-            font-size: 14px;
+            font-size: 12px;
             font-weight: 400;
             color: #4b5563;
             margin-left: 4px;
@@ -288,7 +330,7 @@
             position: relative;
             font-weight: 600;
             cursor: pointer;
-            padding: 8px 0;
+            padding: 12px 0;
             white-space: nowrap;
         }
 
@@ -298,7 +340,7 @@
             gap: 4px;
         }
 
-        /* Mega Menu */
+        /* Dropdowns with Smooth Transition */
         .mega-menu {
             position: absolute;
             top: 100%;
@@ -310,12 +352,36 @@
             min-width: 800px;
             max-width: 90vw;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-            display: none;
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
             z-index: 1000;
         }
 
-        .nav-item:hover .mega-menu {
-            display: block;
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 16px;
+            min-width: 250px;
+            max-width: 90vw;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .nav-item:hover .mega-menu,
+        .nav-item:hover .dropdown-menu {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);
         }
 
         .mega-menu-grid {
@@ -361,26 +427,6 @@
             font-size: 12px;
             cursor: pointer;
             margin-top: 8px;
-        }
-
-        /* Dropdown Menu */
-        .dropdown-menu {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: #ffffff;
-            border: 1px solid #e5e7eb;
-            border-radius: 8px;
-            padding: 16px;
-            min-width: 250px;
-            max-width: 90vw;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-            display: none;
-            z-index: 1000;
-        }
-
-        .nav-item:hover .dropdown-menu {
-            display: block;
         }
 
         .dropdown-menu .section {
@@ -493,13 +539,10 @@
 
         /* ===== HERO SECTION ===== */
         .hero {
-            background: linear-gradient(90deg, rgba(17, 24, 39, 0.95) 0%, rgba(17, 24, 39, 0.7) 40%, rgba(17, 24, 39, 0.1) 100%), url('https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
-            background-size: cover;
-            background-position: right center; 
+            background: linear-gradient(135deg, #111827 0%, #1e3a8a 100%);
             color: #ffffff;
             padding: 80px 4vw; 
             text-align: left; 
-            transition: background 0.5s ease-in-out;
         }
 
         .hero-content {
@@ -536,8 +579,7 @@
         }
 
         .hero-problem-solution ul {
-            list-style: disc;
-            padding-left: 20px;
+            list-style: none;
             margin-bottom: 16px;
         }
 
@@ -616,26 +658,6 @@
             60% {transform: translateY(-5px);}
         }
 
-        /* ===== TRUCK VIEWS GALLERY ===== */
-        .hero-truck-views {
-            margin-top: 40px;
-        }
-
-        .hero-truck-views img {
-            width: 120px;
-            height: 80px;
-            object-fit: cover;
-            border-radius: 6px;
-            border: 2px solid rgba(255,255,255,0.3);
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
-
-        .hero-truck-views img:hover {
-            border-color: #ffffff;
-            transform: scale(1.05);
-        }
-
         /* ===== STORY SECTION ===== */
         .story-section {
             padding: 80px 0;
@@ -690,12 +712,9 @@
             background-color: #d1d5db;
             border-radius: 50%;
             overflow: hidden;
-        }
-
-        .founder-photo img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .founder-quote p {
@@ -1094,12 +1113,9 @@
             border-radius: 50%;
             margin: 0 auto 16px;
             overflow: hidden;
-        }
-
-        .founder-photo-placeholder img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .founder-card h4 {
@@ -1759,15 +1775,10 @@
             border-radius: 4px;
             position: relative;
             overflow: hidden;
-        }
-
-        .feed-image::after {
-            content: '📷';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            opacity: 0.5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #9ca3af;
         }
 
         /* ===== FOOTER ===== */
@@ -2222,29 +2233,34 @@
     </style>
 </head>
 <body>
+    <!-- DEVELOPMENT MARQUEE -->
+    <div class="dev-marquee">
+        <div class="marquee-content">
+            <i class="fas fa-hard-hat"></i> Notice: Koshiv Technology and Logistics is currently in active development. Some data displayed is for demonstration purposes as we prepare for our launch. <i class="fas fa-hard-hat"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fas fa-hard-hat"></i> Notice: Koshiv Technology and Logistics is currently in active development. Some data displayed is for demonstration purposes as we prepare for our launch. <i class="fas fa-hard-hat"></i>
+        </div>
+    </div>
+
     <!-- PRE-HEADER -->
     <div class="pre-header">
         <div class="pre-header-content">
             <div class="pre-header-left">
-                <a href="tel:+919876543210"><i class="fas fa-phone-alt"></i> +91 98765 43210</a>
-                <span class="whatsapp-indicator"><i class="fab fa-whatsapp" style="color:#25D366;"></i> WhatsApp</span>
+                <a href="tel:+917417093299"><i class="fas fa-phone-alt"></i> +91 74170 93299</a>
+                <span class="whatsapp-indicator"><a href="https://wa.me/918298163299"><i class="fab fa-whatsapp" style="color:#25D366;"></i> WhatsApp</a></span>
                 <a href="mailto:info@koshiv.com"><i class="fas fa-envelope"></i> info@koshiv.com</a>
-                <span><i class="fas fa-rocket"></i> Launching Q2 2026</span>
-                <span class="company-registration"><i class="fas fa-building"></i> GSTIN: 27AADCK1234X1Z5 (Applied)</span>
-                <span class="company-registration"><i class="fas fa-file"></i> PAN: AADCK1234X</span>
-                <span><i class="fas fa-calendar-alt"></i> Est. 2026</span>
+                <span><i class="fas fa-rocket"></i> Launching Soon</span>
+                <span class="company-registration"><i class="fas fa-building"></i> Entity Registration in Progress</span>
             </div>
             <div class="pre-header-right">
                 <div class="language-selector">
-                    <i class="fas fa-globe"></i> English <i class="fas fa-chevron-down"></i>
+                    <i class="fas fa-globe"></i> English 
                 </div>
                 <div class="currency-selector">
-                    INR <i class="fas fa-chevron-down"></i>
+                    INR 
                 </div>
                 <div class="login-links">
-                    <!-- href="https://client.koshiv.com" --><a href="clients/clients.html">Client Login</a>
-                    <!-- href="https://driver.koshiv.com" --><a href="drivers/drivers.html">Driver Login</a>
-                    <!-- href="https://partner.koshiv.com" --><a href="partners/partners.html">Partner Login</a>
+                    <a href="clients/clients.html">Client Login</a>
+                    <a href="drivers/drivers.html">Driver Login</a>
+                    <a href="partners/partners.html">Partner Login</a>
                 </div>
                 <div class="quote-basket">
                     <i class="fas fa-shopping-cart"></i> (0)
@@ -2256,7 +2272,7 @@
 
     <!-- PRE-LAUNCH BANNER -->
     <div class="pre-launch-banner">
-        🚀 KOSHIV LOGISTICS LAUNCHING Q2 2026 - Reserve capacity now • Early adopter pricing • 10% off first shipments
+        <i class="fas fa-rocket"></i> KOSHIV TECHNOLOGY AND LOGISTICS LAUNCHING SOON - Reserve capacity now • Early adopter pricing
         <a href="#">CLAIM YOUR SPOT</a>
     </div>
 
@@ -2264,7 +2280,7 @@
     <nav class="main-nav" id="mainNav">
         <div class="nav-container">
             <div class="logo">
-                <!-- href="" --><a href="index.html">KOSHIV<span>LOGISTICS • Est. 2026</span></a>
+                <a href="index.html">KOSHIV<span>TECHNOLOGY & LOGISTICS</span></a>
             </div>
             <div class="mobile-toggle" onclick="toggleMobileNav()">
                 <i class="fas fa-bars"></i>
@@ -2272,53 +2288,53 @@
             <ul class="nav-menu">
                 <!-- SERVICES Mega Menu -->
                 <li class="nav-item">
-                    <!-- href="https://services.koshiv.com" --><a href="services/services.html">SERVICES <i class="fas fa-chevron-down"></i></a>
+                    <a href="services/services.html">SERVICES</a>
                     <div class="mega-menu">
                         <div class="mega-menu-grid">
                             <div class="mega-menu-col">
                                 <h4><i class="fas fa-download"></i> IMPORT SERVICES</h4>
                                 <ul>
-                                    <li><!-- href="https://services.koshiv.com/import" --><a href="services/import-solution.html">Full Import Solution</a></li>
-                                    <li><!-- href="https://services.koshiv.com/customs" --><a href="services/customs-clearance.html">Customs Clearance</a></li>
-                                    <li><!-- href="https://services.koshiv.com/isf" --><a href="services/isf-filing.html">ISF Filing</a></li>
-                                    <li><!-- href="https://services.koshiv.com/drayage" --><a href="services/port-drayage.html">Port Drayage</a></li>
-                                    <li><!-- href="https://services.koshiv.com/transloading" --><a href="services/transloading.html">Transloading</a></li>
-                                    <li><!-- href="https://services.koshiv.com/warehousing" --><a href="services/bonded-warehousing.html">Bonded Warehousing</a></li>
-                                    <li><!-- href="https://services.koshiv.com/compliance" --><a href="services/fssai-compliance.html">FSSAI/Plant Quarantine Compliance</a></li>
+                                    <li><a href="services/import-solution.html">Full Import Solution</a></li>
+                                    <li><a href="services/customs-clearance.html">Customs Clearance</a></li>
+                                    <li><a href="services/isf-filing.html">ISF Filing</a></li>
+                                    <li><a href="services/port-drayage.html">Port Drayage</a></li>
+                                    <li><a href="services/transloading.html">Transloading</a></li>
+                                    <li><a href="services/bonded-warehousing.html">Bonded Warehousing</a></li>
+                                    <li><a href="services/fssai-compliance.html">FSSAI/Plant Quarantine Compliance</a></li>
                                 </ul>
-                                <span class="status-badge">Coming Q2 2026</span>
+                                <span class="status-badge">Coming 2026</span>
                                 <button class="notify-btn"><i class="far fa-bell"></i> NOTIFY ME</button>
                             </div>
                             <div class="mega-menu-col">
                                 <h4><i class="fas fa-upload"></i> EXPORT SERVICES</h4>
                                 <ul>
-                                    <li><!-- href="https://services.koshiv.com/export" --><a href="services/export-solution.html">Full Export Solution</a></li>
-                                    <li><!-- href="https://services.koshiv.com/export-docs" --><a href="services/export-documentation.html">Export Documentation</a></li>
-                                    <li><!-- href="https://services.koshiv.com/shipping-bill" --><a href="services/shipping-bill.html">Shipping Bill Filing</a></li>
-                                    <li><!-- href="https://services.koshiv.com/container-loading" --><a href="services/container-loading.html">Container Loading</a></li>
-                                    <li><!-- href="https://services.koshiv.com/export-packing" --><a href="services/export-packing.html">Export Packing</a></li>
-                                    <li><!-- href="https://services.koshiv.com/certificate-of-origin" --><a href="services/certificate-of-origin.html">Certificate of Origin</a></li>
-                                    <li><!-- href="https://services.koshiv.com/hazmat" --><a href="services/hazmat-export.html">Hazmat Export</a></li>
+                                    <li><a href="services/export-solution.html">Full Export Solution</a></li>
+                                    <li><a href="services/export-documentation.html">Export Documentation</a></li>
+                                    <li><a href="services/shipping-bill.html">Shipping Bill Filing</a></li>
+                                    <li><a href="services/container-loading.html">Container Loading</a></li>
+                                    <li><a href="services/export-packing.html">Export Packing</a></li>
+                                    <li><a href="services/certificate-of-origin.html">Certificate of Origin</a></li>
+                                    <li><a href="services/hazmat-export.html">Hazmat Export</a></li>
                                 </ul>
-                                <span class="status-badge">Coming Q2 2026</span>
+                                <span class="status-badge">Coming 2026</span>
                                 <button class="notify-btn"><i class="far fa-bell"></i> NOTIFY ME</button>
                             </div>
                             <div class="mega-menu-col">
                                 <h4><i class="fas fa-border-all"></i> CROSS-BORDER</h4>
                                 <ul>
-                                    <li><!-- href="https://services.koshiv.com/india-nepal" --><a href="services/india-nepal.html">India-Nepal Crossings</a></li>
-                                    <li><!-- href="https://services.koshiv.com/india-bangladesh" --><a href="services/india-bangladesh.html">India-Bangladesh Crossings</a></li>
-                                    <li><!-- href="https://services.koshiv.com/customs-broker" --><a href="services/customs-broker.html">Customs Broker Coord</a></li>
-                                    <li><!-- href="https://services.koshiv.com/border-times" --><a href="services/border-wait-times.html">Border Wait Times</a></li>
+                                    <li><a href="services/india-nepal.html">India-Nepal Crossings</a></li>
+                                    <li><a href="services/india-bangladesh.html">India-Bangladesh Crossings</a></li>
+                                    <li><a href="services/customs-broker.html">Customs Broker Coord</a></li>
+                                    <li><a href="services/border-wait-times.html">Border Wait Times</a></li>
                                 </ul>
                                 <h4 style="margin-top:16px;"><i class="fas fa-star"></i> SPECIALIZED</h4>
                                 <ul>
-                                    <li><!-- href="https://services.koshiv.com/temperature-controlled" --><a href="services/temperature-controlled.html">Temperature-Controlled</a></li>
-                                    <li><!-- href="https://services.koshiv.com/oversized" --><a href="services/oversized-cargo.html">Oversized/Heavy Haul</a></li>
-                                    <li><!-- href="https://services.koshiv.com/hazmat-specialized" --><a href="services/hazmat-specialized.html">Hazardous Materials</a></li>
-                                    <li><!-- href="https://services.koshiv.com/project-cargo" --><a href="services/project-cargo.html">Project Cargo</a></li>
+                                    <li><a href="services/temperature-controlled.html">Temperature-Controlled</a></li>
+                                    <li><a href="services/oversized-cargo.html">Oversized/Heavy Haul</a></li>
+                                    <li><a href="services/hazmat-specialized.html">Hazardous Materials</a></li>
+                                    <li><a href="services/project-cargo.html">Project Cargo</a></li>
                                 </ul>
-                                <span class="status-badge">Coming Q3 2026</span>
+                                <span class="status-badge">Coming 2026</span>
                                 <button class="notify-btn"><i class="far fa-bell"></i> NOTIFY ME</button>
                             </div>
                         </div>
@@ -2327,18 +2343,18 @@
 
                 <!-- FLEET Dropdown -->
                 <li class="nav-item">
-                    <!-- href="https://fleet.koshiv.com" --><a href="fleet/fleet.html">FLEET <i class="fas fa-chevron-down"></i></a>
+                    <a href="fleet/fleet.html">FLEET</a>
                     <div class="dropdown-menu">
                         <div class="section">
                             <h5>BY EQUIPMENT TYPE</h5>
                             <ul>
-                                <li><!-- href="https://fleet.koshiv.com/dry-vans" --><a href="fleet/dry-vans.html">Dry Vans (40', 32')</a></li>
-                                <li><!-- href="https://fleet.koshiv.com/reefers" --><a href="fleet/reefers.html">Refrigerated (Reefers)</a></li>
-                                <li><!-- href="https://fleet.koshiv.com/flatbeds" --><a href="fleet/flatbeds.html">Flatbeds & Step Decks</a></li>
-                                <li><!-- href="https://fleet.koshiv.com/rgn" --><a href="fleet/double-drop.html">Double Drop (RGN)</a></li>
-                                <li><!-- href="https://fleet.koshiv.com/tankers" --><a href="fleet/tankers.html">Tankers (Food/Chemical)</a></li>
-                                <li><!-- href="https://fleet.koshiv.com/hoppers" --><a href="fleet/hoppers.html">Hopper Trailers</a></li>
-                                <li><!-- href="https://fleet.koshiv.com/chassis" --><a href="fleet/chassis.html">Chassis (20'-40')</a></li>
+                                <li><a href="fleet/dry-vans.html">Dry Vans (40', 32')</a></li>
+                                <li><a href="fleet/reefers.html">Refrigerated (Reefers)</a></li>
+                                <li><a href="fleet/flatbeds.html">Flatbeds & Step Decks</a></li>
+                                <li><a href="fleet/double-drop.html">Double Drop (RGN)</a></li>
+                                <li><a href="fleet/tankers.html">Tankers (Food/Chemical)</a></li>
+                                <li><a href="fleet/hoppers.html">Hopper Trailers</a></li>
+                                <li><a href="fleet/chassis.html">Chassis (20'-40')</a></li>
                             </ul>
                         </div>
                         <div class="section">
@@ -2354,10 +2370,10 @@
                         <div class="section">
                             <h5>FLEET PLANNING</h5>
                             <ul>
-                                <li>Phase 1 (Q2): 10 trucks</li>
-                                <li>Phase 2 (Q3): 25 trucks</li>
-                                <li>Phase 3 (Q4): 50 trucks</li>
-                                <li><!-- href="https://fleet.koshiv.com/request" --><a href="fleet/request.html" style="color:#1e3a8a;">TELL US YOUR NEEDS</a></li>
+                                <li>Phase 1: 10 trucks</li>
+                                <li>Phase 2: 25 trucks</li>
+                                <li>Phase 3: 50 trucks</li>
+                                <li><a href="fleet/request.html" style="color:#1e3a8a;">TELL US YOUR NEEDS</a></li>
                             </ul>
                         </div>
                     </div>
@@ -2365,73 +2381,73 @@
 
                 <!-- COVERAGE Dropdown -->
                 <li class="nav-item">
-                    <!-- href="https://coverage.koshiv.com" --><a href="coverage/coverage.html">COVERAGE <i class="fas fa-chevron-down"></i></a>
+                    <a href="coverage/coverage.html">COVERAGE</a>
                     <div class="dropdown-menu" style="min-width:400px;">
                         <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
                             <div>
                                 <h5>PLANNED NETWORK</h5>
                                 <ul>
-                                    <li><!-- href="https://coverage.koshiv.com/distribution-centers" --><a href="coverage/coverage.html">Major Distribution Centers</a></li>
-                                    <li><!-- href="https://coverage.koshiv.com/rail-ramps" --><a href="coverage/coverage.html">Rail Ramp Connections</a></li>
-                                    <li><!-- href="https://coverage.koshiv.com/pan-india" --><a href="coverage/coverage.html">Pan-India (Phased)</a></li>
+                                    <li><a href="coverage/coverage.html">Major Distribution Centers</a></li>
+                                    <li><a href="coverage/coverage.html">Rail Ramp Connections</a></li>
+                                    <li><a href="coverage/coverage.html">Pan-India (Phased)</a></li>
                                 </ul>
                                 <h5 style="margin-top:16px;">PORTS</h5>
                                 <ul>
-                                    <li><!-- href="https://coverage.koshiv.com/ports/west" --><a href="coverage/coverage.html">Mundra, Nhava Sheva, Kandla</a></li>
-                                    <li><!-- href="https://coverage.koshiv.com/ports/east" --><a href="coverage/coverage.html">Chennai, Ennore, Tuticorin</a></li>
-                                    <li><!-- href="https://coverage.koshiv.com/ports/eastern" --><a href="coverage/coverage.html">Kolkata, Vizag, Kochi</a></li>
+                                    <li><a href="coverage/coverage.html">Mundra, Nhava Sheva, Kandla</a></li>
+                                    <li><a href="coverage/coverage.html">Chennai, Ennore, Tuticorin</a></li>
+                                    <li><a href="coverage/coverage.html">Kolkata, Vizag, Kochi</a></li>
                                 </ul>
                             </div>
                             <div>
                                 <h5>BORDER CROSSINGS</h5>
                                 <ul>
-                                    <li><!-- href="https://coverage.koshiv.com/borders/petrapole" --><a href="coverage/coverage.html">Petrapole, WB</a></li>
-                                    <li><!-- href="https://coverage.koshiv.com/borders/attari" --><a href="coverage/coverage.html">Attari, PB</a></li>
-                                    <li><!-- href="https://coverage.koshiv.com/borders/raxaul" --><a href="coverage/coverage.html">Raxaul, BR</a></li>
-                                    <li><!-- href="https://coverage.koshiv.com/borders/sunauli" --><a href="coverage/coverage.html">Sunauli, UP</a></li>
-                                    <li><!-- href="https://coverage.koshiv.com/borders/jogbani" --><a href="coverage/coverage.html">Jogbani, BR</a></li>
-                                    <li><!-- href="https://coverage.koshiv.com/borders/moreh" --><a href="coverage/coverage.html">Moreh, MN</a></li>
+                                    <li><a href="coverage/coverage.html">Petrapole, WB</a></li>
+                                    <li><a href="coverage/coverage.html">Attari, PB</a></li>
+                                    <li><a href="coverage/coverage.html">Raxaul, BR</a></li>
+                                    <li><a href="coverage/coverage.html">Sunauli, UP</a></li>
+                                    <li><a href="coverage/coverage.html">Jogbani, BR</a></li>
+                                    <li><a href="coverage/coverage.html">Moreh, MN</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div style="margin-top:16px; padding:16px; background:#f3f4f6; text-align:center;">
-                            <!-- href="https://map.koshiv.com" --><a href="coverage/coverage.html">[INTERACTIVE MAP PREVIEW - PLANNED COVERAGE 2026]</a>
+                            <a href="coverage/coverage.html">[INTERACTIVE MAP PREVIEW - PLANNED COVERAGE]</a>
                         </div>
-                        <!-- href="https://coverage.koshiv.com/full" --><a href="coverage/coverage.html" style="display:block; text-align:center; margin-top:16px;">VIEW FULL COVERAGE MAP</a>
+                        <a href="coverage/coverage.html" style="display:block; text-align:center; margin-top:16px;">VIEW FULL COVERAGE MAP</a>
                     </div>
                 </li>
 
                 <!-- CLIENTS Dropdown -->
                 <li class="nav-item">
-                    <!-- href="https://clients.koshiv.com" --><a href="clients/clients.html">CLIENTS <i class="fas fa-chevron-down"></i></a>
+                    <a href="clients/clients.html">CLIENTS</a>
                     <div class="dropdown-menu">
                         <div class="section">
-                            <h5>CLIENT PORTAL (Coming 2026)</h5>
+                            <h5>CLIENT PORTAL (Coming Soon)</h5>
                             <ul>
-                                <li><!-- href="https://clients.koshiv.com/register" --><a href="clients/clients.html">Pre-Register Interest</a></li>
-                                <li><!-- href="https://track.koshiv.com" --><a href="clients/clients.html">Track Shipment (Future)</a></li>
-                                <li><!-- href="https://quote.koshiv.com" --><a href="clients/clients.html">Request Quote</a></li>
-                                <li><!-- href="https://clients.koshiv.com/samples" --><a href="clients/clients.html">View Sample Invoices</a></li>
-                                <li><!-- href="https://early.koshiv.com" --><a href="clients/clients.html">Early Access Signup</a></li>
+                                <li><a href="clients/clients.html">Pre-Register Interest</a></li>
+                                <li><a href="clients/clients.html">Track Shipment (Future)</a></li>
+                                <li><a href="clients/clients.html">Request Quote</a></li>
+                                <li><a href="clients/clients.html">View Sample Invoices</a></li>
+                                <li><a href="clients/clients.html">Early Access Signup</a></li>
                             </ul>
                         </div>
                         <div class="section">
                             <h5>CLIENT RESOURCES</h5>
                             <ul>
-                                <li><!-- href="https://resources.koshiv.com/shipping-guide" --><a href="resources/resources.html">How to Ship Guide</a></li>
-                                <li><!-- href="https://resources.koshiv.com/docs" --><a href="resources/resources.html">Documentation Requirements</a></li>
-                                <li><!-- href="https://resources.koshiv.com/incoterms" --><a href="resources/resources.html">Incoterms Explained</a></li>
-                                <li><!-- href="https://resources.koshiv.com/faq/shippers" --><a href="resources/resources.html">FAQs for New Shippers</a></li>
-                                <li><!-- href="https://tools.koshiv.com/calculators" --><a href="resources/resources.html">Shipping Calculators</a></li>
+                                <li><a href="resources/resources.html">How to Ship Guide</a></li>
+                                <li><a href="resources/resources.html">Documentation Requirements</a></li>
+                                <li><a href="resources/resources.html">Incoterms Explained</a></li>
+                                <li><a href="resources/resources.html">FAQs for New Shippers</a></li>
+                                <li><a href="resources/resources.html">Shipping Calculators</a></li>
                             </ul>
                         </div>
                         <div class="section">
                             <h5>NEW CLIENTS</h5>
                             <ul>
-                                <li><!-- href="https://account.koshiv.com/open" --><a href="clients/clients.html" style="color:#1e3a8a;">OPEN AN ACCOUNT</a></li>
-                                <li><!-- href="https://quote.koshiv.com" --><a href="clients/clients.html" style="color:#1e3a8a;">GET A QUOTE</a></li>
-                                <li><!-- href="https://account.koshiv.com/credit" --><a href="clients/clients.html" style="color:#1e3a8a;">CREDIT APPLICATION</a></li>
-                                <li><!-- href="https://calendly.com/koshiv" --><a href="contact/contact.html" style="color:#1e3a8a;">SCHEDULE CONSULTATION</a></li>
+                                <li><a href="clients/clients.html" style="color:#1e3a8a;">OPEN AN ACCOUNT</a></li>
+                                <li><a href="clients/clients.html" style="color:#1e3a8a;">GET A QUOTE</a></li>
+                                <li><a href="clients/clients.html" style="color:#1e3a8a;">CREDIT APPLICATION</a></li>
+                                <li><a href="contact/contact.html" style="color:#1e3a8a;">SCHEDULE CONSULTATION</a></li>
                             </ul>
                         </div>
                     </div>
@@ -2439,153 +2455,153 @@
 
                 <!-- DRIVERS Dropdown -->
                 <li class="nav-item">
-                    <!-- href="https://drivers.koshiv.com" --><a href="drivers/drivers.html">DRIVERS <i class="fas fa-chevron-down"></i></a>
+                    <a href="drivers/drivers.html">DRIVERS</a>
                     <div class="dropdown-menu">
                         <div class="section">
-                            <h5>DRIVER PORTAL (Coming 2026)</h5>
+                            <h5>DRIVER PORTAL (Coming Soon)</h5>
                             <ul>
-                                <li><!-- href="https://drivers.koshiv.com/apply" --><a href="drivers/drivers.html">Pre-Apply Now</a></li>
-                                <li><!-- href="https://drivers.koshiv.com/sample-loads" --><a href="drivers/drivers.html">View Sample Loads</a></li>
-                                <li><!-- href="https://drivers.koshiv.com/sample-settlements" --><a href="drivers/drivers.html">Sample Settlements</a></li>
-                                <li><!-- href="https://drivers.koshiv.com/upload-resume" --><a href="drivers/drivers.html">Upload Resume</a></li>
+                                <li><a href="drivers/drivers.html">Pre-Apply Now</a></li>
+                                <li><a href="drivers/drivers.html">View Sample Loads</a></li>
+                                <li><a href="drivers/drivers.html">Sample Settlements</a></li>
+                                <li><a href="drivers/drivers.html">Upload Resume</a></li>
                                 <li><a href="mailto:careers@koshiv.com">Contact Recruiting</a></li>
                             </ul>
                         </div>
                         <div class="section">
                             <h5>DRIVER OPPORTUNITIES</h5>
                             <ul>
-                                <li><!-- href="https://careers.koshiv.com/national" --><a href="drivers/drivers.html">National Route Positions</a></li>
-                                <li><!-- href="https://careers.koshiv.com/regional" --><a href="drivers/drivers.html">Regional Positions</a></li>
-                                <li><!-- href="https://careers.koshiv.com/local" --><a href="drivers/drivers.html">Local Positions</a></li>
-                                <li><!-- href="https://careers.koshiv.com/owner-operator" --><a href="drivers/drivers.html">Owner Operator Opportunities</a></li>
-                                <li><!-- href="https://careers.koshiv.com/lease-purchase" --><a href="drivers/drivers.html">Lease Purchase Program</a></li>
-                                <li><!-- href="https://careers.koshiv.com/team-driving" --><a href="drivers/drivers.html">Team Driving Opportunities</a></li>
-                                <li style="color:#1e3a8a; font-weight:700;">JOIN LAUNCH TEAM - ₹2 LAKH BONUS</li>
+                                <li><a href="drivers/drivers.html">National Route Positions</a></li>
+                                <li><a href="drivers/drivers.html">Regional Positions</a></li>
+                                <li><a href="drivers/drivers.html">Local Positions</a></li>
+                                <li><a href="drivers/drivers.html">Owner Operator Opportunities</a></li>
+                                <li><a href="drivers/drivers.html">Lease Purchase Program</a></li>
+                                <li><a href="drivers/drivers.html">Team Driving Opportunities</a></li>
+                                <li style="color:#1e3a8a; font-weight:700;">JOIN LAUNCH TEAM</li>
                             </ul>
                         </div>
                         <div class="section">
                             <h5>DRIVER RESOURCES</h5>
                             <ul>
-                                <li><!-- href="https://benefits.koshiv.com" --><a href="drivers/drivers.html">Pay & Benefits (Projected)</a></li>
-                                <li><!-- href="https://policies.koshiv.com/home-time" --><a href="drivers/drivers.html">Home Time Policy</a></li>
-                                <li><!-- href="https://fleet.koshiv.com/driver-info" --><a href="fleet/features.html">Equipment Information</a></li>
-                                <li><!-- href="https://resources.koshiv.com/faq/drivers" --><a href="resources/resources.html">Driver FAQs</a></li>
-                                <li><!-- href="https://rewards.koshiv.com/referral" --><a href="drivers/drivers.html">Referral Program (₹2.5 Lakh)</a></li>
+                                <li><a href="drivers/drivers.html">Pay & Benefits (Projected)</a></li>
+                                <li><a href="drivers/drivers.html">Home Time Policy</a></li>
+                                <li><a href="fleet/features.html">Equipment Information</a></li>
+                                <li><a href="resources/resources.html">Driver FAQs</a></li>
+                                <li><a href="drivers/drivers.html">Referral Program</a></li>
                             </ul>
                         </div>
-                        <!-- href="https://drivers.koshiv.com/apply" --><a href="drivers/drivers.html" style="display:block; text-align:center; padding:8px; background:#1e3a8a; color:white; border-radius:4px; margin-top:16px;">PRE-APPLY NOW - ₹2,00,000 BONUS</a>
+                        <a href="drivers/drivers.html" style="display:block; text-align:center; padding:8px; background:#1e3a8a; color:white; border-radius:4px; margin-top:16px;">PRE-APPLY NOW</a>
                     </div>
                 </li>
 
                 <!-- PARTNERS Dropdown -->
                 <li class="nav-item">
-                    <!-- href="https://partners.koshiv.com" --><a href="partners/partners.html">PARTNERS <i class="fas fa-chevron-down"></i></a>
+                    <a href="partners/partners.html">PARTNERS</a>
                     <div class="dropdown-menu">
                         <div class="section">
-                            <h5>PARTNER PORTAL (Coming 2026)</h5>
+                            <h5>PARTNER PORTAL (Coming Soon)</h5>
                             <ul>
-                                <li><!-- href="https://partners.koshiv.com/register" --><a href="partners/partners.html">Register Interest</a></li>
-                                <li><!-- href="https://partners.koshiv.com/sample-loads" --><a href="partners/partners.html">View Sample Loads</a></li>
-                                <li><!-- href="https://partners.koshiv.com/benefits" --><a href="partners/partners.html">Partnership Benefits</a></li>
+                                <li><a href="partners/partners.html">Register Interest</a></li>
+                                <li><a href="partners/partners.html">View Sample Loads</a></li>
+                                <li><a href="partners/partners.html">Partnership Benefits</a></li>
                                 <li><a href="mailto:partners@koshiv.com">Contact Partnerships</a></li>
                             </ul>
                         </div>
                         <div class="section">
                             <h5>BECOME A PARTNER</h5>
                             <ul>
-                                <li><!-- href="https://partners.koshiv.com/carrier" --><a href="partners/partners.html">Carrier Partners</a></li>
-                                <li><!-- href="https://partners.koshiv.com/broker" --><a href="partners/partners.html">Broker Partners</a></li>
-                                <li><!-- href="https://partners.koshiv.com/forwarder" --><a href="partners/partners.html">Freight Forwarders</a></li>
-                                <li><!-- href="https://partners.koshiv.com/customs-broker" --><a href="partners/partners.html">Customs Brokers</a></li>
-                                <li><!-- href="https://partners.koshiv.com/supplier" --><a href="partners/partners.html">Supplier Partners</a></li>
+                                <li><a href="partners/partners.html">Carrier Partners</a></li>
+                                <li><a href="partners/partners.html">Broker Partners</a></li>
+                                <li><a href="partners/partners.html">Freight Forwarders</a></li>
+                                <li><a href="partners/partners.html">Customs Brokers</a></li>
+                                <li><a href="partners/partners.html">Supplier Partners</a></li>
                             </ul>
                         </div>
                         <div class="section">
                             <h5>PARTNER RESOURCES</h5>
                             <ul>
-                                <li><!-- href="https://partners.koshiv.com/requirements" --><a href="partners/partners.html">Requirements Checklist</a></li>
-                                <li><!-- href="https://partners.koshiv.com/tiers" --><a href="partners/partners.html">Partner Program Tiers</a></li>
-                                <li><!-- href="https://resources.koshiv.com/faq/partners" --><a href="resources/resources.html">Partner FAQs</a></li>
-                                <li><!-- href="https://early.koshiv.com/partner" --><a href="partners/partners.html">Early Access Application</a></li>
+                                <li><a href="partners/partners.html">Requirements Checklist</a></li>
+                                <li><a href="partners/partners.html">Partner Program Tiers</a></li>
+                                <li><a href="resources/resources.html">Partner FAQs</a></li>
+                                <li><a href="partners/partners.html">Early Access Application</a></li>
                             </ul>
                         </div>
-                        <!-- href="https://partners.koshiv.com/register" --><a href="partners/partners.html" style="display:block; text-align:center; margin-top:16px;">REGISTER INTEREST</a>
+                        <a href="partners/partners.html" style="display:block; text-align:center; margin-top:16px;">REGISTER INTEREST</a>
                     </div>
                 </li>
 
                 <!-- RESOURCES Dropdown -->
                 <li class="nav-item">
-                    <!-- href="https://resources.koshiv.com" --><a href="resources/resources.html">RESOURCES <i class="fas fa-chevron-down"></i></a>
+                    <a href="resources/resources.html">RESOURCES</a>
                     <div class="dropdown-menu" style="min-width:400px;">
                         <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
                             <div>
                                 <h5>KNOWLEDGE CENTER</h5>
                                 <ul>
-                                    <li><!-- href="https://blog.koshiv.com" --><a href="resources/resources.html">Blog</a></li>
-                                    <li><!-- href="https://news.koshiv.com" --><a href="resources/resources.html">Industry News</a></li>
-                                    <li><!-- href="https://events.koshiv.com/webinars" --><a href="resources/resources.html">Webinars (Coming)</a></li>
-                                    <li><!-- href="https://research.koshiv.com/white-papers" --><a href="resources/resources.html">White Papers</a></li>
-                                    <li><!-- href="https://research.koshiv.com/case-studies" --><a href="resources/resources.html">Case Studies (Coming)</a></li>
+                                    <li><a href="resources/resources.html">Blog</a></li>
+                                    <li><a href="resources/resources.html">Industry News</a></li>
+                                    <li><a href="resources/resources.html">Webinars (Coming)</a></li>
+                                    <li><a href="resources/resources.html">White Papers</a></li>
+                                    <li><a href="resources/resources.html">Case Studies (Coming)</a></li>
                                 </ul>
                             </div>
                             <div>
                                 <h5>TOOLS & CALCULATORS</h5>
                                 <ul>
-                                    <li><!-- href="https://tools.koshiv.com/transit" --><a href="resources/resources.html">Transit Time Calculator</a></li>
-                                    <li><!-- href="https://tools.koshiv.com/rate" --><a href="resources/resources.html">Freight Rate Calculator</a></li>
-                                    <li><!-- href="https://tools.koshiv.com/duty" --><a href="resources/resources.html">Duty Calculator</a></li>
-                                    <li><!-- href="https://tools.koshiv.com/hsn" --><a href="resources/resources.html">HSN Code Lookup</a></li>
-                                    <li><!-- href="https://tools.koshiv.com/pallet" --><a href="resources/resources.html">Pallet Calculator</a></li>
+                                    <li><a href="resources/resources.html">Transit Time Calculator</a></li>
+                                    <li><a href="resources/resources.html">Freight Rate Calculator</a></li>
+                                    <li><a href="resources/resources.html">Duty Calculator</a></li>
+                                    <li><a href="resources/resources.html">HSN Code Lookup</a></li>
+                                    <li><a href="resources/resources.html">Pallet Calculator</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="section" style="margin-top:16px;">
                             <h5>STARTUP RESOURCES</h5>
                             <ul>
-                                <li><!-- href="https://about.koshiv.com/timeline" --><a href="about/about.html">Launch Timeline</a></li>
-                                <li><!-- href="https://about.koshiv.com/faq" --><a href="about/about.html">FAQ About Koshiv</a></li>
-                                <li><!-- href="https://about.koshiv.com/team" --><a href="about/about.html">Meet the Founders</a></li>
-                                <li><!-- href="https://investors.koshiv.com" --><a href="about/about.html">Investor Information</a></li>
-                                <li><!-- href="https://media.koshiv.com/press-kit" --><a href="about/about.html">Press Kit</a></li>
+                                <li><a href="about/about.html">Launch Timeline</a></li>
+                                <li><a href="about/about.html">FAQ About Koshiv</a></li>
+                                <li><a href="about/about.html">Meet the Founders</a></li>
+                                <li><a href="about/about.html">Investor Information</a></li>
+                                <li><a href="about/about.html">Press Kit</a></li>
                             </ul>
                         </div>
-                        <!-- href="https://resources.koshiv.com" --><a href="resources/resources.html" style="display:block; text-align:center; margin-top:16px;">VISIT RESOURCE CENTER</a>
+                        <a href="resources/resources.html" style="display:block; text-align:center; margin-top:16px;">VISIT RESOURCE CENTER</a>
                     </div>
                 </li>
 
                 <!-- ABOUT Dropdown -->
                 <li class="nav-item">
-                    <!-- href="https://about.koshiv.com" --><a href="about/about.html">ABOUT <i class="fas fa-chevron-down"></i></a>
+                    <a href="about/about.html">ABOUT</a>
                     <div class="dropdown-menu">
                         <div class="section">
                             <h5>COMPANY</h5>
                             <ul>
-                                <li><!-- href="https://about.koshiv.com/story" --><a href="about/about.html">Our Story / Vision</a></li>
-                                <li><!-- href="https://about.koshiv.com/mission" --><a href="about/about.html">Mission & Values</a></li>
-                                <li><!-- href="https://about.koshiv.com/team" --><a href="about/about.html">Founding Team</a></li>
-                                <li><!-- href="https://about.koshiv.com/certifications" --><a href="about/about.html">Certifications (In Process)</a></li>
-                                <li><!-- href="https://about.koshiv.com/sustainability" --><a href="about/about.html">Sustainability Goals</a></li>
-                                <li><!-- href="https://about.koshiv.com/community" --><a href="about/about.html">Community Commitment</a></li>
+                                <li><a href="about/about.html">Our Story / Vision</a></li>
+                                <li><a href="about/about.html">Mission & Values</a></li>
+                                <li><a href="about/about.html">Founding Team</a></li>
+                                <li><a href="about/about.html">Certifications (In Process)</a></li>
+                                <li><a href="about/about.html">Sustainability Goals</a></li>
+                                <li><a href="about/about.html">Community Commitment</a></li>
                             </ul>
                         </div>
                         <div class="section">
                             <h5>CAREERS</h5>
                             <ul>
-                                <li><!-- href="https://careers.koshiv.com" --><a href="about/about.html">View All Openings</a></li>
-                                <li><!-- href="https://careers.koshiv.com/drivers" --><a href="drivers/drivers.html">Driver Jobs</a></li>
-                                <li><!-- href="https://careers.koshiv.com/non-driver" --><a href="about/about.html">Non-Driver Jobs</a></li>
-                                <li><!-- href="https://benefits.koshiv.com" --><a href="drivers/drivers.html">Benefits (Planned)</a></li>
-                                <li><!-- href="https://about.koshiv.com/culture" --><a href="about/about.html">Culture</a></li>
+                                <li><a href="about/about.html">View All Openings</a></li>
+                                <li><a href="drivers/drivers.html">Driver Jobs</a></li>
+                                <li><a href="about/about.html">Non-Driver Jobs</a></li>
+                                <li><a href="drivers/drivers.html">Benefits (Planned)</a></li>
+                                <li><a href="about/about.html">Culture</a></li>
                             </ul>
                         </div>
                         <div class="section">
                             <h5>NEWS & MEDIA</h5>
                             <ul>
-                                <li><!-- href="https://news.koshiv.com/press-releases" --><a href="about/about.html">Press Releases</a></li>
-                                <li><!-- href="https://news.koshiv.com/coverage" --><a href="about/about.html">In the News</a></li>
-                                <li><!-- href="https://news.koshiv.com/launch" --><a href="about/about.html">Launch Announcement</a></li>
-                                <li><!-- href="https://media.koshiv.com" --><a href="about/about.html">Media Kit</a></li>
-                                <li><!-- href="https://brand.koshiv.com" --><a href="about/about.html">Brand Assets</a></li>
+                                <li><a href="about/about.html">Press Releases</a></li>
+                                <li><a href="about/about.html">In the News</a></li>
+                                <li><a href="about/about.html">Launch Announcement</a></li>
+                                <li><a href="about/about.html">Media Kit</a></li>
+                                <li><a href="about/about.html">Brand Assets</a></li>
                             </ul>
                         </div>
                     </div>
@@ -2593,13 +2609,13 @@
 
                 <!-- CONTACT Dropdown -->
                 <li class="nav-item">
-                    <!-- href="https://contact.koshiv.com" --><a href="contact/contact.html">CONTACT <i class="fas fa-chevron-down"></i></a>
+                    <a href="contact/contact.html">CONTACT</a>
                     <div class="dropdown-menu">
                         <div class="section">
                             <h5>GENERAL</h5>
                             <ul>
-                                <li><i class="fas fa-phone"></i> <a href="tel:+919876543210">+91 98765 43210</a></li>
-                                <li><i class="fab fa-whatsapp" style="color:#25D366;"></i> <a href="https://wa.me/919876543210">WhatsApp</a></li>
+                                <li><i class="fas fa-phone"></i> <a href="tel:+917417093299">+91 74170 93299</a></li>
+                                <li><i class="fab fa-whatsapp" style="color:#25D366;"></i> <a href="https://wa.me/918298163299">WhatsApp</a></li>
                                 <li><i class="fas fa-envelope"></i> <a href="mailto:info@koshiv.com">info@koshiv.com</a></li>
                                 <li><i class="fas fa-comment"></i> Live Chat (9am-6pm IST)</li>
                             </ul>
@@ -2616,12 +2632,12 @@
                         <div class="section">
                             <h5>HEADQUARTERS</h5>
                             <p>Office No. 123, Andheri East,<br>Mumbai - 400093, Maharashtra</p>
-                            <p><i class="fas fa-map-pin"></i> (Opening Q2 2026)</p>
+                            <p><i class="fas fa-map-pin"></i> (Opening 2026)</p>
                             <div style="background:#f3f4f6; padding:16px; text-align:center; margin-top:8px;">
-                                <!-- href="https://maps.koshiv.com" --><a href="contact/contact.html">[VIEW ON MAP]</a>
+                                <a href="contact/contact.html">[VIEW ON MAP]</a>
                             </div>
                         </div>
-                        <!-- href="https://contact.koshiv.com" --><a href="contact/contact.html" style="display:block; text-align:center; margin-top:16px;">CONTACT FORM</a>
+                        <a href="contact/contact.html" style="display:block; text-align:center; margin-top:16px;">CONTACT FORM</a>
                     </div>
                 </li>
             </ul>
@@ -2638,40 +2654,40 @@
             <li class="mobile-nav-item">
                 <a href="#" onclick="toggleMobileSubmenu(this)">SERVICES <i class="fas fa-chevron-down"></i></a>
                 <ul class="mobile-submenu">
-                    <li><!-- href="https://services.koshiv.com/import" --><a href="services/import-solution.html">Import Services</a></li>
-                    <li><!-- href="https://services.koshiv.com/export" --><a href="services/export-solution.html">Export Services</a></li>
-                    <li><!-- href="https://services.koshiv.com/cross-border" --><a href="services/cross-border.html">Cross-Border</a></li>
-                    <li><!-- href="https://services.koshiv.com/specialized" --><a href="services/specialized.html">Specialized</a></li>
+                    <li><a href="services/import-solution.html">Import Services</a></li>
+                    <li><a href="services/export-solution.html">Export Services</a></li>
+                    <li><a href="services/cross-border.html">Cross-Border</a></li>
+                    <li><a href="services/specialized.html">Specialized</a></li>
                 </ul>
             </li>
             <li class="mobile-nav-item">
                 <a href="#" onclick="toggleMobileSubmenu(this)">FLEET <i class="fas fa-chevron-down"></i></a>
                 <ul class="mobile-submenu">
-                    <li><!-- href="https://fleet.koshiv.com/dry-vans" --><a href="fleet/dry-vans.html">Dry Vans</a></li>
-                    <li><!-- href="https://fleet.koshiv.com/reefers" --><a href="fleet/reefers.html">Reefers</a></li>
-                    <li><!-- href="https://fleet.koshiv.com/flatbeds" --><a href="fleet/flatbeds.html">Flatbeds</a></li>
+                    <li><a href="fleet/dry-vans.html">Dry Vans</a></li>
+                    <li><a href="fleet/reefers.html">Reefers</a></li>
+                    <li><a href="fleet/flatbeds.html">Flatbeds</a></li>
                 </ul>
             </li>
             <li class="mobile-nav-item">
                 <a href="#" onclick="toggleMobileSubmenu(this)">COVERAGE <i class="fas fa-chevron-down"></i></a>
                 <ul class="mobile-submenu">
-                    <li><!-- href="https://coverage.koshiv.com/ports" --><a href="coverage/coverage.html">Ports</a></li>
-                    <li><!-- href="https://coverage.koshiv.com/borders" --><a href="coverage/coverage.html">Borders</a></li>
-                    <li><!-- href="https://map.koshiv.com" --><a href="coverage/coverage.html">Coverage Map</a></li>
+                    <li><a href="coverage/coverage.html">Ports</a></li>
+                    <li><a href="coverage/coverage.html">Borders</a></li>
+                    <li><a href="coverage/coverage.html">Coverage Map</a></li>
                 </ul>
             </li>
-            <li class="mobile-nav-item"><!-- href="https://clients.koshiv.com" --><a href="clients/clients.html">CLIENTS</a></li>
-            <li class="mobile-nav-item"><!-- href="https://drivers.koshiv.com" --><a href="drivers/drivers.html">DRIVERS</a></li>
-            <li class="mobile-nav-item"><!-- href="https://partners.koshiv.com" --><a href="partners/partners.html">PARTNERS</a></li>
-            <li class="mobile-nav-item"><!-- href="https://resources.koshiv.com" --><a href="resources/resources.html">RESOURCES</a></li>
-            <li class="mobile-nav-item"><!-- href="https://about.koshiv.com" --><a href="about/about.html">ABOUT</a></li>
-            <li class="mobile-nav-item"><!-- href="https://contact.koshiv.com" --><a href="contact/contact.html">CONTACT</a></li>
+            <li class="mobile-nav-item"><a href="clients/clients.html">CLIENTS</a></li>
+            <li class="mobile-nav-item"><a href="drivers/drivers.html">DRIVERS</a></li>
+            <li class="mobile-nav-item"><a href="partners/partners.html">PARTNERS</a></li>
+            <li class="mobile-nav-item"><a href="resources/resources.html">RESOURCES</a></li>
+            <li class="mobile-nav-item"><a href="about/about.html">ABOUT</a></li>
+            <li class="mobile-nav-item"><a href="contact/contact.html">CONTACT</a></li>
         </ul>
         <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e7eb;">
-            <a href="tel:+919876543210" style="display: block; margin-bottom: 10px;"><i class="fas fa-phone"></i> +91 98765 43210</a>
+            <a href="tel:+917417093299" style="display: block; margin-bottom: 10px;"><i class="fas fa-phone"></i> +91 74170 93299</a>
             <a href="mailto:info@koshiv.com" style="display: block; margin-bottom: 10px;"><i class="fas fa-envelope"></i> info@koshiv.com</a>
-            <a href="https://wa.me/919876543210" style="display: block; margin-bottom: 20px;"><i class="fab fa-whatsapp" style="color:#25D366;"></i> WhatsApp</a>
-            <!-- href="https://early.koshiv.com" --><a href="clients/clients.html" class="btn btn-primary" style="width:100%; text-align:center;">GET EARLY ACCESS QUOTE</a>
+            <a href="https://wa.me/918298163299" style="display: block; margin-bottom: 20px;"><i class="fab fa-whatsapp" style="color:#25D366;"></i> WhatsApp</a>
+            <a href="clients/clients.html" class="btn btn-primary" style="width:100%; text-align:center;">GET EARLY ACCESS QUOTE</a>
         </div>
     </div>
     <div class="mobile-overlay" id="mobileOverlay" onclick="toggleMobileNav()"></div>
@@ -2679,27 +2695,27 @@
     <!-- HERO SECTION -->
     <section class="hero" id="mainHero">
         <div class="hero-content">
-            <h1>KOSHIV LOGISTICS</h1>
+            <h1>KOSHIV TECHNOLOGY AND LOGISTICS</h1>
             <h2>Fresh Perspective. Proven Expertise.</h2>
             
             <div class="hero-problem-solution">
                 <h3>THE PROBLEM WE SOLVE:</h3>
-                <p>Logistics with hidden fees, no visibility, and outdated equipment. My father, with 40+ years driving experience, faced these problems every day.</p>
+                <p>Logistics with hidden fees, no visibility, and outdated equipment. My family, with 40+ years driving experience, faced these problems every day.</p>
                 
                 <h3 style="margin-top:16px;">OUR SOLUTION:</h3>
                 <ul>
-                    <li>✓ Transparent pricing upfront</li>
-                    <li>✓ Real-time tracking with alerts</li>
-                    <li>✓ Modern fleet (2024-2026 models)</li>
-                    <li>✓ Built by a 3rd year B.Tech CSE innovator</li>
-                    <li>✓ Powered by MERN stack, React Native apps</li>
+                    <li><i class="fas fa-check-circle" style="color:#10b981;"></i> Transparent pricing upfront</li>
+                    <li><i class="fas fa-check-circle" style="color:#10b981;"></i> Real-time tracking with alerts</li>
+                    <li><i class="fas fa-check-circle" style="color:#10b981;"></i> Modern fleet (Upcoming models)</li>
+                    <li><i class="fas fa-check-circle" style="color:#10b981;"></i> Built by a B.Tech CSE innovator</li>
+                    <li><i class="fas fa-check-circle" style="color:#10b981;"></i> Powered by modern web technologies</li>
                 </ul>
             </div>
 
             <div class="hero-buttons">
-                <!-- href="https://early.koshiv.com/client" --><a href="clients/clients.html" class="btn btn-hero-primary">RESERVE CAPACITY <span style="display:block; font-size:12px;">10% OFF FIRST 5 SHIPMENTS</span></a>
-                <!-- href="https://drivers.koshiv.com/apply" --><a href="drivers/drivers.html" class="btn btn-hero-secondary">PRE-APPLY AS DRIVER <span style="display:block; font-size:12px;">₹2 LAKH SIGNING BONUS</span></a>
-                <!-- href="https://contact.koshiv.com/sales" --><a href="contact/contact.html" class="btn btn-hero-secondary">CONTACT SALES</a>
+                <a href="clients/clients.html" class="btn btn-hero-primary">RESERVE CAPACITY <span style="display:block; font-size:12px;">BECOME AN EARLY CLIENT</span></a>
+                <a href="drivers/drivers.html" class="btn btn-hero-secondary">PRE-APPLY AS DRIVER <span style="display:block; font-size:12px;">JOIN LAUNCH TEAM</span></a>
+                <a href="contact/contact.html" class="btn btn-hero-secondary">CONTACT SALES</a>
             </div>
 
             <div class="hero-stats">
@@ -2708,7 +2724,7 @@
                     <span class="stat-label">B.Tech CSE Student</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-number">2024-2026</span>
+                    <span class="stat-number">Upcoming</span>
                     <span class="stat-label">Fleet Models</span>
                 </div>
                 <div class="stat-item">
@@ -2716,19 +2732,16 @@
                     <span class="stat-label">Hidden Fees</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-number">Q2 2026</span>
+                    <span class="stat-number">2026</span>
                     <span class="stat-label">Launch Target</span>
                 </div>
             </div>
 
-            <!-- Interactive Truck Views -->
+            <!-- Removed Copyright Truck Images / Added Placeholder -->
             <div class="hero-truck-views">
                 <p style="font-size: 12px; opacity: 0.8; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">Explore Our Fleet</p>
-                <div style="display: flex; gap: 12px; flex-wrap: wrap;">
-                    <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=300&q=80" alt="Truck View 1" loading="lazy" onclick="changeHeroBg('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=2070&q=80')">
-                    <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=300&q=80" alt="Truck View 2" loading="lazy" onclick="changeHeroBg('https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=2070&q=80')">
-                    <img src="https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=300&q=80" alt="Truck View 3" loading="lazy" onclick="changeHeroBg('https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=2070&q=80')">
-                    <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=300&q=80" alt="Truck View 4" loading="lazy" onclick="changeHeroBg('https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=2070&q=80')">
+                <div style="background: rgba(255,255,255,0.1); border: 1px dashed rgba(255,255,255,0.3); padding: 16px; border-radius: 8px; display: inline-block;">
+                    <i class="fas fa-camera"></i> Fleet images will be updated post-acquisition
                 </div>
             </div>
 
@@ -2747,64 +2760,71 @@
 
             <div class="story-grid">
                 <div class="problem-col">
-                    <h3>THE PROBLEM <span style="color:#dc2626;">❌</span></h3>
+                    <h3>THE PROBLEM <i class="fas fa-times-circle" style="color:#dc2626;"></i></h3>
                     <ul>
-                        <li><i class="fas fa-times" style="color:#dc2626;"></i> Hidden fees and surprises</li>
-                        <li><i class="fas fa-times" style="color:#dc2626;"></i> No visibility where cargo is</li>
-                        <li><i class="fas fa-times" style="color:#dc2626;"></i> Old, broken trucks</li>
-                        <li><i class="fas fa-times" style="color:#dc2626;"></i> 3-day response to inquiries</li>
-                        <li><i class="fas fa-times" style="color:#dc2626;"></i> Sales reps who disappear</li>
-                        <li><i class="fas fa-times" style="color:#dc2626;"></i> Small fleet owners struggle with cash flow</li>
+                        <li><i class="fas fa-times-circle" style="color:#dc2626;"></i> Hidden fees and surprises</li>
+                        <li><i class="fas fa-times-circle" style="color:#dc2626;"></i> No visibility where cargo is</li>
+                        <li><i class="fas fa-times-circle" style="color:#dc2626;"></i> Old, broken trucks</li>
+                        <li><i class="fas fa-times-circle" style="color:#dc2626;"></i> 3-day response to inquiries</li>
+                        <li><i class="fas fa-times-circle" style="color:#dc2626;"></i> Sales reps who disappear</li>
+                        <li><i class="fas fa-times-circle" style="color:#dc2626;"></i> Small fleet owners struggle with cash flow</li>
                     </ul>
                 </div>
                 <div class="solution-col">
-                    <h3>OUR SOLUTION <span style="color:#10b981;">✓</span></h3>
+                    <h3>OUR SOLUTION <i class="fas fa-check-circle" style="color:#10b981;"></i></h3>
                     <ul>
-                        <li><i class="fas fa-check" style="color:#10b981;"></i> Upfront pricing on every quote</li>
-                        <li><i class="fas fa-check" style="color:#10b981;"></i> Real-time GPS tracking 24/7</li>
-                        <li><i class="fas fa-check" style="color:#10b981;"></i> Modern fleet 2024-2026 models</li>
-                        <li><i class="fas fa-check" style="color:#10b981;"></i> 24/7 dispatch when we launch</li>
-                        <li><i class="fas fa-check" style="color:#10b981;"></i> Dedicated account manager</li>
-                        <li><i class="fas fa-check" style="color:#10b981;"></i> Tech-driven cash flow solutions</li>
+                        <li><i class="fas fa-check-circle" style="color:#10b981;"></i> Upfront pricing on every quote</li>
+                        <li><i class="fas fa-check-circle" style="color:#10b981;"></i> Real-time GPS tracking 24/7</li>
+                        <li><i class="fas fa-check-circle" style="color:#10b981;"></i> Modern fleet acquisitions</li>
+                        <li><i class="fas fa-check-circle" style="color:#10b981;"></i> 24/7 dispatch when we launch</li>
+                        <li><i class="fas fa-check-circle" style="color:#10b981;"></i> Dedicated account manager</li>
+                        <li><i class="fas fa-check-circle" style="color:#10b981;"></i> Tech-driven cash flow solutions</li>
                     </ul>
                 </div>
             </div>
 
             <div class="founder-message">
                 <div class="founder-photo">
-                    <img src="images/a4b7cde7-2811-4df5-9823-df20b359e878.jpg" alt="Koushal Jha - Founder" onerror="this.style.backgroundColor='#d1d5db'">
+                    <i class="fas fa-user-tie" style="font-size: 48px; color: #9ca3af;"></i>
                 </div>
                 <div class="founder-quote">
-                    <p>"As a 3rd-year B.Tech CSE student, I watched my father and grandfather struggle with the same logistics problems for decades. Old trucks, no tracking, brokers taking 15-20% commissions. So I decided to build the tech-driven logistics company we always needed. No bureaucracy. No hidden agendas. Just logistics done right."</p>
+                    <p>"As a 3rd-year B.Tech CSE student, I watched my family struggle with the same logistics problems for decades. Old trucks, no tracking, brokers taking huge commissions. So I decided to build the tech-driven logistics company we always needed. No bureaucracy. No hidden agendas. Just logistics done right."</p>
                     <p class="attribution">— Koushal Jha, Founder & CEO</p>
                 </div>
             </div>
 
             <!-- Tech Differentiator Section -->
             <div class="tech-differentiator">
-                <h3>🚀 BUILT BY A DEVELOPER, FOR THE FUTURE</h3>
+                <h3><i class="fas fa-rocket"></i> BUILT BY A DEVELOPER, FOR THE FUTURE</h3>
                 <div class="tech-grid">
                     <div class="tech-item">
                         <i class="fas fa-code"></i>
-                        <h4>MERN Stack Platform</h4>
-                        <p>Full-stack JavaScript, real-time updates, no legacy systems</p>
+                        <h4>Modern Web Platform</h4>
+                        <p>Real-time updates, scalable architecture, no legacy systems holding us back</p>
                     </div>
                     <div class="tech-item">
                         <i class="fas fa-mobile-alt"></i>
-                        <h4>React Native Apps</h4>
-                        <p>Native mobile apps for drivers and clients - built from scratch</p>
+                        <h4>Mobile Applications (In Dev)</h4>
+                        <p>Native mobile experiences for drivers and clients - built from scratch</p>
                     </div>
                     <div class="tech-item">
                         <i class="fas fa-robot"></i>
                         <h4>AI Route Optimization</h4>
-                        <p>Machine learning algorithms for fuel efficiency and ETAs</p>
+                        <p>Smart algorithms to maximize fuel efficiency and provide accurate ETAs</p>
                     </div>
                 </div>
             </div>
 
+            <!-- App Development Placeholder -->
+            <div class="dev-placeholder-box" style="margin-top: 32px; border-color: #1e3a8a;">
+                <i class="fas fa-mobile-alt" style="color: #1e3a8a;"></i>
+                <h3>Mobile Client & Driver Apps In Development</h3>
+                <p>We are currently engineering our dedicated mobile applications to ensure a seamless, real-time tracking experience. Both iOS and Android versions will be available to our early adopters upon official launch.</p>
+            </div>
+
             <!-- Market Analysis Section -->
             <div class="market-section">
-                <h3 style="font-size: 24px; margin-bottom: 16px;">📊 MARKET OPPORTUNITY</h3>
+                <h3 style="font-size: 24px; margin-bottom: 16px;"><i class="fas fa-chart-pie"></i> MARKET OPPORTUNITY</h3>
                 <div class="market-stats">
                     <div class="market-stat">
                         <div class="number">$250B</div>
@@ -2828,34 +2848,36 @@
                 <table class="competition-table">
                     <thead>
                         <tr>
-                            <th>Competitor</th>
-                            <th>Focus</th>
-                            <th>Our Edge</th>
+                            <th>Competitor Focus</th>
+                            <th>Traditional Edge</th>
+                            <th>Our Advantage</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Delhivery</td>
-                            <td>E-commerce, express</td>
-                            <td><span class="our-edge">Import/Export Specialists</span></td>
+                            <td>E-commerce & Express</td>
+                            <td>Scale</td>
+                            <td><span class="our-edge">Import/Export Specialized Tech</span></td>
                         </tr>
                         <tr>
-                            <td>BlackBuck</td>
-                            <td>Trucking marketplace</td>
-                            <td><span class="our-edge">Own Fleet + Tech</span></td>
+                            <td>Trucking Marketplaces</td>
+                            <td>Volume</td>
+                            <td><span class="our-edge">Dedicated Assets + Tech</span></td>
                         </tr>
                         <tr>
-                            <td>Rivigo</td>
-                            <td>Surface logistics</td>
-                            <td><span class="our-edge">Built by industry veterans + fresh tech</span></td>
+                            <td>Surface Logistics</td>
+                            <td>Established</td>
+                            <td><span class="our-edge">Zero Legacy Systems</span></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
 
-            <!-- Added Image to Story Section -->
-            <div style="margin-top: 48px; text-align: left;">
-                <img src="https://images.unsplash.com/photo-1586528116311-ad8ed7c83a7f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Modern Logistics Warehouse" style="border-radius: 8px; max-height: 400px; width: 100%; object-fit: cover;" loading="lazy">
+            <!-- Rendered Placeholder for Story Section -->
+            <div class="dev-placeholder-box" style="margin-top: 48px; padding: 60px 20px;">
+                <i class="fas fa-warehouse"></i>
+                <h3>Facility Network Under Development</h3>
+                <p>Strategic warehouse and terminal locations are currently being finalized.</p>
             </div>
         </div>
     </section>
@@ -2909,7 +2931,7 @@
                 </div>
             </div>
             <div style="text-align:center; margin-top:32px;">
-                <!-- href="https://contact.koshiv.com?industry=other" --><a href="contact/contact.html" style="color:#1e3a8a;">NOT SEEING YOUR INDUSTRY? CONTACT US</a>
+                <a href="contact/contact.html" style="color:#1e3a8a;">NOT SEEING YOUR INDUSTRY? CONTACT US</a>
             </div>
         </div>
     </section>
@@ -2917,26 +2939,21 @@
     <!-- SERVICES SECTION -->
     <section class="services-section">
         <div class="container">
-            <h2 class="section-title">SERVICES - LAUNCHING Q2 2026</h2>
+            <h2 class="section-title">SERVICES - LAUNCHING 2026</h2>
             <p class="section-subtitle">Comprehensive import/export solutions planned for launch</p>
-
-            <!-- Added Image to Services Section -->
-            <div style="margin-bottom: 48px; text-align: left;">
-                <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Global Shipping Services" style="border-radius: 8px; max-height: 400px; width: 100%; object-fit: cover;" loading="lazy">
-            </div>
 
             <div class="services-grid">
                 <div class="service-card">
                     <i class="fas fa-download"></i>
                     <h4>IMPORT SERVICES</h4>
                     <ul>
-                        <li>• Customs Clearance</li>
-                        <li>• ISF Filing</li>
+                        <li>• Customs Clearance Coordination</li>
+                        <li>• ISF Filing Setup</li>
                         <li>• Port Drayage</li>
                         <li>• Transloading</li>
                     </ul>
                     <div class="service-status">
-                        <span class="status"><i class="far fa-clock"></i> Q2 2026</span>
+                        <span class="status"><i class="far fa-clock"></i> 2026 Target</span>
                         <button class="notify-service-btn" onclick="openNotifyModal('Import Services')"><i class="far fa-bell"></i> NOTIFY ME</button>
                     </div>
                 </div>
@@ -2944,13 +2961,13 @@
                     <i class="fas fa-upload"></i>
                     <h4>EXPORT SERVICES</h4>
                     <ul>
-                        <li>• Doc Management</li>
-                        <li>• Shipping Bill Filing</li>
+                        <li>• Doc Management Portal</li>
+                        <li>• Shipping Bill Filing Coord</li>
                         <li>• Container Loading</li>
                         <li>• Export Packing</li>
                     </ul>
                     <div class="service-status">
-                        <span class="status"><i class="far fa-clock"></i> Q2 2026</span>
+                        <span class="status"><i class="far fa-clock"></i> 2026 Target</span>
                         <button class="notify-service-btn" onclick="openNotifyModal('Export Services')"><i class="far fa-bell"></i> NOTIFY ME</button>
                     </div>
                 </div>
@@ -2961,38 +2978,38 @@
                         <li>• India-Nepal Crossings</li>
                         <li>• India-Bangladesh Crossings</li>
                         <li>• Customs Broker Coord</li>
-                        <li>• Border Wait Times</li>
+                        <li>• Border Wait Time Analytics</li>
                     </ul>
                     <div class="service-status">
-                        <span class="status"><i class="far fa-clock"></i> Q3 2026</span>
+                        <span class="status"><i class="far fa-clock"></i> Future Expansion</span>
                         <button class="notify-service-btn" onclick="openNotifyModal('Cross-Border Services')"><i class="far fa-bell"></i> NOTIFY ME</button>
                     </div>
                 </div>
                 <div class="service-card">
-                    <i class="fas fa-container-storage"></i>
+                    <i class="fas fa-box-open"></i>
                     <h4>DRAYAGE & INTERMODAL</h4>
                     <ul>
-                        <li>• Port Drayage</li>
+                        <li>• Port Drayage Connect</li>
                         <li>• Rail Ramp Connections</li>
                         <li>• Cross-Dock Operations</li>
                         <li>• Container Stuffing</li>
                     </ul>
                     <div class="service-status">
-                        <span class="status"><i class="far fa-clock"></i> Q3 2026</span>
+                        <span class="status"><i class="far fa-clock"></i> Future Expansion</span>
                         <button class="notify-service-btn" onclick="openNotifyModal('Drayage & Intermodal')"><i class="far fa-bell"></i> NOTIFY ME</button>
                     </div>
                 </div>
                 <div class="service-card">
-                    <i class="fas fa-temperature-high"></i>
+                    <i class="fas fa-temperature-low"></i>
                     <h4>TEMPERATURE CONTROLLED</h4>
                     <ul>
-                        <li>• Frozen (-25°C)</li>
-                        <li>• Refrigerated</li>
-                        <li>• Pharma (2-8°C)</li>
-                        <li>• Produce</li>
+                        <li>• Frozen Transport</li>
+                        <li>• Refrigerated Solutions</li>
+                        <li>• Pharma Compliance</li>
+                        <li>• Produce Logistics</li>
                     </ul>
                     <div class="service-status">
-                        <span class="status"><i class="far fa-clock"></i> Q2 2026</span>
+                        <span class="status"><i class="far fa-clock"></i> 2026 Target</span>
                         <button class="notify-service-btn" onclick="openNotifyModal('Temperature Controlled')"><i class="far fa-bell"></i> NOTIFY ME</button>
                     </div>
                 </div>
@@ -3000,13 +3017,13 @@
                     <i class="fas fa-exclamation-triangle"></i>
                     <h4>SPECIALIZED SERVICES</h4>
                     <ul>
-                        <li>• Hazmat</li>
-                        <li>• Oversized</li>
-                        <li>• High-Value</li>
-                        <li>• Project Cargo</li>
+                        <li>• Hazmat Protocol</li>
+                        <li>• Oversized Cargo</li>
+                        <li>• High-Value Routing</li>
+                        <li>• Project Cargo Planning</li>
                     </ul>
                     <div class="service-status">
-                        <span class="status"><i class="far fa-clock"></i> Q3 2026</span>
+                        <span class="status"><i class="far fa-clock"></i> Future Expansion</span>
                         <button class="notify-service-btn" onclick="openNotifyModal('Specialized Services')"><i class="far fa-bell"></i> NOTIFY ME</button>
                     </div>
                 </div>
@@ -3014,99 +3031,21 @@
         </div>
     </section>
 
-    <!-- FLEET SECTION -->
+    <!-- FLEET SECTION (Placeholder implemented) -->
     <section class="fleet-section">
         <div class="container">
-            <h2 class="section-title">OUR FLEET - ACQUIRING 2024-2026</h2>
+            <h2 class="section-title">OUR FLEET - STRATEGY</h2>
             <p class="section-subtitle">Modern equipment. Latest safety technology. Driver comfort.</p>
 
-            <div class="fleet-promise">
-                WE'RE INVESTING ₹17 LAKHS (PHASE 1) IN BRAND NEW EQUIPMENT
-            </div>
-
-            <!-- Fleet Image with Specific Truck Models -->
-            <div style="margin-bottom: 48px; text-align: left;">
-                <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Tata Signa Fleet" style="border-radius: 8px; max-height: 500px; width: 100%; object-fit: cover;" loading="lazy">
-                <p style="font-size: 14px; color: #4b5563; margin-top: 8px;">*Tata Signa 4825.TK - First 5 trucks arriving April 2026</p>
-            </div>
-
-            <!-- Specific Truck Model Details -->
-            <div class="truck-model-detail">
-                <h5><i class="fas fa-truck"></i> TATA SIGNA 4825.TK (10 Trucks - Phase 1)</h5>
-                <p>6x4 configuration • 280 HP • 10-speed manual • Air brakes • Telematics ready</p>
-            </div>
-            
-            <div class="truck-model-detail">
-                <h5><i class="fas fa-truck"></i> ASHOK LEYLAND 4225 (10 Trucks - Phase 2)</h5>
-                <p>6x4 • 250 HP • 9-speed • Fleet management system • AC cabin</p>
-            </div>
-            
-            <div class="truck-model-detail">
-                <h5><i class="fas fa-truck"></i> EICHER PRO 6055 (5 Trucks - Phase 2)</h5>
-                <p>6x4 • 280 HP • 9-speed • Telematics • Sleeper cabin</p>
-            </div>
-
-            <div class="fleet-grid">
-                <div class="fleet-item">
-                    <h4>25+ DRY VANS</h4>
-                    <p class="fleet-specs">40' & 32' • Air ride • E-track</p>
-                </div>
-                <div class="fleet-item">
-                    <h4>15+ REEFERS</h4>
-                    <p class="fleet-specs">Multi-temp • Remote monitoring</p>
-                </div>
-                <div class="fleet-item">
-                    <h4>10+ FLATBEDS</h4>
-                    <p class="fleet-specs">Step deck • Coil racks • Tarp</p>
-                </div>
-                <div class="fleet-item">
-                    <h4>8+ STEP DECKS</h4>
-                    <p class="fleet-specs">Low height • Heavy haul</p>
-                </div>
-                <div class="fleet-item">
-                    <h4>5+ RGN</h4>
-                    <p class="fleet-specs">Double drop • Removable gooseneck</p>
-                </div>
-                <div class="fleet-item">
-                    <h4>20+ CHASSIS</h4>
-                    <p class="fleet-specs">20'-40' • Tri-axle • Slider</p>
-                </div>
-            </div>
-
-            <div class="fleet-features-grid">
-                <div class="feature-col">
-                    <h4>SAFETY</h4>
-                    <ul>
-                        <li><i class="fas fa-check" style="color:#10b981;"></i> Collision mitigation</li>
-                        <li><i class="fas fa-check" style="color:#10b981;"></i> Lane departure warning</li>
-                        <li><i class="fas fa-check" style="color:#10b981;"></i> Side object detection</li>
-                        <li><i class="fas fa-check" style="color:#10b981;"></i> Stability control</li>
-                    </ul>
-                </div>
-                <div class="feature-col">
-                    <h4>COMFORT</h4>
-                    <ul>
-                        <li><i class="fas fa-check" style="color:#10b981;"></i> 100% AC Cabin</li>
-                        <li><i class="fas fa-check" style="color:#10b981;"></i> Premium sleeper cabin</li>
-                        <li><i class="fas fa-check" style="color:#10b981;"></i> Memory foam mattress</li>
-                        <li><i class="fas fa-check" style="color:#10b981;"></i> Inverter, refrigerator</li>
-                    </ul>
-                </div>
-                <div class="feature-col">
-                    <h4>TECH</h4>
-                    <ul>
-                        <li><i class="fas fa-check" style="color:#10b981;"></i> GPS tracking</li>
-                        <li><i class="fas fa-check" style="color:#10b981;"></i> ELD (electronic logging)</li>
-                        <li><i class="fas fa-check" style="color:#10b981;"></i> Driver app</li>
-                        <li><i class="fas fa-check" style="color:#10b981;"></i> 24/7 support</li>
-                        <li><i class="fas fa-check" style="color:#10b981;"></i> Paperless documents</li>
-                    </ul>
-                </div>
+            <div class="dev-placeholder-box">
+                <i class="fas fa-truck-loading"></i>
+                <h3>Fleet Acquisition Under Development</h3>
+                <p>We are currently establishing vendor relationships for our initial fleet acquisition. Specific truck models, quantities, and exact investment numbers will be published closer to our launch. Check back soon for details on our modern fleet!</p>
             </div>
 
             <div style="background:#ffffff; padding:32px; border-radius:8px;">
                 <h3 style="margin-bottom:16px;">NEED SPECIFIC EQUIPMENT IN 2026?</h3>
-                <p style="margin-bottom:24px;">Tell us what you need - we'll build our fleet around you.</p>
+                <p style="margin-bottom:24px;">Tell us what you need - we'll factor it into our fleet acquisition phase.</p>
                 
                 <form action="https://formspree.io/f/your-form-id" method="POST" style="max-width:600px; margin:0 auto;">
                     <div style="margin-bottom:16px;">
@@ -3130,7 +3069,7 @@
                     </div>
                     <button type="submit" class="btn btn-primary" style="width:100%;">SUBMIT EQUIPMENT REQUEST</button>
                 </form>
-                <p style="text-align:center; margin-top:16px; font-size:14px;">We'll prioritize equipment for early requestors.</p>
+                <p style="text-align:center; margin-top:16px; font-size:14px;">We'll prioritize specific requests for early adopters.</p>
             </div>
         </div>
     </section>
@@ -3141,67 +3080,51 @@
             <h2 class="section-title">OUR LAUNCH TIMELINE - FOLLOW OUR PROGRESS</h2>
             <p class="section-subtitle">Transparency every step of the way</p>
 
-            <!-- Real Milestones Counter -->
-            <div class="milestone-counter">
-                <div class="milestone-item">
-                    <div class="milestone-number">15</div>
-                    <div class="milestone-label">Early Adopter Signups</div>
-                </div>
-                <div class="milestone-item">
-                    <div class="milestone-number">5</div>
-                    <div class="milestone-label">Driver Pre-Applications</div>
-                </div>
-                <div class="milestone-item">
-                    <div class="milestone-number">2</div>
-                    <div class="milestone-label">Trucks Booked</div>
-                </div>
-                <div class="milestone-item">
-                    <div class="milestone-number">1</div>
-                    <div class="milestone-label">Office Location Secured</div>
-                </div>
+            <div class="dev-placeholder-box">
+                <i class="fas fa-tasks"></i>
+                <h3>Live Metrics Coming Soon</h3>
+                <p>Live tracking of early adopters, driver applications, and operational metrics will be integrated as our administrative framework completes.</p>
             </div>
 
             <div class="timeline-item">
                 <div class="timeline-header">
-                    <h3>Q1 2026 (IN PROGRESS) - 65% Complete</h3>
-                    <span>Today: March 2026</span>
+                    <h3>PRE-LAUNCH PHASE (IN PROGRESS)</h3>
                 </div>
                 <div class="progress-bar">
-                    <div class="progress-fill" style="width:65%"></div>
+                    <div class="progress-fill" style="width:40%"></div>
                 </div>
                 <div class="timeline-items">
                     <div class="completed">
-                        <h5>✓ COMPLETED</h5>
+                        <h5><i class="fas fa-check-circle" style="color:#10b981;"></i> COMPLETED</h5>
                         <ul>
-                            <li>✓ Office location secured (Andheri East, Mumbai)</li>
-                            <li>✓ Founders team fully assembled</li>
-                            <li>✓ Business entity formed (Koshiv Logistics Pvt Ltd)</li>
-                            <li>✓ Early adopter signups open (15 registered)</li>
-                            <li>✓ Domain www.koshiv.com purchased</li>
+                            <li><i class="fas fa-check-circle" style="color:#10b981;"></i> Founders team assembled</li>
+                            <li><i class="fas fa-check-circle" style="color:#10b981;"></i> Web platform developed</li>
+                            <li><i class="fas fa-check-circle" style="color:#10b981;"></i> Early adopter signup portal open</li>
+                            <li><i class="fas fa-check-circle" style="color:#10b981;"></i> Domain koshiv.com registered</li>
                         </ul>
                     </div>
                     <div class="in-progress">
-                        <h5>🟡 IN PROGRESS</h5>
+                        <h5><i class="fas fa-spinner fa-spin" style="color:#f59e0b;"></i> IN PROGRESS</h5>
                         <ul>
-                            <li>🟡 GSTIN application in process</li>
-                            <li>🟡 First 5 trucks ordered (Tata Signa)</li>
-                            <li>🟡 Bank financing secured (75% complete)</li>
-                            <li>🟡 Mobile app development (React Native)</li>
+                            <li>Entity incorporation (Pvt Ltd)</li>
+                            <li>Fleet acquisition strategy</li>
+                            <li>Investor relations & funding</li>
+                            <li>Mobile app UX/UI wireframing</li>
                         </ul>
                     </div>
                     <div class="planned">
-                        <h5>⬜ PLANNED</h5>
+                        <h5><i class="far fa-calendar-alt"></i> PLANNED</h5>
                         <ul>
-                            <li>⬜ AEO certification (by April 15)</li>
-                            <li>⬜ Driver hiring (by April 30)</li>
-                            <li>⬜ Finalize warehouse lease</li>
+                            <li>Office location procurement</li>
+                            <li>Driver recruitment opening</li>
+                            <li>Operational launch</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
             <div style="text-align:center; margin-top:32px;">
-                <!-- href="https://early.koshiv.com/timeline" --><a href="about/about.html" class="btn btn-primary">GET TIMELINE UPDATES VIA EMAIL</a>
+                <a href="about/about.html" class="btn btn-primary">GET TIMELINE UPDATES VIA EMAIL</a>
             </div>
         </div>
     </section>
@@ -3209,61 +3132,56 @@
     <!-- FOUNDERS SECTION -->
     <section class="founders-section">
         <div class="container">
-            <h2 class="section-title">MEET THE FOUNDERS</h2>
-            <p class="section-subtitle">40+ years combined industry experience + Fresh Tech Perspective</p>
+            <h2 class="section-title">MEET THE TEAM</h2>
+            <p class="section-subtitle">Combining industry legacy with future tech</p>
 
             <div class="founders-grid">
                 <div class="founder-card">
                     <div class="founder-photo-placeholder">
-                        <img src="images/a4b7cde7-2811-4df5-9823-df20b359e878.jpg" alt="Koushal Jha" onerror="this.style.display='none'">
+                        <i class="fas fa-laptop-code" style="font-size: 40px; color: #9ca3af;"></i>
                     </div>
                     <h4>KOUSHAL JHA</h4>
-                    <p class="title">CEO, Founder & Lead Developer</p>
+                    <p class="title">Founder & Tech Lead</p>
                     <ul>
-                        <li>• 3rd Yr B.Tech CSE Student</li>
-                        <li>• Full-stack Developer (MERN)</li>
-                        <li>• Built this entire platform</li>che
-                        <li>• LinkedIn: <a href="https://www.linkedin.com/in/koushal-jha-cs27/" class="social-link">@koushal-jha-cs27</a></li>
+                        <li>• B.Tech CSE Innovator</li>
+                        <li>• Full-stack Architecture</li>
+                        <li>• Logistics Tech Visionary</li>
                     </ul>
-                    <div>
-                        <a href="https://www.linkedin.com/in/koushal-jha-cs27/" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/koushaljhacs" class="social-link"><i class="fab fa-github"></i></a>
-                    </div>
                 </div>
                 <div class="founder-card">
                     <div class="founder-photo-placeholder">
-                        <img src="images/jay.png" alt="Jay Govind Jha" >
+                        <i class="fas fa-user-tie" style="font-size: 40px; color: #9ca3af;"></i>
                     </div>
                     <h4>JAY GOVIND JHA</h4>
-                    <p class="title">COO & Co-Founder</p>
+                    <p class="title">Operations Expert</p>
                     <ul>
-                        <li>• 10+ yrs Transport Experience</li>
-                        <li>• Manager at Kushal Roadlines (KRL)</li>
-                        <li>• Fleet Operations Expert</li>
+                        <li>• Transport Management</li>
+                        <li>• Fleet Operations</li>
+                        <li>• Industry Operations</li>
                     </ul>
                 </div>
                 <div class="founder-card">
                     <div class="founder-photo-placeholder">
-                        <img src="images/founder-uday.jpg" alt="Uday Chandra Jha" onerror="this.style.display='none'">
+                        <i class="fas fa-truck" style="font-size: 40px; color: #9ca3af;"></i>
                     </div>
                     <h4>UDAY CHANDRA JHA</h4>
-                    <p class="title">Co-Founder</p>
+                    <p class="title">Fleet Advisor</p>
                     <ul>
-                        <li>• 20+ yrs Driving Experience</li>
-                        <li>• 4-Wheeler & 8-Wheeler Operations</li>
-                        <li>• On-Ground Fleet Expert</li>
+                        <li>• Heavy Vehicle Operations</li>
+                        <li>• Route Management</li>
+                        <li>• Ground Execution</li>
                     </ul>
                 </div>
                 <div class="founder-card">
                     <div class="founder-photo-placeholder">
-                        <img src="images/founder-raj.jpg" alt="Raj Mohan Jha" onerror="this.style.display='none'">
+                        <i class="fas fa-road" style="font-size: 40px; color: #9ca3af;"></i>
                     </div>
                     <h4>RAJ MOHAN JHA</h4>
-                    <p class="title">Co-Founder</p>
+                    <p class="title">Senior Advisor</p>
                     <ul>
-                        <li>• 40+ yrs Driving Experience</li>
-                        <li>• 4-Wheeler & 8-Wheeler Veteran</li>
-                        <li>• Lifetime Transport Expert</li>
+                        <li>• Lifetime Industry Legacy</li>
+                        <li>• Network Building</li>
+                        <li>• Strategic Counsel</li>
                     </ul>
                 </div>
             </div>
@@ -3273,202 +3191,81 @@
     <!-- EARLY ADOPTER SECTION -->
     <section class="early-adopter-section">
         <div class="container">
-            <h2 class="section-title">EARLY ADOPTER PROGRAM - LIMITED SPOTS</h2>
-            <p class="section-subtitle">Be among the first to ship with Koshiv</p>
+            <h2 class="section-title">EARLY ADOPTER PROGRAM</h2>
+            <p class="section-subtitle">Be among the first to partner with Koshiv Technology and Logistics</p>
 
-            <!-- Added Image to Early Adopter Section -->
-            <div style="margin-bottom: 48px; text-align: left;">
-                <img src="https://images.unsplash.com/photo-1559297434-fae8a1916a79?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Business Partnership" style="border-radius: 8px; max-height: 350px; width: 100%; object-fit: cover;" loading="lazy">
-            </div>
-
-            <div class="urgency-counter">
-                <h3>🔥 ONLY 25 EARLY ADOPTER SPOTS AVAILABLE</h3>
-                <p style="font-size:24px; font-weight:700;">12 ALREADY CLAIMED • 13 SPOTS REMAINING</p>
-                <div class="counter-progress">
-                    <div class="counter-bar">
-                        <div class="counter-fill"></div>
-                    </div>
-                    <p>48% CLAIMED</p>
-                </div>
+            <div class="dev-placeholder-box" style="margin-top: 20px; padding: 40px 20px;">
+                <i class="fas fa-handshake"></i>
+                <h3>Partnership Network Building</h3>
+                <p>We are currently onboarding partners for our 2026 launch. Lock in your priority status today.</p>
             </div>
 
             <div class="offers-grid">
                 <div class="offer-card">
                     <h4>FOR EARLY CLIENTS</h4>
                     <ul>
-                        <li><i class="fas fa-check"></i> 10% off first 5 shipments</li>
-                        <li><i class="fas fa-check"></i> Dedicated account manager from day one</li>
-                        <li><i class="fas fa-check"></i> No credit check for first 30 days</li>
-                        <li><i class="fas fa-check"></i> Input on our service development</li>
-                        <li><i class="fas fa-check"></i> Named on "Launch Partners" page</li>
-                        <li><i class="fas fa-check"></i> Exclusive rate lock for 2026</li>
-                        <li><i class="fas fa-check"></i> Priority capacity during launch</li>
+                        <li><i class="fas fa-check-circle" style="color:#1e3a8a;"></i> Dedicated account manager from day one</li>
+                        <li><i class="fas fa-check-circle" style="color:#1e3a8a;"></i> Input on our service development</li>
+                        <li><i class="fas fa-check-circle" style="color:#1e3a8a;"></i> Priority capacity during launch</li>
                     </ul>
                 </div>
                 <div class="offer-card">
                     <h4>FOR EARLY DRIVERS</h4>
                     <ul>
-                        <li><i class="fas fa-check"></i> ₹2,00,000 signing bonus</li>
-                        <li><i class="fas fa-check"></i> First pick of equipment</li>
-                        <li><i class="fas fa-check"></i> Input on home time policies</li>
-                        <li><i class="fas fa-check"></i> Founder meet-and-greet</li>
-                        <li><i class="fas fa-check"></i> Priority route assignments</li>
-                        <li><i class="fas fa-check"></i> Referral bonus enhanced (₹2,50,000)</li>
-                        <li><i class="fas fa-check"></i> Guaranteed home time</li>
+                        <li><i class="fas fa-check-circle" style="color:#1e3a8a;"></i> First pick of equipment options</li>
+                        <li><i class="fas fa-check-circle" style="color:#1e3a8a;"></i> Input on home time policies</li>
+                        <li><i class="fas fa-check-circle" style="color:#1e3a8a;"></i> Direct line to founder</li>
                     </ul>
                 </div>
                 <div class="offer-card">
                     <h4>FOR EARLY PARTNERS</h4>
                     <ul>
-                        <li><i class="fas fa-check"></i> Reduced commission for first 6 months</li>
-                        <li><i class="fas fa-check"></i> Featured partner status</li>
-                        <li><i class="fas fa-check"></i> Direct integration support</li>
-                        <li><i class="fas fa-check"></i> Co-marketing opportunities</li>
-                        <li><i class="fas fa-check"></i> First access to new lanes</li>
-                        <li><i class="fas fa-check"></i> Dedicated partner support</li>
-                        <li><i class="fas fa-check"></i> Invite to partner advisory council</li>
+                        <li><i class="fas fa-check-circle" style="color:#1e3a8a;"></i> Featured partner status</li>
+                        <li><i class="fas fa-check-circle" style="color:#1e3a8a;"></i> Co-marketing opportunities</li>
+                        <li><i class="fas fa-check-circle" style="color:#1e3a8a;"></i> Invite to advisory council</li>
                     </ul>
                 </div>
             </div>
 
-            <button class="claim-btn" onclick="openEarlyAdopterModal()">CLAIM YOUR EARLY ADOPTER SPOT - 13 LEFT</button>
+            <button class="claim-btn" onclick="openEarlyAdopterModal()">JOIN EARLY ADOPTER PROGRAM</button>
         </div>
     </section>
 
-    <!-- INVESTOR SECTION -->
+    <!-- INVESTOR SECTION (Placeholder implemented) -->
     <section class="investor-section">
         <div class="container">
-            <div class="investor-grid">
-                <div class="investor-details">
-                    <h3>🚀 FOR INVESTORS</h3>
-                    <p style="margin-bottom: 24px;">We're building the next-gen logistics platform. Join our journey.</p>
-                    
-                    <h4>Use of Funds (₹50 Lakhs Seed Round)</h4>
-                    <ul class="funds-list">
-                        <li><span>Fleet expansion (Phase 1)</span> <span>₹30L</span></li>
-                        <li><span>Technology development</span> <span>₹10L</span></li>
-                        <li><span>Marketing & Sales</span> <span>₹7L</span></li>
-                        <li><span>Working capital</span> <span>₹3L</span></li>
-                    </ul>
-                    
-                    <div style="margin-top: 24px;">
-                        <a href="pitch-deck.pdf" class="pitch-download" download><i class="fas fa-download"></i> Download Pitch Deck</a>
-                        <a href="mailto:investors@koshiv.com" class="investor-contact">investors@koshiv.com</a>
-                    </div>
-                    
-                    <p style="margin-top: 16px; font-size: 14px; color: #4b5563;">
-                        Current Valuation: ₹2 Crores | Equity Offered: 10-15%
-                    </p>
-                </div>
-                
-                <div class="valuation-box">
-                    <div class="number">₹17L</div>
-                    <div class="label">Current Founder Investment</div>
-                    <div style="margin: 16px 0;">
-                        <i class="fas fa-chart-line" style="font-size: 48px;"></i>
-                    </div>
-                    <div>Seeking ₹50L for Phase 1</div>
-                </div>
+            <div class="dev-placeholder-box" style="margin: 0;">
+                <i class="fas fa-chart-line"></i>
+                <h3>Investment & Funding Details Under Review</h3>
+                <p>Specific capital requirements, startup valuations, and equity structures are currently being finalized by our financial advisors. Please reach out to <a href="mailto:investors@koshiv.com" style="color:#1e3a8a; font-weight:600;">investors@koshiv.com</a> directly for discussions.</p>
             </div>
         </div>
     </section>
 
-    <!-- TESTIMONIALS SECTION -->
+    <!-- TESTIMONIALS SECTION (Placeholder implemented) -->
     <section class="testimonials-section">
         <div class="container">
-            <h2 class="section-title">WHAT PEOPLE ARE SAYING</h2>
-            <p class="section-subtitle">Trusted by industry professionals</p>
+            <h2 class="section-title">CLIENTS & PARTNERS</h2>
+            <p class="section-subtitle">Building trust in the logistics ecosystem</p>
 
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <p>"Koushal's vision combines his family's 40+ years of transport experience with modern technology. This is exactly what the Indian logistics industry needs."</p>
-                    <p class="attribution">— Dr. [Professor Name]</p>
-                    <p class="context">Head of CSE Department, [College Name]</p>
-                </div>
-                <div class="testimonial-card">
-                    <p>"I've known the Jha family for 20+ years. Jay Govind's expertise in fleet operations combined with Koushal's tech skills is a winning combination."</p>
-                    <p class="attribution">— [Family Friend Name]</p>
-                    <p class="context">Transport Business Owner, 30+ years experience</p>
-                </div>
-                <div class="testimonial-card">
-                    <p>"The equipment and home time policy they're offering is better than anything I've seen. I've already pre-applied to join their launch team."</p>
-                    <p class="attribution">— Local Driver Name</p>
-                    <p class="context">15-year Heavy Vehicle Driver</p>
-                </div>
-            </div>
-
-            <div style="text-align:center;">
-                <p style="margin-bottom:16px; font-weight:600;">TRUSTED BY (COMING SOON)</p>
-                <div class="logo-placeholders">
-                    <div class="logo-placeholder">[LOGO] Partner 1</div>
-                    <div class="logo-placeholder">[LOGO] Partner 2</div>
-                    <div class="logo-placeholder">[LOGO] Client 1</div>
-                    <div class="logo-placeholder">[LOGO] Client 2</div>
-                </div>
-                <p style="margin-top:24px;">YOUR LOGO COULD BE HERE - <a href="mailto:partners@koshiv.com">CONTACT US ABOUT PARTNERSHIPS</a></p>
+            <div class="dev-placeholder-box">
+                <i class="fas fa-comments"></i>
+                <h3>Network Under Development</h3>
+                <p>We are actively building our B2B network. Official client and partner testimonials will be featured here once initial operations and beta-testing conclude.</p>
             </div>
         </div>
     </section>
 
-    <!-- PRESS SECTION -->
+    <!-- PRESS SECTION (Placeholder implemented) -->
     <section class="press-section">
         <div class="container">
-            <h2 class="section-title">AS FEATURED IN (COMING SOON)</h2>
-            <p class="section-subtitle">Media outlets we're in discussion with</p>
+            <h2 class="section-title">PRESS & MEDIA</h2>
+            <p class="section-subtitle">Following our tech-logistics journey</p>
 
-            <div class="press-grid">
-                <div class="press-item">
-                    <div>[LOGO] YourStory</div>
-                    <div class="in-discussion">In Discussion</div>
-                </div>
-                <div class="press-item">
-                    <div>[LOGO] Inc42</div>
-                    <div class="in-discussion">In Discussion</div>
-                </div>
-                <div class="press-item">
-                    <div>[LOGO] Economic Times</div>
-                    <div class="in-discussion">In Discussion</div>
-                </div>
-                <div class="press-item">
-                    <div>[LOGO] Hindu Business Line</div>
-                    <div class="in-discussion">In Discussion</div>
-                </div>
-                <div class="press-item">
-                    <div>[LOGO] Freight Waves</div>
-                    <div class="in-discussion">In Discussion</div>
-                </div>
-                <div class="press-item">
-                    <div>[LOGO] Indian Shipper</div>
-                    <div class="in-discussion">In Discussion</div>
-                </div>
-                <div class="press-item">
-                    <div>[LOGO] DC Velocity</div>
-                    <div class="in-discussion">In Discussion</div>
-                </div>
-                <div class="press-item">
-                    <div>[LOGO] Logistics Management</div>
-                    <div class="in-discussion">In Discussion</div>
-                </div>
-            </div>
-
-            <div class="press-release-preview">
-                <div class="release-card">
-                    <p class="release-date">March 15, 2026</p>
-                    <h4>KOSHIV LOGISTICS ANNOUNCES ₹17 LAKHS FLEET INVESTMENT</h4>
-                    <p>First 5 Tata Signa trucks ordered for April 2026 delivery</p>
-                    <a href="#" style="color:#1e3a8a;">[READ MORE →]</a>
-                </div>
-                <div class="release-card">
-                    <p class="release-date">February 1, 2026</p>
-                    <h4>3RD YEAR CSE STUDENT LAUNCHES TECH-DRIVEN LOGISTICS COMPANY</h4>
-                    <p>Koushal Jha combines family's 40+ years transport experience with modern tech</p>
-                    <a href="#" style="color:#1e3a8a;">[READ MORE →]</a>
-                </div>
-            </div>
-
-            <div style="text-align:center; margin-top:32px;">
-                <a href="#" style="color:#1e3a8a;">VIEW ALL PRESS RELEASES</a>
-                <p style="margin-top:16px;">MEDIA INQUIRIES: <a href="mailto:press@koshiv.com">press@koshiv.com</a></p>
+            <div class="dev-placeholder-box">
+                <i class="fas fa-newspaper"></i>
+                <h3>Press Kit & Releases Coming Soon</h3>
+                <p>Official startup announcements and media coverage will be published here as we approach our launch date. Direct media inquiries to <a href="mailto:press@koshiv.com" style="color:#1e3a8a; font-weight:600;">press@koshiv.com</a>.</p>
             </div>
         </div>
     </section>
@@ -3481,41 +3278,49 @@
 
             <div class="blog-grid">
                 <div class="blog-card">
-                    <div class="blog-image"></div>
+                    <div class="blog-image">
+                        <i class="fas fa-pen-nib" style="font-size: 32px;"></i>
+                    </div>
                     <div class="blog-content">
-                        <h4>Why We Started Koshiv: A Message from the Founders</h4>
-                        <p class="blog-meta">March 15, 2026 • 5 min read</p>
+                        <h4>Why We Started Koshiv: A Message from the Founder</h4>
+                        <p class="blog-meta">5 min read</p>
                         <a href="#" class="blog-link">[READ MORE →]</a>
                     </div>
                 </div>
                 <div class="blog-card">
-                    <div class="blog-image"></div>
+                    <div class="blog-image">
+                        <i class="fas fa-laptop-code" style="font-size: 32px;"></i>
+                    </div>
                     <div class="blog-content">
-                        <h4>5 Things to Know About 2026 Import/Export Regulations</h4>
-                        <p class="blog-meta">March 10, 2026 • 8 min read</p>
+                        <h4>How MERN Stack is Changing Logistics Architecture</h4>
+                        <p class="blog-meta">8 min read</p>
                         <a href="#" class="blog-link">[READ MORE →]</a>
                     </div>
                 </div>
                 <div class="blog-card">
-                    <div class="blog-image"></div>
+                    <div class="blog-image">
+                        <i class="fas fa-users" style="font-size: 32px;"></i>
+                    </div>
                     <div class="blog-content">
-                        <h4>Meet Our Founding Team: 40+ Years of Combined Experience</h4>
-                        <p class="blog-meta">March 5, 2026 • 4 min read</p>
+                        <h4>Fusing Generational Experience with New Technology</h4>
+                        <p class="blog-meta">4 min read</p>
                         <a href="#" class="blog-link">[READ MORE →]</a>
                     </div>
                 </div>
                 <div class="blog-card">
-                    <div class="blog-image"></div>
+                    <div class="blog-image">
+                        <i class="fas fa-box" style="font-size: 32px;"></i>
+                    </div>
                     <div class="blog-content">
-                        <h4>What Early Adopters Get: Inside the Koshiv Launch Program</h4>
-                        <p class="blog-meta">February 28, 2026 • 6 min read</p>
+                        <h4>What Early Adopters Get: Inside the Koshiv Program</h4>
+                        <p class="blog-meta">6 min read</p>
                         <a href="#" class="blog-link">[READ MORE →]</a>
                     </div>
                 </div>
             </div>
 
             <div style="text-align:center; margin-top:32px;">
-                <!-- href="https://blog.koshiv.com" --><a href="resources/resources.html" class="btn btn-outline">VIEW ALL ARTICLES</a>
+                <a href="resources/resources.html" class="btn btn-outline">VIEW ALL ARTICLES</a>
             </div>
         </div>
     </section>
@@ -3524,94 +3329,49 @@
     <section class="faq-section">
         <div class="container">
             <h2 class="section-title">FREQUENTLY ASKED QUESTIONS</h2>
-            <p class="section-subtitle">Everything you need to know about our launch</p>
+            <p class="section-subtitle">Everything you need to know about our launch phase</p>
 
             <div style="max-width:800px; margin:0 auto;">
                 <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
-                        <span>When will Koshiv actually start moving freight?</span>
+                        <span>When will Koshiv Technology and Logistics start operations?</span>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        We're on track for Q2 2026 launch. Our first trucks arrive in April, with client shipments beginning in May. Join our early adopter list to be first in line and get priority capacity when we launch.
+                        We are projecting a 2026 operational launch. Our tech infrastructure is currently being built out, while entity registration and asset procurement happen in parallel. Join our early adopter list for updates.
                     </div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
-                        <span>Can I book shipments now for 2026?</span>
+                        <span>Can I register as a partner or client now?</span>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        Yes! We're accepting pre-bookings with no obligation. Reserve your capacity today and lock in early adopter pricing (10% off first 5 shipments). You can cancel anytime before our official launch.
+                        Yes! We are accepting pre-registrations with no obligation. Let us know your logistics needs today so we can factor them into our routing and scaling algorithms.
                     </div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
-                        <span>How do I know you'll actually launch?</span>
+                        <span>What makes Koshiv different?</span>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        Our founders have 40+ years combined industry experience. We have already registered the company, booked our first 5 trucks, and secured office space in Mumbai. Follow our progress on social media and check our launch timeline above for real-time updates.
+                        We are an entirely digitally-native logistics company built from the ground up on the MERN stack. We have zero legacy software bloat, giving us immense agility to offer perfectly transparent pricing and real-time app tracking from day one.
                     </div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
-                        <span>What makes Koshiv different from established carriers?</span>
+                        <span>Are the mobile apps ready?</span>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        We're building from scratch with: • Modern technology (MERN stack, React Native apps) • Transparent pricing (no hidden fees) • Customer-first culture (dedicated account managers) • Newer equipment (2024-2026 models) • Industry veterans who've seen what doesn't work.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                        <span>Are you hiring drivers now?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        Yes! We're accepting pre-applications for our launch team. Early applicants receive a ₹2,00,000 signing bonus and first pick of equipment. Apply today to secure your spot. Positions fill quickly.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                        <span>What certifications do you have?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        We're currently in the process of obtaining: • GSTIN Number (pending) • AEO Certification (application in progress) • Customs Bond (being secured) • BCAS Certified Cargo Screening (planned). All certifications will be complete before our Q2 launch.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                        <span>What areas will you serve initially?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        Phase 1 (Q2 2026): Mumbai, Delhi NCR, Western region • Phase 2 (Q3 2026): East coast ports, Bangladesh crossings • Phase 3 (Q4 2026): South coast ports, Nepal crossings. Check our coverage map above for details.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                        <span>How can I become a partner?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        We're actively recruiting: • Owner operators (lease purchase available) • Small fleet partners • Broker partners • Customs brokers. Fill out our partner interest form and we'll contact you within 48 hours.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                        <span>Is this a real company or a college project?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        Both! Koshiv Logistics is a registered company (Koshiv Logistics Pvt Ltd) founded by a 3rd year CSE student along with family members who have 40+ years of transport experience. The website and technology are being built by the founder himself, combining academic learning with real-world business.
+                        Our React Native mobile applications are currently in the development lifecycle. They will undergo rigorous beta testing prior to our official fleet deployment.
                     </div>
                 </div>
             </div>
 
             <div style="text-align:center; margin-top:32px;">
-                <!-- href="https://resources.koshiv.com/faq" --><a href="resources/resources.html" class="btn btn-outline">VIEW ALL FAQs</a>
+                <a href="resources/resources.html" class="btn btn-outline">VIEW ALL FAQs</a>
             </div>
         </div>
     </section>
@@ -3620,16 +3380,15 @@
     <section style="padding:80px 0; background-color:#f3f4f6;">
         <div class="container">
             <div style="text-align:center; max-width:600px; margin:0 auto;">
-                <h2 style="font-size:32px; font-weight:700; margin-bottom:16px;">🚚 STAY UPDATED ON OUR LAUNCH</h2>
-                <p style="font-size:18px; margin-bottom:32px;">Be the first to know when we're ready to move your freight</p>
+                <h2 style="font-size:32px; font-weight:700; margin-bottom:16px;"><i class="fas fa-envelope-open-text"></i> STAY UPDATED ON OUR LAUNCH</h2>
+                <p style="font-size:18px; margin-bottom:32px;">Be the first to know when our platform goes live</p>
                 
                 <form action="https://formspree.io/f/your-newsletter-id" method="POST" style="display:flex; gap:8px;">
                     <input type="email" name="email" placeholder="Email Address" required style="flex:1; padding:12px; border:1px solid #d1d5db; border-radius:4px;">
                     <button type="submit" class="btn btn-primary">SUBSCRIBE</button>
                 </form>
                 
-                <p style="margin-top:16px; font-size:14px;">✓ No spam ✓ Unsubscribe anytime ✓ Launch updates only</p>
-                <p style="margin-top:8px; font-weight:600;">15+ early adopters already subscribed</p>
+                <p style="margin-top:16px; font-size:14px;"><i class="fas fa-check"></i> No spam <i class="fas fa-check"></i> Unsubscribe anytime <i class="fas fa-check"></i> Enterprise updates only</p>
             </div>
         </div>
     </section>
@@ -3637,15 +3396,15 @@
     <!-- CONTACT SECTION -->
     <section class="contact-section">
         <div class="container">
-            <h2 class="section-title">CONTACT KOSHIV LOGISTICS</h2>
+            <h2 class="section-title">CONTACT KOSHIV TECHNOLOGY AND LOGISTICS</h2>
             <p class="section-subtitle">We're here to answer your questions before launch</p>
 
             <div class="contact-grid">
                 <div class="contact-card">
                     <i class="fas fa-phone-alt"></i>
                     <h4>PHONE</h4>
-                    <p><a href="tel:+919876543210">+91 98765 43210</a></p>
-                    <span class="whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp Available</span>
+                    <p><a href="tel:+917417093299">+91 74170 93299</a></p>
+                    <span class="whatsapp" style="margin-top: 8px;"><a href="https://wa.me/918298163299" style="color:white;"><i class="fab fa-whatsapp"></i> WhatsApp Available</a></span>
                     <p style="font-size:14px; margin-top:8px;">Mon-Fri 9am-6pm IST</p>
                 </div>
                 <div class="contact-card">
@@ -3656,31 +3415,11 @@
                     <p><a href="mailto:support@koshiv.com">support@koshiv.com</a></p>
                 </div>
                 <div class="contact-card">
-                    <i class="fas fa-comment"></i>
-                    <h4>LIVE CHAT</h4>
-                    <p>Available M-F 9-6 IST</p>
-                    <p style="font-size:14px;">After hours: leave message</p>
-                </div>
-                <div class="contact-card">
                     <i class="fas fa-map-marker-alt"></i>
                     <h4>HEADQUARTERS</h4>
                     <p>Office No. 123, Andheri East,</p>
                     <p>Mumbai - 400093, Maharashtra</p>
-                    <p style="font-size:14px;">(Opening Q2 2026)</p>
-                </div>
-                <div class="contact-card">
-                    <i class="far fa-clock"></i>
-                    <h4>BUSINESS HOURS</h4>
-                    <p>Mon-Fri: 9am-6pm IST</p>
-                    <p>Sat-Sun: Closed</p>
-                    <p style="font-size:14px;">Launching 24/7 Dispatch in Q2 2026</p>
-                </div>
-                <div class="contact-card">
-                    <i class="fas fa-exclamation-triangle"></i>
-                    <h4>EMERGENCY</h4>
-                    <p><a href="mailto:emergency@koshiv.com">emergency@koshiv.com</a></p>
-                    <p><a href="tel:+919876543210">+91 98765 43210 ext 9</a></p>
-                    <p style="font-size:14px;">For urgent pre-launch issues</p>
+                    <p style="font-size:14px;">(Opening 2026)</p>
                 </div>
             </div>
 
@@ -3727,7 +3466,7 @@
                     </div>
                     <div class="checkbox-group">
                         <label>
-                            <input type="checkbox" name="newsletter"> I'd like to receive launch updates
+                            <input type="checkbox" name="newsletter"> I'd like to receive enterprise updates
                         </label>
                     </div>
                     <button type="submit" class="submit-btn">SEND MESSAGE</button>
@@ -3737,56 +3476,16 @@
         </div>
     </section>
 
-    <!-- MAP SECTION -->
+    <!-- MAP SECTION (Placeholder implemented) -->
     <section class="map-section">
         <div class="container">
             <h2 class="section-title" style="text-align:center;">OUR PLANNED LOCATIONS</h2>
             
-            <div class="map-placeholder" id="indiaMap">
-                <div style="position:relative; width:100%; height:100%;">
-                    <!-- Mumbai -->
-                    <div class="map-marker" style="top:55%; left:30%;">
-                        <span class="marker-label">Mumbai (HQ - Q2 2026)</span>
-                    </div>
-                    <!-- Delhi NCR -->
-                    <div class="map-marker" style="top:30%; left:35%;">
-                        <span class="marker-label">Delhi NCR (Q2 2026)</span>
-                    </div>
-                    <!-- Chennai -->
-                    <div class="map-marker" style="top:75%; left:35%;">
-                        <span class="marker-label">Chennai (Q3 2026)</span>
-                    </div>
-                    <!-- Bengaluru -->
-                    <div class="map-marker" style="top:65%; left:30%;">
-                        <span class="marker-label">Bengaluru (Q4 2026)</span>
-                    </div>
-                    <!-- Kolkata -->
-                    <div class="map-marker" style="top:45%; left:55%;">
-                        <span class="marker-label">Kolkata (Q3 2026)</span>
-                    </div>
-                    <!-- Mundra -->
-                    <div class="map-marker" style="top:40%; left:20%;">
-                        <span class="marker-label">Mundra Port</span>
-                    </div>
-                    <!-- Pune -->
-                    <div class="map-marker" style="top:60%; left:25%;">
-                        <span class="marker-label">Pune</span>
-                    </div>
-                    <!-- Hyderabad -->
-                    <div class="map-marker" style="top:60%; left:38%;">
-                        <span class="marker-label">Hyderabad</span>
-                    </div>
-                </div>
-                <div class="map-controls">
-                    <button onclick="zoomMap('in')">[+]</button>
-                    <button onclick="zoomMap('out')">[-]</button>
-                    <button onclick="fullscreenMap()">[⛶]</button>
-                </div>
-                <div class="map-legend">
-                    ★ Headquarters | ● Terminals | ⚓ Ports
-                </div>
+            <div class="dev-placeholder-box">
+                <i class="fas fa-map-marked-alt"></i>
+                <h3>Coverage Map Under Development</h3>
+                <p>Specific port connections, terminal locations, and border crossings are being mapped. Interactive routing tool coming soon!</p>
             </div>
-            <p style="text-align:center; margin-top:16px; font-size:14px;">Click pins for details: opening dates, services offered</p>
         </div>
     </section>
 
@@ -3794,21 +3493,21 @@
     <section class="social-section">
         <div class="container">
             <h2 class="section-title text-center">FOLLOW OUR LAUNCH JOURNEY</h2>
-            <p class="section-subtitle text-center">Connect with us for behind-the-scenes updates</p>
+            <p class="section-subtitle text-center">Connect with us for updates</p>
 
             <div class="social-grid">
                 <div class="social-item">
                     <a href="https://linkedin.com/company/koshiv-logistics" target="_blank">
                         <i class="fab fa-linkedin" style="color:#0077b5;"></i>
                         <div class="handle">@KoshivLogistics</div>
-                        <div class="followers">Connect with founder</div>
+                        <div class="followers">Connect with us</div>
                     </a>
                 </div>
                 <div class="social-item">
                     <a href="https://instagram.com/koshivlogistics" target="_blank">
                         <i class="fab fa-instagram" style="color:#e4405f;"></i>
                         <div class="handle">@koshivlogistics</div>
-                        <div class="followers">Behind the scenes</div>
+                        <div class="followers">Development tracking</div>
                     </a>
                 </div>
                 <div class="social-item">
@@ -3819,54 +3518,23 @@
                     </a>
                 </div>
                 <div class="social-item">
-                    <a href="https://youtube.com/@koshivlogistics" target="_blank">
-                        <i class="fab fa-youtube" style="color:#ff0000;"></i>
-                        <div class="handle">@koshivlogistics</div>
-                        <div class="followers">Coming 2026</div>
-                    </a>
-                </div>
-                <div class="social-item">
-                    <a href="https://github.com/koshiv" target="_blank">
-                        <i class="fab fa-github" style="color:#333;"></i>
-                        <div class="handle">@koshiv</div>
-                        <div class="followers">Open source</div>
-                    </a>
-                </div>
-                <div class="social-item">
-                    <a href="https://wa.me/919876543210" target="_blank">
+                    <a href="https://wa.me/918298163299" target="_blank">
                         <i class="fab fa-whatsapp" style="color:#25D366;"></i>
                         <div class="handle">WhatsApp</div>
-                        <div class="followers">Quick response</div>
-                    </a>
-                </div>
-                <div class="social-item">
-                    <a href="https://t.me/koshivlogistics" target="_blank">
-                        <i class="fab fa-telegram" style="color:#0088cc;"></i>
-                        <div class="handle">Telegram</div>
-                        <div class="followers">Announcements</div>
-                    </a>
-                </div>
-                <div class="social-item">
-                    <a href="https://threads.net/@koshivlogistics" target="_blank">
-                        <i class="fab fa-threads"></i>
-                        <div class="handle">Threads</div>
-                        <div class="followers">Coming 2026</div>
+                        <div class="followers">Enterprise inquiries</div>
                     </a>
                 </div>
             </div>
 
-            <p style="text-align:center; margin-bottom:24px; font-weight:600;">#KoshivLogistics #Launch2026 #BuiltByAStudent</p>
+            <p style="text-align:center; margin-bottom:24px; font-weight:600;">#KoshivTechnology #FutureOfLogistics</p>
 
             <div class="social-feed-preview">
-                <div class="feed-image"></div>
-                <div class="feed-image"></div>
-                <div class="feed-image"></div>
-                <div class="feed-image"></div>
-                <div class="feed-image"></div>
+                <div class="feed-image"><i class="fas fa-image"></i></div>
+                <div class="feed-image"><i class="fas fa-image"></i></div>
+                <div class="feed-image"><i class="fas fa-image"></i></div>
+                <div class="feed-image"><i class="fas fa-image"></i></div>
+                <div class="feed-image"><i class="fas fa-image"></i></div>
             </div>
-            <p style="text-align:center; margin-top:16px;">
-                <a href="https://instagram.com/koshivlogistics" style="color:#1e3a8a;">FOLLOW @KOSHIVLOGISTICS</a>
-            </p>
         </div>
     </section>
 
@@ -3875,72 +3543,67 @@
         <div class="footer-content">
             <div class="footer-main">
                 <div class="footer-col">
-                    <h4>KOSHIV LOGISTICS</h4>
-                    <p style="margin-bottom:8px;">LOGISTICS • Est. 2026</p>
-                    <p style="font-size:14px; opacity:0.8;">Launching Q2 2026</p>
-                    <p style="font-size:14px; opacity:0.8; margin-top:8px;">Import/Export logistics built by a CSE student with 40+ years family experience</p>
+                    <h4>KOSHIV TECHNOLOGY AND LOGISTICS</h4>
+                    <p style="font-size:14px; opacity:0.8;">Launching 2026</p>
+                    <p style="font-size:14px; opacity:0.8; margin-top:8px;">Enterprise logistics engineered with modern web technologies and generational expertise.</p>
                     <div class="subdomain-links">
-                        <!-- href="https://client.koshiv.com" --><a href="clients/clients.html" class="subdomain-link">client.koshiv.com</a>
-                        <!-- href="https://driver.koshiv.com" --><a href="drivers/drivers.html" class="subdomain-link">driver.koshiv.com</a>
-                        <!-- href="https://partner.koshiv.com" --><a href="partners/partners.html" class="subdomain-link">partner.koshiv.com</a>
+                        <a href="clients/clients.html" class="subdomain-link">Client Portal (Dev)</a>
+                        <a href="drivers/drivers.html" class="subdomain-link">Driver Portal (Dev)</a>
                     </div>
                 </div>
                 <div class="footer-col">
                     <h4>SERVICES (2026)</h4>
                     <ul>
-                        <li><!-- href="https://services.koshiv.com/import" --><a href="services/import-solution.html">Import Services</a></li>
-                        <li><!-- href="https://services.koshiv.com/export" --><a href="services/export-solution.html">Export Services</a></li>
-                        <li><!-- href="https://services.koshiv.com/cross-border" --><a href="services/cross-border.html">Cross-Border</a></li>
-                        <li><!-- href="https://services.koshiv.com/drayage" --><a href="services/port-drayage.html">Drayage</a></li>
-                        <li><!-- href="https://services.koshiv.com/temperature" --><a href="services/temperature-controlled.html">Temperature Controlled</a></li>
-                        <li><!-- href="https://services.koshiv.com/specialized" --><a href="services/specialized.html">Specialized</a></li>
-                        <li><!-- href="https://fleet.koshiv.com" --><a href="fleet/fleet.html">Fleet</a></li>
-                        <li><!-- href="https://coverage.koshiv.com" --><a href="coverage/coverage.html">Coverage</a></li>
+                        <li><a href="services/import-solution.html">Import Services</a></li>
+                        <li><a href="services/export-solution.html">Export Services</a></li>
+                        <li><a href="services/cross-border.html">Cross-Border</a></li>
+                        <li><a href="services/port-drayage.html">Drayage</a></li>
+                        <li><a href="services/temperature-controlled.html">Temperature Controlled</a></li>
+                        <li><a href="services/specialized.html">Specialized</a></li>
+                        <li><a href="fleet/fleet.html">Fleet</a></li>
+                        <li><a href="coverage/coverage.html">Coverage</a></li>
                         <li><a href="sitemap.html">Sitemap</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>RESOURCES</h4>
                     <ul>
-                        <li><!-- href="https://blog.koshiv.com" --><a href="resources/resources.html">Blog</a></li>
-                        <li><!-- href="https://news.koshiv.com" --><a href="resources/resources.html">News</a></li>
-                        <li><!-- href="https://resources.koshiv.com/faq" --><a href="resources/resources.html">FAQs</a></li>
-                        <li><!-- href="https://tools.koshiv.com" --><a href="resources/resources.html">Calculators</a></li>
-                        <li><!-- href="https://resources.koshiv.com/guides" --><a href="resources/resources.html">Shipping Guides</a></li>
-                        <li><!-- href="https://resources.koshiv.com/compliance" --><a href="resources/resources.html">Compliance</a></li>
-                        <li><!-- href="https://news.koshiv.com/industry" --><a href="resources/resources.html">Industry News</a></li>
+                        <li><a href="resources/resources.html">Blog</a></li>
+                        <li><a href="resources/resources.html">News</a></li>
+                        <li><a href="resources/resources.html">FAQs</a></li>
+                        <li><a href="resources/resources.html">Calculators</a></li>
+                        <li><a href="resources/resources.html">Shipping Guides</a></li>
+                        <li><a href="resources/resources.html">Compliance</a></li>
+                        <li><a href="resources/resources.html">Industry News</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>COMPANY</h4>
                     <ul>
-                        <li><!-- href="https://about.koshiv.com" --><a href="about/about.html">About Us</a></li>
-                        <li><!-- href="https://about.koshiv.com/team" --><a href="about/about.html">Team</a></li>
-                        <li><!-- href="https://careers.koshiv.com" --><a href="about/about.html">Careers</a></li>
-                        <li><!-- href="https://news.koshiv.com" --><a href="about/about.html">News</a></li>
-                        <li><!-- href="https://contact.koshiv.com" --><a href="contact/contact.html">Contact</a></li>
-                        <li><!-- href="https://partners.koshiv.com" --><a href="partners/partners.html">Partners</a></li>
-                        <li><!-- href="https://investors.koshiv.com" --><a href="about/about.html">Investors</a></li>
+                        <li><a href="about/about.html">About Us</a></li>
+                        <li><a href="about/about.html">Team</a></li>
+                        <li><a href="about/about.html">Careers</a></li>
+                        <li><a href="about/about.html">News</a></li>
+                        <li><a href="contact/contact.html">Contact</a></li>
+                        <li><a href="partners/partners.html">Partners</a></li>
+                        <li><a href="about/about.html">Investors</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>CONNECT</h4>
-                    <p><i class="fas fa-phone"></i> <a href="tel:+919876543210">+91 98765 43210</a></p>
-                    <p><i class="fab fa-whatsapp" style="color:#25D366;"></i> <a href="https://wa.me/919876543210">WhatsApp</a></p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+917417093299">+91 74170 93299</a></p>
+                    <p><i class="fab fa-whatsapp" style="color:#25D366;"></i> <a href="https://wa.me/918298163299">WhatsApp</a></p>
                     <p><i class="fas fa-envelope"></i> <a href="mailto:info@koshiv.com">info@koshiv.com</a></p>
-                    <p><i class="fas fa-comment"></i> Live Chat M-F 9-6 IST</p>
                     <div style="display:flex; gap:16px; margin-top:16px;">
                         <a href="https://linkedin.com/company/koshiv-logistics"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://facebook.com/koshivlogistics"><i class="fab fa-facebook"></i></a>
                         <a href="https://twitter.com/koshivlogistics"><i class="fab fa-twitter"></i></a>
                         <a href="https://instagram.com/koshivlogistics"><i class="fab fa-instagram"></i></a>
-                        <a href="https://youtube.com/@koshivlogistics"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
             </div>
 
             <div class="footer-newsletter">
-                <h3>🚀 LAUNCH ALERTS - BE FIRST WHEN WE'RE READY TO ROLL</h3>
+                <h3><i class="fas fa-rocket"></i> LAUNCH ALERTS - STAY INFORMED</h3>
                 <form class="newsletter-form" action="https://formspree.io/f/your-footer-newsletter-id" method="POST">
                     <input type="email" name="email" placeholder="Email Address" required>
                     <button type="submit">SUBSCRIBE</button>
@@ -3949,27 +3612,24 @@
 
             <div class="trust-badges">
                 <span class="badge"><i class="fas fa-lock"></i> SSL Secure</span>
-                <span class="badge">GSTIN: 27AADCK1234X1Z5 (Applied)</span>
-                <span class="badge">PAN: AADCK1234X</span>
-                <span class="badge">CIN: U49231MH2026PTCXXXXXX (Applied)</span>
-                <span class="badge">AEO # Pending</span>
-                <span class="badge">MSME Registered</span>
+                <span class="badge"><i class="fas fa-building"></i> Entity Registration in Progress</span>
+                <span class="badge"><i class="fas fa-file-signature"></i> Compliance Licensing Pending</span>
             </div>
 
             <div class="footer-bottom">
-                <div>© 2026 Koshiv Logistics Pvt Ltd. All rights reserved.</div>
+                <div>© 2026 Koshiv Technology and Logistics Pvt Ltd. All rights reserved.</div>
                 <div class="footer-links">
-                    <!-- href="https://legal.koshiv.com/privacy" --><a href="legal/legal.html">PRIVACY</a>
-                    <!-- href="https://legal.koshiv.com/terms" --><a href="legal/legal.html">TERMS</a>
-                    <!-- href="https://legal.koshiv.com/cookies" --><a href="legal/legal.html">COOKIES</a>
-                    <!-- href="https://legal.koshiv.com/accessibility" --><a href="legal/legal.html">ACCESSIBILITY</a>
-                    <!-- href="https://koshiv.com/sitemap.xml" --><a href="sitemap.html">SITEMAP</a>
+                    <a href="legal/legal.html">PRIVACY</a>
+                    <a href="legal/legal.html">TERMS</a>
+                    <a href="legal/legal.html">COOKIES</a>
+                    <a href="legal/legal.html">ACCESSIBILITY</a>
+                    <a href="sitemap.html">SITEMAP</a>
                 </div>
             </div>
 
             <div class="disclaimer">
-                *All services and timelines subject to change. Koshiv Logistics is launching in 2026. 
-                GSTIN, PAN, CIN are in application process - certificates will be updated upon receipt.
+                *Koshiv Technology and Logistics is currently in the pre-launch development phase. Operations are planned for 2026. 
+                Certain data represented is structural preview data and subject to change. Legal entity registration is in progress.
             </div>
         </div>
     </footer>
@@ -3985,7 +3645,7 @@
                 <i class="fas fa-times" onclick="toggleChat()"></i>
             </div>
             <div class="chat-messages" id="chatMessages">
-                <p style="margin-bottom:8px;"><strong>Koshiv:</strong> 👋 Hi! Thanks for reaching out. I'm Koushal, the founder. How can I help you today?</p>
+                <p style="margin-bottom:8px;"><strong>Koshiv:</strong> <i class="fas fa-hand-paper" style="color: #f59e0b;"></i> Hi! Thanks for reaching out. Our platform is currently under development. How can I help you today?</p>
                 <p style="margin-bottom:8px; font-size:12px; color:#6b7280;">Usually responds within a few hours</p>
             </div>
             <div class="chat-input">
@@ -3993,7 +3653,7 @@
                 <button onclick="sendChat()"><i class="fas fa-paper-plane"></i></button>
             </div>
             <div class="chat-availability">
-                Founder typically online 9am-6pm IST
+                General Inquiries: M-F 9am-6pm IST
             </div>
         </div>
     </div>
@@ -4005,7 +3665,7 @@
 
     <!-- COOKIE BANNER -->
     <div class="cookie-banner" id="cookieBanner">
-        <span>🍪 We use cookies to enhance your experience. By continuing to visit this site, you agree to our use of cookies.</span>
+        <span><i class="fas fa-cookie-bite" style="color:#d97706;"></i> We use cookies to enhance your experience on our platform.</span>
         <div class="cookie-buttons">
             <button onclick="acceptCookies('essential')">ESSENTIAL ONLY</button>
             <button class="accept" onclick="acceptCookies('all')">ACCEPT ALL</button>
@@ -4017,7 +3677,7 @@
     <div class="modal" id="notifyModal">
         <div class="modal-content">
             <span class="modal-close" onclick="closeModal('notifyModal')">&times;</span>
-            <h3 id="modalServiceName">🔔 Get notified when this service launches</h3>
+            <h3 id="modalServiceName"><i class="fas fa-bell"></i> Get notified when this service launches</h3>
             <form class="modal-form" action="https://formspree.io/f/your-notify-id" method="POST">
                 <input type="hidden" name="service" id="modalServiceInput">
                 <input type="text" name="name" placeholder="Name" required>
@@ -4035,8 +3695,8 @@
     <div class="modal" id="earlyAdopterModal">
         <div class="modal-content">
             <span class="modal-close" onclick="closeModal('earlyAdopterModal')">&times;</span>
-            <h3>🚀 CLAIM YOUR EARLY ADOPTER SPOT</h3>
-            <p style="margin-bottom:16px;">13 spots remaining</p>
+            <h3><i class="fas fa-rocket"></i> JOIN EARLY ADOPTER PROGRAM</h3>
+            <p style="margin-bottom:16px;">Reserve your priority status.</p>
             <form class="modal-form" action="https://formspree.io/f/your-early-id" method="POST">
                 <input type="text" name="name" placeholder="Name" required>
                 <input type="email" name="email" placeholder="Email" required>
@@ -4047,7 +3707,7 @@
                     <option>I am a: Partner</option>
                     <option>I am a: Investor</option>
                 </select>
-                <button type="submit" class="modal-submit">CLAIM MY SPOT</button>
+                <button type="submit" class="modal-submit">SUBMIT INQUIRY</button>
             </form>
         </div>
     </div>
@@ -4109,7 +3769,7 @@
                 
                 // Simulate founder response
                 setTimeout(function() {
-                    chatMessages.innerHTML += '<p style="margin-bottom:8px;"><strong>Koushal (Founder):</strong> Thanks for your message! I\'ll personally get back to you soon. For immediate assistance, you can also WhatsApp me at +91 98765 43210.</p>';
+                    chatMessages.innerHTML += '<p style="margin-bottom:8px;"><strong>Koshiv Support:</strong> Thanks for your message! Our team will personally get back to you soon. For immediate enterprise assistance, you can also WhatsApp us at +91 82981 63299.</p>';
                     chatMessages.scrollTop = chatMessages.scrollHeight;
                 }, 2000);
             }
@@ -4120,12 +3780,11 @@
             window.scrollTo({top: 0, behavior: 'smooth'});
         }
 
-        // Change Hero Background
+        // Change Hero Background (Gradient fallback)
         function changeHeroBg(imageUrl) {
             var hero = document.getElementById('mainHero');
-            hero.style.background = "linear-gradient(90deg, rgba(17, 24, 39, 0.95) 0%, rgba(17, 24, 39, 0.7) 40%, rgba(17, 24, 39, 0.1) 100%), url('" + imageUrl + "')";
-            hero.style.backgroundSize = "cover";
-            hero.style.backgroundPosition = "right center";
+            // Since we removed external images, we fallback to a simple gradient change
+            hero.style.background = "linear-gradient(135deg, #1e3a8a 0%, #111827 100%)";
         }
 
         // Map Functions
@@ -4150,7 +3809,7 @@
 
         // Modals
         function openNotifyModal(serviceName) {
-            document.getElementById('modalServiceName').innerHTML = '🔔 Get notified when ' + serviceName + ' launches';
+            document.getElementById('modalServiceName').innerHTML = '<i class="fas fa-bell"></i> Get notified when ' + serviceName + ' launches';
             document.getElementById('modalServiceInput').value = serviceName;
             document.getElementById('notifyModal').classList.add('show');
         }
@@ -4197,5 +3856,3 @@
     </script>
 </body>
 </html>
-
-
